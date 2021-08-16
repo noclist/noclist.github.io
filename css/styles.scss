@@ -1,0 +1,244 @@
+@import 'modules/reset';
+@import 'modules/breakpoints';
+@import 'modules/colors';  
+@import 'modules/icons';
+@import 'modules/hover';  
+
+@import 'modules/type';
+@import 'modules/stickynote'; 
+@import 'modules/coasters'; 
+@import 'modules//text-bubble'; 
+ 
+@font-face { 
+    font-family: "Mosk-bold";
+    src: url(/fonts/Mosk-Bold-700.ttf);
+  } 
+      
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;   
+    align-items: center;   
+        
+    background: #fff;  
+    font-family: Mosk-bold, sans-serif;
+     
+    @media(min-width: $bp-xs) {
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    }
+}   
+ 
+.carptainer { 
+    width: 90vw;  
+    padding: 0.5em 1em;
+    margin: 1.2em 0; 
+    background: radial-gradient(#fff, #426b7d);
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, hsl(119, 75%, 43%) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+
+    @media (min-width: $bp-sm) {
+        width: 75vw;
+        background: radial-gradient(#fff, #9fe06c); 
+        box-shadow: rgb(0, 0, 255) 0px 0px 0px 3px, 
+                    rgb(255, 255, 255) 10px -10px 0px -1px,
+                    rgb(31, 193, 27) 10px -10px 0 2px, 
+                    rgb(255, 255, 255) 20px -20px 0px -2px, 
+                    rgb(255, 217, 19) 20px -20px 0 1px, 
+                    rgb(255, 255, 255) 30px -30px 0px -3px, 
+                    rgb(255, 156, 85) 30px -30px, 
+                    rgb(255, 255, 255) 40px -40px 0px -3px, 
+                    rgb(255, 85, 85) 40px -40px;
+    }   
+    
+    @media(min-width: $bp-lg) {
+        margin-top: 3.2em; 
+        padding: 0.5em 3em;
+        transform: rotate(-0.5deg);
+    }
+} 
+  
+.header-flex {
+    display: block;
+    gap: 25px;
+    align-items: center;
+
+    @media(min-width: $bp-sm) {
+        display: flex;
+    }
+} 
+
+h1:not(.type) { 
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 0.8em;
+    margin-top: -0.2em;
+    color: #fff;
+    text-shadow: 0 2px 2px #FF0000, 
+                -2px 5px 0 #FF7F00, 
+                -4px 10px 0 #0f0f0f,
+                -8px 15px 0 #00FF00,
+                -12px 20px 0 #0000FF, 
+                -16px 25px 0 #4B0082,
+                -20px 30px 0 #9400D3;
+
+    @media(min-width: $bp-sm) {
+        font-size: 5em;
+        text-align: left;
+    }
+}
+   
+.wrapper { 
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: $bp-sm) {
+        flex-direction: column;
+    }
+}   
+    
+nav { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    letter-spacing: 0.4em;
+  
+    padding-bottom: 1em;
+    border-bottom: 3px dashed #ff7c94;
+    z-index: 3;
+    
+    a.fancy-link { 
+        font-size: 2.4rem;
+        margin: 0 15px;
+ 
+        -webkit-text-fill-color: var(--color-white);
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: var(--color-black);
+
+        &:hover {
+            -webkit-text-fill-color: var(--color-pink);
+        }
+
+        @media(min-width: $bp-sm) {
+            -webkit-text-fill-color: var(--color-blue);
+        }
+    } 
+ 
+    > div {
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .maze {  
+        background: url('/images/maze-white.png') no-repeat;
+        background-size: cover;
+        width: 55px;
+        height: 55px;
+        transition: transform 1s ease-out;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+ 
+        @media(min-width: $bp-sm) {
+            background-image: url('/images/maze.png');
+        }
+    }
+
+    @media (min-width: $bp-sm) {
+        border-bottom: none;
+    }
+}  
+ 
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    text-align: center;
+
+    -webkit-text-fill-color: var(--color-white);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--color-black);
+
+    a{
+        img {
+            padding: 58px 53px;
+            background: url(/icons/new/Cleveland_512-grey-alt.png) no-repeat;
+
+            &:hover {
+                background: url(/icons/new/Cleveland_512-blue.png) no-repeat;
+            }
+
+            @media(max-width: $bp-xs) {
+                filter: drop-shadow(2px 4px 6px black);
+            }
+        }
+    }
+
+    .name {
+        -webkit-text-fill-color: var(--color-purple);
+
+        &:hover {
+        -webkit-text-fill-color: var(--color-white);
+        }
+    }      
+
+    .city {
+        -webkit-text-fill-color: var(--color-yellow);
+
+        &:hover {
+        -webkit-text-fill-color: var(--color-white);
+        }
+    }
+
+    &:hover {
+        -webkit-text-fill-color: var(--color-pink);
+
+        img {
+            filter: hue-rotate(0);
+        }
+    }
+
+    @media(min-width: $bp-xs) {
+        font-size: 4em;
+        text-align: left; 
+    }
+
+    @media (min-width: $bp-md) {
+        flex-direction: row;  
+    }
+}
+ 
+.carp {
+    background-image: url("/images/lips2.png");
+    height: auto; 
+    align-self: center;
+    background-repeat: no-repeat; 
+    width: 245px;
+    height: 350px;
+    position: relative;
+
+    @media (min-width: $bp-md) {
+        flex: 0 0 260px;
+
+        &:hover {
+            background-image: url("/images/ben.png");
+        }
+    }
+}
+
+footer { 
+    margin-top: 1.5em;
+
+    ul { 
+        display: flex;   
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
