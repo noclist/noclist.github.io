@@ -1,0 +1,106 @@
+@import 'modules/reset';
+@import 'modules/breakpoints';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+script {
+    display: none;
+}
+
+body {
+    min-height: 97vh;
+    margin: 0.5em;
+
+    font-family: 'Roboto', sans-serif;
+
+    display: grid;
+    grid-template-areas: "header header header"
+                         "nav main aside"
+                         "footer footer footer";
+
+    grid-auto-columns: 30ch 1fr 30ch;                     
+    grid-auto-rows: 100px 1fr 100px;
+
+    @media(max-width: $bp-md) {
+        grid-template-areas: "header header"
+                             "nav aside"
+                             "main main"
+                             "footer footer";
+        grid-auto-columns: 1fr 1fr;
+        grid-auto-rows: 100px 1fr 1fr 100px;
+
+        gap: 0.25em;
+    }
+
+    @media(max-width: $bp-xs) {
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "aside"
+                             "footer";
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 100px 1fr 1fr 1fr 100px;
+    }
+
+    gap: 0.5em;
+
+    text-align: center;
+
+    > * {
+        display: grid;
+        place-content: center;
+
+        background: hsla(0, 13%, 57%, 0.13);
+        border: 5px solid #212529;
+    }
+
+    header {
+        grid-area: header; 
+        background: rgba(26, 150, 239, 0.13);
+    }
+
+    nav {
+        grid-area: nav;
+        grid-auto-columns: 30ch;
+        background: rgba(0, 255, 172, 0.13);
+    }
+
+    main {
+        grid-area: main;
+        grid-auto-columns: 30ch;
+        background: rgba(255, 168, 38, 0.13);
+    }
+
+    aside {
+        grid-area: aside;
+        grid-auto-columns: 30ch;
+        background: rgba(180, 14, 222, 0.13);
+    }
+
+    footer {
+        grid-area: footer;
+        background: rgba(115, 115, 106, 0.13);
+    }
+}
+
+figure {
+    padding: 0.5rem;
+    margin: 0.5em;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 0.3rem hsl(0, 0%, 70%);
+    font-size: 1.3em;
+  
+    &,
+    figcaption {
+      border-radius: 0.5rem;
+    }
+
+    figcaption {
+        background: rebeccapurple;
+        color: #fff;
+        padding: 1.5em;
+    }
+  }
+
+script {
+    display: none;
+}
