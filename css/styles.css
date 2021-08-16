@@ -322,7 +322,9 @@ h1.type {
   position: fixed;
   left: 2.3%;
   z-index: 2;
-  box-shadow: 0 0 20px 10px #fff, 0 0 33px 20px #f0f, 0 0 47px 30px #0ff; }
+  box-shadow: 0 0 20px 10px #fff,
+ 0 0 33px 20px #f0f,
+ 0 0 47px 30px #0ff; }
   @media (max-width: 1200px) {
     .coaster {
       display: none; } }
@@ -425,7 +427,13 @@ h1:not(.type) {
   margin-bottom: 0.8em;
   margin-top: -0.2em;
   color: #fff;
-  text-shadow: 0 2px 2px #FF0000,  -2px 5px 0 #FF7F00,  -4px 10px 0 #0f0f0f, -8px 15px 0 #00FF00, -12px 20px 0 #0000FF,  -16px 25px 0 #4B0082, -20px 30px 0 #9400D3; }
+  text-shadow: 0 2px 2px #FF0000, 
+ -2px 5px 0 #FF7F00, 
+ -4px 10px 0 #0f0f0f,
+ -8px 15px 0 #00FF00,
+ -12px 20px 0 #0000FF, 
+ -16px 25px 0 #4B0082,
+ -20px 30px 0 #9400D3; }
   @media (min-width: 768px) {
     h1:not(.type) {
       font-size: 5em;
@@ -490,9 +498,9 @@ main {
   -webkit-text-stroke-color: var(--color-black); }
   main a img {
     padding: 58px 53px;
-    background: url(/icons/new/Cleveland_512-grey-alt.png) no-repeat; }
+    background: url(/icons/Cleveland_512-grey-alt.png) no-repeat; }
     main a img:hover {
-      background: url(/icons/new/Cleveland_512-blue.png) no-repeat; }
+      background: url(/icons/Cleveland_512-blue.png) no-repeat; }
     @media (max-width: 600px) {
       main a img {
         filter: drop-shadow(2px 4px 6px black); } }

@@ -166,10 +166,10 @@ main {
     a{
         img {
             padding: 58px 53px;
-            background: url(/icons/new/Cleveland_512-grey-alt.png) no-repeat;
+            background: url(/icons/Cleveland_512-grey-alt.png) no-repeat;
 
             &:hover {
-                background: url(/icons/new/Cleveland_512-blue.png) no-repeat;
+                background: url(/icons/Cleveland_512-blue.png) no-repeat;
             }
 
             @media(max-width: $bp-xs) {
