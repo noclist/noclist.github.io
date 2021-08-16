@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import 'modules/colors';
+@import 'modules/hover';
+
+@mixin ellipses {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background: conic-gradient(from .5turn at 50% 110%, white, orange)
+}
+
+h1 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.actions-grid {
+  width: 75vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  grid-template-areas:
+      "animals games food"
+      "sci-fi music music";
+  grid-gap: 20px;
+
+  .action {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      border: 0;
+      padding: 0;
+      cursor: pointer; 
+      background-color: #FFE0A8;
+      box-shadow: 7px 7px 6px hsla(0, 0%, 0%, 0.25);
+
+      h2 {
+          grid-column: 1 / 4;
+          padding: 0.3em 0;
+          background: var(--color-blue);
+          color: hsl(0, 0%, 100%);
+          border: 1px solid var(--color-black);
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          margin: 0;
+      }
+
+      a {
+          @include ellipses();
+
+          padding: 1em 0;
+          background-color: var(--color-white);
+          border: 1px solid rebeccapurple;
+          color: rebeccapurple;
+          line-height: 1.5;
+          font-size: 1.1em;
+          text-decoration: none;
+          transition:
+            background-color .5s ease-in,
+            color .5s ease-in;
+
+          i {
+              font-size: 2.3em;
+              &.fas {
+                  display: none;
+              }
+              &.fal {
+                  display: block;
+              }
+          }
+
+          &:hover {
+              background-color: rebeccapurple;
+              color: var(--color-pink);
+
+              .fal {
+                  display: none;
+              }
+              .fas {
+                  display: block;
+              }
+          }
+      }
+
+      &.animals {
+          grid-area: animals;
+          grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.games {
+          grid-area: games;
+          grid-template-columns: 1fr;
+
+          h2 {
+              grid-column: 1 / 1;
+          }
+      }
+
+      &.food {
+          grid-area: food;
+          grid-template-columns: repeat(2, 1fr);
+
+          h2 {
+              grid-column: 1 / 3;
+          }
+      }
+
+      &.sci-fi {
+          grid-area: sci-fi;
+          grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.music {
+          grid-area: music;
+          grid-template-columns: 1fr 1fr 1.5fr 1fr;
+
+          h2 {
+            grid-column: 1 / 5
+          }
+      }
+  }
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "animals food"
+        "games sci-fi"
+        "music music";
+
+        .action {
+            &.games {
+                grid-template-columns: 1fr 1fr;
+
+                h2 {
+                    grid-column: 1 / 3;
+                }
+            }
+        }
+}
+
+  @media (max-width: 992px) {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+          "animals animals"
+          "games food"
+          "sci-fi sci-fi"
+          "music music";
+
+          .action {
+            &.games {
+                grid-template-columns: 1fr;
+
+                h2 {
+                    grid-column: 1 / 2;
+                }
+            }
+        }
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "animals"
+        "games"
+        "food"
+        "sci-fi"
+        "music";
+    }
+}
