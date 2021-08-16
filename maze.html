@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A maze made with css.</title>
+    <link rel="stylesheet" href="css/maze.css">
+</head>
+<body>
+    <h1>A CSS Maze</h1>
+    <div class="btns">   
+        <button id="circle">circle</button>
+        <button id="square">square</button>
+        <button id="animate">animate</button>
+    </div>
+    <div class="circle violet2">
+        <div class="circle indigo2">
+            <div class="circle blue2">
+                <div class="circle green2">
+                    <div class="circle yellow2">
+                        <div class="circle orange2">
+                            <div class="circle red2">
+                                <div class="circle violet">
+                                    <div class="circle indigo">
+                                        <div class="circle blue">
+                                            <div class="circle green">
+                                                <div class="circle yellow">
+                                                    <div class="circle orange">
+                                                        <div class="circle red">
+                                                            <span class="end">END</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="start">START</span>
+</body>
+</html>
+<script>
+    var circles = document.getElementsByClassName('circle');
+    document.getElementById('circle').onclick = function(){
+        for (circle of circles) {
+            circle.classList.remove('square-border');
+            circle.classList.add('circle-border');
+        }
+    };
+    document.getElementById('square').onclick = function(){
+        for (circle of circles) {
+            circle.classList.remove('circle-border');
+            circle.classList.add('square-border');
+        }
+    };
+        document.getElementById('animate').onclick = function(){
+        for (circle of circles) {
+            if (circle.classList.contains('animate'))
+                circle.classList.remove('animate');
+            else
+                circle.classList.add('animate'); 
+        }
+    };
+</script>

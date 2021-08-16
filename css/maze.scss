@@ -1,0 +1,400 @@
+@import 'modules/breakpoints';
+
+@font-face {
+    font-family: "Mosk-bold";
+    src: url(/fonts/Mosk-Bold-700.ttf);
+  }
+
+  @mixin gap {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: pink;
+  }
+
+  @mixin top-gap {
+    @include gap;
+    top: -11px;
+  }
+
+  @mixin right-gap {
+    @include gap;
+    right: -11px;
+  }
+
+  @mixin bottom-gap {
+    @include gap;
+    bottom: -11px;
+  }
+
+  @mixin left-gap {
+    @include gap;
+    left: -11px;
+  }
+
+  @mixin circle-size {
+    width: 50px;
+    height: 50px;
+  }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mosk-bold", sans-serif;
+    // overflow: hidden;
+
+    background: conic-gradient(red 0 52deg,
+    orange 52deg 104deg, 
+    yellow 104deg 156deg,
+    green 156deg 208deg,
+    blue 208deg 260deg,
+    indigo 260deg 312deg,
+    violet 312deg 360deg);
+
+    background: linear-gradient(to right, pink 77%, black);
+
+    // animation: conic 1s linear infinite;
+
+    @media(min-width: $bp-xs) {
+        flex-direction: row;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    margin-right: 1em;
+    color: white;
+    text-shadow: 5px 4px 0 #528bb7, 12px 10px 0 #5ac7ff, 14px 12px 0 #ff7800de, 16px 14px 0 #f55aff;
+}
+
+.circle {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    border: 10px solid;
+    position: relative;
+    border-radius: 50%;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2em;
+    padding: 1em;
+    border: 10px solid #0000007a;
+    border-top: none;
+    border-bottom: none;
+    height: 95vh;
+
+    background: conic-gradient(from -135deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
+}
+
+button {
+    border: 2px solid black;
+    color: black;
+    background: white;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    background: linear-gradient(#f1ff96, #ada1f1);
+    box-shadow: rgba(46, 133, 240, 40%)5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.circle-border {
+    border-radius: 50%;
+    transition: border-radius 1s ease-in;
+}
+
+.square-border {
+    border-radius: 0;
+    transition: border-radius 1s ease-in;
+}
+
+.animate {
+    animation: rotate 30s linear infinite;
+}
+
+#start {
+    position: relative;
+    border: 10px solid violet;
+
+    padding: 5px 10px 5px 5px;
+    left: -1px;
+
+    @media(min-width: $bp-xs) {
+        border-right: 0;
+        border-left: 0;
+    }
+}
+
+.red {
+    width: 50px;
+    height: 50px;
+    border-color: red;
+
+    &::after {
+        @include left-gap();
+    }
+}
+
+.orange {
+    width: 100px;
+    height: 100px;
+    border-color: orange;
+    
+    &::after {
+        @include top-gap;
+    }
+}
+
+.yellow {
+    width: 150px;
+    height: 150px;
+    border: 10px solid yellow;
+
+    &::after {
+        @include right-gap;
+    }   
+}
+
+.green {
+    width: 200px;
+    height: 200px;
+    border: 10px solid green;
+    
+    &::after {
+        @include bottom-gap;
+    } 
+}
+
+.blue {
+    width: 250px;
+    height: 250px;
+    border: 10px solid blue;
+    
+    &::after {
+        @include left-gap();
+    }
+}
+
+.indigo {
+    width: 300px;
+    height: 300px;
+    border: 10px solid indigo;
+    
+    &::after {
+        @include top-gap();
+    }
+}
+
+.violet {
+    width: 350px;
+    height: 350px;
+    border: 10px solid violet;
+    
+    &::after {
+        @include right-gap();
+    }
+}
+
+.red2 {
+    width: 400px;
+    height: 400px;
+    border: 10px solid red;
+
+    &::after {
+        @include bottom-gap();
+    }
+}
+
+.orange2 {
+    width: 450px;
+    height: 450px;
+    border: 10px solid orange;
+
+    &::after {
+        @include left-gap();
+    }
+}
+
+.yellow2 {
+    width: 500px;
+    height: 500px;
+    border: 10px solid yellow;
+    
+    &::after {
+        @include top-gap();
+    }
+}
+
+.green2 {
+    width: 550px;
+    height: 550px;
+    border: 10px solid green;
+    
+    &::after {
+        @include right-gap();
+    }
+}
+
+.blue2 {
+    width: 600px;
+    height: 600px;
+    border: 10px solid blue;
+    
+    &::after {
+        @include bottom-gap();
+    }
+}
+
+.indigo2 {
+    width: 650px;
+    height: 650px;
+    border: 10px solid indigo;
+    
+    &::after {
+        @include left-gap();
+    }
+}
+
+.violet2 {
+    width: 700px;
+    height: 700px;
+    border: 10px solid violet;
+    
+    &::after {
+        @include right-gap();
+        height: 30px;
+    }
+}
+
+// *******************ANIMATIONS***********************
+
+@keyframes conic {
+    0% {
+    background: conic-gradient(red 0 52deg,
+        orange 52deg 104deg, 
+        yellow 104deg 156deg,
+        green 156deg 208deg,
+        blue 208deg 260deg,
+        indigo 260deg 312deg,
+        violet 312deg 360deg);
+    }
+
+    14%   {
+        background: conic-gradient(violet 0 52deg,
+        red 52deg 104deg, 
+        orange 104deg 156deg,
+        yellow 156deg 208deg,
+        green 208deg 260deg,
+        blue 260deg 312deg,
+        indigo 312deg 360deg);
+    }
+
+    28%  {
+        background: conic-gradient(indigo 0 52deg,
+        violet 52deg 104deg, 
+        red 104deg 156deg,
+        orange 156deg 208deg,
+        yellow 208deg 260deg,
+        green 260deg 312deg,
+        blue 312deg 360deg);
+    }
+
+    42%  {
+        background: conic-gradient(blue 0 52deg,
+        indigo 52deg 104deg, 
+        violet 104deg 156deg,
+        red 156deg 208deg,
+        orange 208deg 260deg,
+        yellow 260deg 312deg,
+        green 312deg 360deg);
+    }
+
+    56% {
+        background: conic-gradient(green 0 52deg,
+        blue 52deg 104deg, 
+        indigo 104deg 156deg,
+        violet 156deg 208deg,
+        red 208deg 260deg,
+        orange 260deg 312deg,
+        yellow 312deg 360deg);
+    }
+
+    70% {
+        background: conic-gradient(yellow 0 52deg,
+        green 52deg 104deg, 
+        blue 104deg 156deg,
+        indigo 156deg 208deg,
+        violet 208deg 260deg,
+        red 260deg 312deg,
+        orange 312deg 360deg);
+    }
+
+    85% {
+        background: conic-gradient(orange 0 52deg,
+        yellow 52deg 104deg, 
+        green 104deg 156deg,
+        blue 156deg 208deg,
+        indigo 208deg 260deg,
+        violet 260deg 312deg,
+        red 312deg 360deg);
+    }
+  }
+
+@keyframes pie {
+    0% {
+        align-items: center; 
+        justify-content: flex-start;
+    }
+
+    12.5% {
+        align-items: flex-start; 
+        justify-content: flex-start;
+    }
+
+    25% {
+        align-items: flex-start; 
+        justify-content: center;
+    }
+
+    37.5% {
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    50% {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    62.5% {
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    75% {
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    88% {
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+  }
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
