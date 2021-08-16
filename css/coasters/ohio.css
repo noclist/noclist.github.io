@@ -1,0 +1,41 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#453721 20%, #D5C4A8); }
+
+.ohio {
+  position: relative;
+  background: url("/images/coasters/ohio.png");
+  width: 455px;
+  height: 452px;
+  filter: contrast(100%) drop-shadow(4px 4px 5px #000);
+  animation: ohio .5s ease-in infinite alternate; }
+
+@keyframes ohio {
+  0% {
+    transform: rotate(-5deg);
+    background: url("/images/coasters/ohio.png"); }
+  10% {
+    background: url("/images/coasters/ohio2.png"); }
+  20% {
+    background: url("/images/coasters/ohio3.png"); }
+  30% {
+    background: url("/images/coasters/ohio4.png"); }
+  40% {
+    background: url("/images/coasters/ohio5.png"); }
+  50% {
+    background: url("/images/coasters/ohio6.png"); }
+  60% {
+    background: url("/images/coasters/ohio7.png"); }
+  70% {
+    background: url("/images/coasters/ohio8.png"); }
+  80% {
+    background: url("/images/coasters/ohio9.png"); }
+  90% {
+    background: url("/images/coasters/ohio10.png"); }
+  100% {
+    transform: rotate(5deg);
+    filter: contrast(200%) drop-shadow(16px 16px 20px #000);
+    background: url("/images/coasters/ohio11.png"); } }
