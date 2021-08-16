@@ -1,0 +1,177 @@
+@import 'modules/reset';
+
+body {
+    min-height: 100vh;
+    font-family: system-ui;
+    background: linear-gradient(#eef3ff, #f6fff6);
+}
+
+.container {
+    margin: 1em;
+    padding: 1em;
+    background: linear-gradient(#fefefe, #fff);
+    border: 2px solid #212529;
+    border-radius: 5px;
+    box-shadow: Rgb(0 0 0 / 45%) 6px 6px 3px;
+}
+
+h1 {
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 0px #fff, 4px 3px 0px Rgb(0 0 0 / 15%);
+}
+
+form {
+  color: #212529;
+}
+
+.form-group {
+  + .form-group {
+    margin-top: 1.5rem;
+  }
+
+  label {
+    font-weight: 700;
+    line-height: 1;
+
+    &:not(.form-control) {
+      display: block;
+    }
+
+    + .form-field {
+      margin-top: 0.5em;
+    }
+  }
+
+  &--inline {
+      display: inline-block;
+  }
+}
+
+.form-field {
+  width: 100%;
+  max-width: 30ch;
+  padding: 0.25em 0.5em;
+  border: 2px solid currentColor;
+  border-radius: 0.25em;
+  background-color: #fcfffc;
+  color: inherit;
+  font-family: inherit;
+
+  &:focus-within {
+    outline: Max(2px, 0.08em) dashed currentColor;
+    outline-offset: Max(2px, 0.08em);
+  }
+}
+
+.form-field.select {
+  display: grid;
+  position: relative;
+  grid-template-areas: "select";
+  align-items: center;
+
+  select,
+  &::after {
+    grid-area: select;
+  }
+
+  &::after {
+    content: "";
+    justify-self: end;
+    width: 0.8em;
+    height: 0.5em;
+    background-color: currentColor;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+
+  select {
+    appearance: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 1em 0 0;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: inherit;
+  }
+
+    select {
+      outline: none;
+    }  
+}
+
+.form-control {
+  display: inline-grid;
+  grid-template-columns: 1em 1fr;
+  gap: 0.5em;
+
+  input {
+    width: 1em;
+    height: 1em;
+    margin: 0;
+    opacity: 0;
+
+    &:focus + .input__control {
+      box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.15em rebeccapurple;
+    }
+  }
+
+  &__input {
+    display: grid;
+    grid-template-areas: "input";
+    place-content: center;
+    font-size: 1em;
+
+    > * {
+      grid-area: input;
+    }
+  }
+
+  .input__control {
+    display: grid;
+    place-content: center;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid #212529;
+  }
+}
+
+.checkbox {
+  .input__control {
+    border-radius: 0.25em;
+    color: #3f51b5;
+  }
+
+  .input__control svg {
+    width: 0.65em;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+  }
+
+  input:checked + .input__control svg {
+    transform: scale(1);
+  }
+}
+
+.radio {
+  .input__control {
+    border-radius: 50%;
+  }
+
+  .input__control::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    border-radius: 50%;
+    box-shadow: inset 1em 1em #3f51b5;
+  }
+
+  input:checked + .input__control::before {
+    transform: scale(1);
+  }
+}
