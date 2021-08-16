@@ -1,0 +1,94 @@
+body, html {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+::selection {
+  color: #fff;
+  background: var(--color-pink); }
+
+h1,
+h2,
+h3,
+h4,
+h5
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-self: center; }
+
+a, a:hover {
+  text-decoration: none; }
+
+.flow-content > * + * {
+  margin-top: 2rem; }
+
+li {
+  list-style-type: none; }
+
+:root {
+  --color-blue: #1DA1F2;
+  --color-purple: #b78cf7;
+  --color-pink: #ff7c94;
+  --color-yellow: #ffcf0d;
+  --color-black: #212529;
+  --color-white: #fff; }
+
+@font-face {
+  font-family: "Mosk-bold";
+  src: url(/fonts/Mosk-Bold-700.ttf); }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mosk-bold", sans-serif;
+  color: var(--color-white);
+  background: linear-gradient(9deg, #620945 0%, #353a3e 100%); }
+
+.container {
+  width: 75vw;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+  padding: 1em;
+  background: linear-gradient(38deg, #e67300 0%, #0082ff 100%);
+  box-shadow: 2px 3px 13px 5px rgba(255, 255, 255, 0.26);
+  margin-top: 2em; }
+
+h1 {
+  font-size: 5em;
+  margin-bottom: .25em;
+  text-shadow: 0 2px 2px #FF0000,  -2px 5px 0 #FF7F00,  -4px 10px 0 #FFFF00, -8px 15px 0 #00FF00, -12px 20px 0 #0000FF, -16px 25px 0 #4B0082, -20px 30px 0 #9400D3; }
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto; }
+
+figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1; }
+
+figure a {
+  color: black;
+  text-decoration: none; }
+
+figcaption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: .6em 1em;
+  justify-self: start;
+  border-top-right-radius: 50%; }

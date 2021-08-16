@@ -1,0 +1,67 @@
+@import 'modules/reset';
+@import 'modules/colors';
+@font-face {
+    font-family: "Mosk-bold";
+    src: url(/fonts/Mosk-Bold-700.ttf);
+  }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mosk-bold", sans-serif;
+    color: var(--color-white);
+    background: linear-gradient(9deg, rgba(98,9,69,1) 0%, rgba(53,58,62,1) 100%);
+}
+
+.container {
+    width: 75vw;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: masonry;
+    padding: 1em;
+    background: linear-gradient(38deg, rgba(230,115,0,1) 0%, rgba(0,130,255,1) 100%);
+    box-shadow: 2px 3px 13px 5px rgba(255,255,255,0.26);
+    // border: px solid white;
+    margin-top:2em;
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: .25em;
+    text-shadow: 0 2px 2px #FF0000, 
+    -2px 5px 0 #FF7F00, 
+    -4px 10px 0 #FFFF00,
+    -8px 15px 0 #00FF00,
+    -12px 20px 0 #0000FF,
+    -16px 25px 0 #4B0082,
+    -20px 30px 0 #9400D3;
+}
+
+figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
+figure a {
+    color: black;
+    text-decoration: none;
+    }
+
+figcaption {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgba(255,255,255,0.5);
+    padding: .6em 1em;
+    justify-self: start;
+    border-top-right-radius: 50%;
+}
