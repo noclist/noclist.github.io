@@ -1,0 +1,64 @@
+@import 'modules/breakpoints.scss';
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+    background: linear-gradient(45deg, #ffb56b, #1f005c);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75vw;
+    height: 50vh;
+    border: 10px dashed hsl(260, 100%, 50%);
+    border: 10px dashed #fff;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background: hsl(260, 100%, 18%);
+
+    div {
+    width: 150px;
+    height: 150px;
+    background: #212529;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    transform: scale(1.1);
+
+        > div {
+            position: relative;
+            top: -2px;
+            transform: scale(0.85);
+            background: #fff;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        }
+    }
+
+    @media(min-width: $bp-sm) {
+        width: 50vw;
+    }
+}
+
+p {
+    background: radial-gradient(circle at 50% 50%, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    background-position: left;
+    color: transparent;
+    animation: gradient 2s ease-in-out infinite alternate;
+
+    font-size: 5rem;
+    font-weight: 700;
+    margin: -25px 0 0 0;
+}
+
+@keyframes gradient {
+    to {
+        background-position: right;
+    }
+}
