@@ -429,7 +429,8 @@ h1:not(.type) {
   @media (min-width: 768px) {
     h1:not(.type) {
       font-size: 5em;
-      text-align: left; } }
+      text-align: left;
+      margin-left: 1rem; } }
 
 .wrapper {
   display: flex;
@@ -508,7 +509,7 @@ main {
     -webkit-text-fill-color: var(--color-pink); }
     main:hover img {
       filter: hue-rotate(0); }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     main {
       font-size: 4em;
       text-align: left; } }

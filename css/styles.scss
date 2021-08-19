@@ -87,6 +87,7 @@ h1:not(.type) {
     @media(min-width: $bp-sm) {
         font-size: 5em;
         text-align: left;
+        margin-left: 1rem;
     }
 }
    
@@ -206,7 +207,7 @@ main {
         }
     }
 
-    @media(min-width: $bp-xs) {
+    @media(min-width: $bp-sm) {
         font-size: 4em;
         text-align: left; 
     }
