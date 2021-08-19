@@ -17,7 +17,7 @@ nav {
     justify-content: space-between; }
     @media (max-width: 800px) {
       nav.top, nav.bottom {
-        justify-content: center;
+        width: 75vw;
         gap: 1rem; } }
   nav.top {
     margin-bottom: 1rem; }
@@ -61,19 +61,26 @@ main {
   border: 10px dashed #fff;
   box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
   background: #1f005c; }
+  @media (max-width: 800px) {
+    .container {
+      padding: 1rem; } }
   .container div {
     width: 150px;
     height: 150px;
     background: #212529;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     transform: scale(1.1); }
+    @media (max-height: 400px) {
+      .container div {
+        width: 115px;
+        height: 115px; } }
     .container div > div {
       position: relative;
       top: -2px;
       transform: scale(0.85);
       background: #fff;
       clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
     .container {
       width: 50vw; } }
 
@@ -88,6 +95,9 @@ p {
   font-size: 5rem;
   font-weight: 700;
   margin: -25px 0 0; }
+  @media (max-height: 400px) {
+    p {
+      font-size: 4rem; } }
 
 @keyframes gradient {
   to {

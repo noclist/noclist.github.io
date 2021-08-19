@@ -17,14 +17,13 @@ a {
 nav {
     width: 50vw;
     
-
     &.top, 
     &.bottom {
         display: flex;
         justify-content: space-between;
 
         @media(max-width: 800px) {
-            justify-content: center;
+            width: 75vw;
             gap: 1rem;
         } 
     }
@@ -85,12 +84,21 @@ main {
     box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
     background: hsl(260, 100%, 18%);
 
+    @media(max-width: 800px) {
+        padding: 1rem;
+    }
+
     div {
-    width: 150px;
-    height: 150px;
-    background: #212529;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    transform: scale(1.1);
+        width: 150px;
+        height: 150px;
+        background: #212529;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        transform: scale(1.1);
+
+        @media(max-height: 400px) {
+            width: 115px;
+            height: 115px;
+        }
 
         > div {
             position: relative;
@@ -101,7 +109,7 @@ main {
         }
     }
 
-    @media(min-width: $bp-sm) {
+    @media(min-width: 800px) {
         width: 50vw;
     }
 }
@@ -118,6 +126,10 @@ p {
     font-size: 5rem;
     font-weight: 700;
     margin: -25px 0 0;
+
+    @media(max-height: 400px) {
+        font-size: 4rem;
+    }
 }
 
 @keyframes gradient {
