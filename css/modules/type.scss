@@ -1,0 +1,70 @@
+h1.type {
+    @include bp-md-hide;
+
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    width: max-content; 
+    background: #fff;
+    border: 1px solid #000;
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    i {
+        font-size: 1.5em;
+        line-height: 1.2;
+
+        &:first-child {
+            padding-left: 8px;
+        }
+
+        &:last-child {
+            padding-right: 8px;
+            @include bp-custom-hide(1316px, inline-block);
+        }
+
+        &:nth-last-child(2) {
+            @include bp-custom-hide(1116px, inline-block);
+        }
+
+        &:nth-last-child(3) {
+            @include bp-custom-hide(1012px, inline-block);
+        }
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;   
+    }
+
+    &::before {
+        animation: typewriter 5s steps(7) 1s alternate infinite;
+        background: #fff;
+    }
+
+    &::after {
+        width: 0.125em;
+        background: rgb(0, 0, 0);
+        left: -1px;
+
+        animation:
+            typewriter 5s steps(7) 1s alternate infinite,
+            cursor 750ms steps(7) alternate infinite;
+    }
+}
+
+@keyframes typewriter {
+    to {
+        left: 116%;
+        }
+}
+
+@keyframes cursor {
+    to {
+        background: transparent;
+    }
+}

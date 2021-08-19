@@ -322,9 +322,7 @@ h1.type {
   position: fixed;
   left: 2.3%;
   z-index: 2;
-  box-shadow: 0 0 20px 10px #fff,
- 0 0 33px 20px #f0f,
- 0 0 47px 30px #0ff; }
+  box-shadow: 0 0 20px 10px #fff, 0 0 33px 20px #f0f, 0 0 47px 30px #0ff; }
   @media (max-width: 1200px) {
     .coaster {
       display: none; } }
@@ -382,8 +380,8 @@ h1.type {
       top: 3px; }
 
 @font-face {
-  font-family: "Mosk-bold";
-  src: url(/fonts/Mosk-Bold-700.ttf); }
+  font-family: 'Mosk-bold';
+  src: url("/fonts/Mosk-Bold-700.ttf"); }
 
 body {
   min-height: 100vh;
@@ -401,12 +399,12 @@ body {
   padding: 0.5em 1em;
   margin: 1.2em 0;
   background: radial-gradient(#fff, #426b7d);
-  box-shadow: #555bff 0px 0px 0px 3px, #1ec01b 0px 0px 0px 6px, #ffd913 0px 0px 0px 9px, #ff9c55 0px 0px 0px 12px, #ff5555 0px 0px 0px 15px; }
+  box-shadow: #555bff 0 0 0 3px, #1ec01b 0 0 0 6px, #ffd913 0 0 0 9px, #ff9c55 0 0 0 12px, #ff5555 0 0 0 15px; }
   @media (min-width: 768px) {
     .carptainer {
       width: 75vw;
       background: radial-gradient(#fff, #9fe06c);
-      box-shadow: blue 0px 0px 0px 3px, white 10px -10px 0px -1px, #1fc11b 10px -10px 0 2px, white 20px -20px 0px -2px, #ffd913 20px -20px 0 1px, white 30px -30px 0px -3px, #ff9c55 30px -30px, white 40px -40px 0px -3px, #ff5555 40px -40px; } }
+      box-shadow: blue 0 0 0 3px, white 10px -10px 0 -1px, #1fc11b 10px -10px 0 2px, white 20px -20px 0 -2px, #ffd913 20px -20px 0 1px, white 30px -30px 0 -3px, #ff9c55 30px -30px, white 40px -40px 0 -3px, #ff5555 40px -40px; } }
   @media (min-width: 1200px) {
     .carptainer {
       margin-top: 3.2em;
@@ -427,13 +425,7 @@ h1:not(.type) {
   margin-bottom: 0.8em;
   margin-top: -0.2em;
   color: #fff;
-  text-shadow: 0 2px 2px #FF0000, 
- -2px 5px 0 #FF7F00, 
- -4px 10px 0 #0f0f0f,
- -8px 15px 0 #00FF00,
- -12px 20px 0 #0000FF, 
- -16px 25px 0 #4B0082,
- -20px 30px 0 #9400D3; }
+  text-shadow: 0 2px 2px #f00,  -2px 5px 0 #ff7f00,  -4px 10px 0 #0f0f0f, -8px 15px 0 #0f0, -12px 20px 0 #00f,  -16px 25px 0 #4b0082, -20px 30px 0 #9400d3; }
   @media (min-width: 768px) {
     h1:not(.type) {
       font-size: 5em;
@@ -456,16 +448,16 @@ nav {
   padding-bottom: 1em;
   border-bottom: 3px dashed #ff7c94;
   z-index: 3; }
-  nav a.fancy-link {
+  nav .fancy-link {
     font-size: 2.4rem;
     margin: 0 15px;
     -webkit-text-fill-color: var(--color-white);
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--color-black); }
-    nav a.fancy-link:hover {
+    nav .fancy-link:hover {
       -webkit-text-fill-color: var(--color-pink); }
     @media (min-width: 768px) {
-      nav a.fancy-link {
+      nav .fancy-link {
         -webkit-text-fill-color: var(--color-blue); } }
   nav > div {
     display: flex;
@@ -484,7 +476,7 @@ nav {
         background-image: url("/images/maze.png"); } }
   @media (min-width: 768px) {
     nav {
-      border-bottom: none; } }
+      border-bottom: 0; } }
 
 main {
   display: flex;
@@ -498,12 +490,12 @@ main {
   -webkit-text-stroke-color: var(--color-black); }
   main a img {
     padding: 58px 53px;
-    background: url(/icons/Cleveland_512-grey-alt.png) no-repeat; }
+    background: url("/icons/Cleveland_512-grey-alt.png") no-repeat; }
     main a img:hover {
-      background: url(/icons/Cleveland_512-blue.png) no-repeat; }
+      background: url("/icons/Cleveland_512-blue.png") no-repeat; }
     @media (max-width: 600px) {
       main a img {
-        filter: drop-shadow(2px 4px 6px black); } }
+        filter: drop-shadow(2px 4px 6px #000); } }
   main .name {
     -webkit-text-fill-color: var(--color-purple); }
     main .name:hover {
