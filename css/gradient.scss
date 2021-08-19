@@ -1,12 +1,75 @@
-@import 'modules/breakpoints.scss';
+@import 'modules/breakpoints';
 
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: system-ui;
-    background: linear-gradient(45deg, #ffb56b, #1f005c);
+    background: linear-gradient(0deg, #ffb56b, #1f005c);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 50vw;
+    
+
+    &.top, 
+    &.bottom {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 800px) {
+            justify-content: center;
+            gap: 1rem;
+        } 
+    }
+
+    &.top {
+        margin-bottom: 1rem;
+    }
+
+    &.bottom {
+        margin-top: 1rem;
+
+        @media(min-width: 800px) {
+            display: none;
+        }
+    }
+
+    i {
+        background: linear-gradient(45deg, #fff, #870160);
+        font-size: 5rem;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 200%;
+        background-position: left;
+        transition: background-position 0.5s ease;
+
+        &:hover {
+            background-position: right;
+        }
+    }
+}
+
+main {
+    display: flex;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 7.5rem;
+
+        @media(max-width: 800px) {
+            display: none;
+        } 
+    }
 }
 
 .container {
@@ -19,7 +82,7 @@ body {
     height: 50vh;
     border: 10px dashed hsl(260, 100%, 50%);
     border: 10px dashed #fff;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
     background: hsl(260, 100%, 18%);
 
     div {
@@ -54,7 +117,7 @@ p {
 
     font-size: 5rem;
     font-weight: 700;
-    margin: -25px 0 0 0;
+    margin: -25px 0 0;
 }
 
 @keyframes gradient {
