@@ -223,9 +223,9 @@ h1.type {
   border: 1px solid #000;
   position: relative;
   margin-bottom: 1.5rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 1224px) {
     h1.type {
-      display: block; } }
+      display: inline-block; } }
   h1.type i {
     font-size: 1.5em;
     line-height: 1.2; }
@@ -234,18 +234,8 @@ h1.type {
     h1.type i:last-child {
       padding-right: 8px;
       display: none; }
-      @media (min-width: 1316px) {
+      @media (min-width: 1338px) {
         h1.type i:last-child {
-          display: inline-block; } }
-    h1.type i:nth-last-child(2) {
-      display: none; }
-      @media (min-width: 1116px) {
-        h1.type i:nth-last-child(2) {
-          display: inline-block; } }
-    h1.type i:nth-last-child(3) {
-      display: none; }
-      @media (min-width: 1012px) {
-        h1.type i:nth-last-child(3) {
           display: inline-block; } }
   h1.type::before, h1.type::after {
     content: '';
@@ -274,8 +264,8 @@ h1.type {
 .sticky {
   display: block;
   position: absolute;
-  right: -7.5rem;
-  top: -1.75rem;
+  right: -1rem;
+  top: -3rem;
   z-index: 2; }
   .sticky p {
     font-family: 'Nanum Pen Script', cursive;
@@ -379,9 +369,63 @@ h1.type {
       left: 3px;
       top: 3px; }
 
+.alien {
+  z-index: 3; }
+  @media (max-width: 1200px) {
+    .alien {
+      display: none; } }
+  .alien .ufo {
+    position: absolute;
+    height: 61px;
+    right: 5px;
+    top: 5px;
+    z-index: 2; }
+  .alien .aliens {
+    position: absolute;
+    right: 65px;
+    top: 350px;
+    font-size: 3rem;
+    color: #99ffb4;
+    text-shadow: #daff54 -10px -50px 0, #a500a5 -20px -100px 0, #16647c -30px -150px 0, #e41285 -20px -200px 0, #995c00 -10px -250px 0, #99ffb4 0 -300px 0;
+    transition: background-position 0.5s ease;
+    animation: translate 20s linear infinite alternate, shake 0.05s linear infinite alternate; }
+    .alien .aliens:hover {
+      background-position: right; }
+    @media (max-width: 1200px) {
+      .alien .aliens {
+        display: none; } }
+
+@keyframes translate {
+  to {
+    transform: translateY(40vh); } }
+
+@keyframes shake {
+  to {
+    right: 70px; } }
+    .alien .aliens:after {
+      content: '';
+      position: absolute;
+      width: 75px;
+      height: 2px;
+      background: #333333;
+      right: -17%;
+      bottom: 4px;
+      filter: blur(10px);
+      animation: translate 20s linear infinite alternate-reverse, blur 20s linear infinite alternate; }
+
+@keyframes blur {
+  to {
+    filter: blur(3px);
+    width: 30px;
+    right: 22%; } }
+
 @font-face {
   font-family: 'Mosk-bold';
   src: url("/fonts/Mosk-Bold-700.ttf"); }
+
+@font-face {
+  font-family: 'Mosk-Extra-bold';
+  src: url("/fonts/Mosk Extra-Bold 800.ttf"); }
 
 body {
   min-height: 100vh;
@@ -389,7 +433,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #fff;
-  font-family: Mosk-bold, sans-serif; }
+  font-family: Mosk-Extra-bold, sans-serif; }
   @media (min-width: 600px) {
     body {
       background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); } }

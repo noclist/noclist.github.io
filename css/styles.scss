@@ -3,17 +3,23 @@
 @import 'modules/colors';  
 @import 'modules/icons';
 @import 'modules/hover';  
-
+  
 @import 'modules/type';
 @import 'modules/stickynote'; 
 @import 'modules/coasters'; 
-@import 'modules//text-bubble'; 
+@import 'modules/text-bubble'; 
+@import 'modules/alien'; 
  
 @font-face { 
     font-family: 'Mosk-bold';
     src: url('/fonts/Mosk-Bold-700.ttf');
   } 
-      
+
+  @font-face { 
+    font-family: 'Mosk-Extra-bold';
+    src: url('/fonts/Mosk Extra-Bold 800.ttf');
+  } 
+   
 body {
     min-height: 100vh;
     display: flex;
@@ -21,7 +27,7 @@ body {
     align-items: center;
         
     background: #fff;
-    font-family: Mosk-bold, sans-serif;
+    font-family: Mosk-Extra-bold, sans-serif;
      
     @media(min-width: $bp-xs) {
         background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);

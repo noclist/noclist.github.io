@@ -1,0 +1,76 @@
+.alien {
+
+    @media(max-width: $bp-lg) {
+        display: none;
+    }
+
+    z-index: 3;
+
+    .ufo {
+        position: absolute;
+        height: 61px; 
+        right: 5px;
+        top: 5px;
+        z-index: 2;
+    }
+
+    .aliens {
+        position: absolute;
+        right: 65px;
+        top: 350px;
+        font-size: 3rem; 
+        color: hsl(136, 100%, 80%);
+        text-shadow: #daff54 -10px -50px 0,   
+                    rgb(165, 0, 165) -20px -100px 0,
+                    rgb(22, 100, 124) -30px -150px 0,
+                    rgb(228, 18, 133) -20px -200px 0,
+                    rgb(153, 92, 0) -10px -250px 0,
+                    hsl(136, 100%, 80%) 0 -300px 0;
+        transition: background-position 0.5s ease;
+        animation: translate 20s linear infinite alternate,
+                shake 0.05s linear infinite alternate;
+    
+        &:hover {
+            background-position: right;
+        } 
+    
+        @media(max-width: $bp-lg) {
+            display: none;
+        }
+    
+        @keyframes translate {
+            to {
+            transform: translateY(40vh);
+            }
+        }
+    
+        @keyframes shake {
+            to {
+            right: 70px;
+            } 
+        }
+    
+        &:after {
+            content: '';
+            position: absolute;
+            width: 75px;
+            height: 2px;
+            background: hsl(0, 0%, 20%);
+            right: -17%;
+            bottom: 4px;
+            filter: blur(10px);
+    
+            animation: translate 20s linear infinite alternate-reverse,
+                    blur 20s linear infinite alternate;
+    
+            @keyframes blur {
+                to {
+                    filter: blur(3px);
+                    width: 30px;
+                    right: 22%;
+                }
+    
+            } 
+        }
+    }
+  }

@@ -1,5 +1,5 @@
 h1.type {
-    @include bp-md-hide;
+    @include bp-custom-hide(1224px, inline-block);
 
     font-family: 'Source Code Pro', monospace;
     position: relative;
@@ -19,15 +19,7 @@ h1.type {
 
         &:last-child {
             padding-right: 8px;
-            @include bp-custom-hide(1316px, inline-block);
-        }
-
-        &:nth-last-child(2) {
-            @include bp-custom-hide(1116px, inline-block);
-        }
-
-        &:nth-last-child(3) {
-            @include bp-custom-hide(1012px, inline-block);
+            @include bp-custom-hide(1338px, inline-block);
         }
     }
 
