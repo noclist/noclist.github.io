@@ -375,19 +375,34 @@ h1.type {
     .alien {
       display: none; } }
   .alien .ufo {
+    background: url("/images/ufo.png");
     position: absolute;
+    width: 168px;
     height: 61px;
     right: 5px;
     top: 5px;
     z-index: 2; }
+    .alien .ufo:after {
+      content: '';
+      position: absolute;
+      right: 41px;
+      top: 54px;
+      width: 85px;
+      height: calc(100vh - 66px);
+      background: Hsl(60 100% 50%/0.3);
+      filter: blur(1px);
+      animation: beam 0.5s linear infinite alternate; }
+
+@keyframes beam {
+  to {
+    filter: blur(3px); } }
   .alien .aliens {
     position: absolute;
-    right: 65px;
+    right: 45px;
     top: 350px;
     font-size: 3rem;
     color: #99ffb4;
     text-shadow: #daff54 -10px -50px 0, #a500a5 -20px -100px 0, #16647c -30px -150px 0, #e41285 -20px -200px 0, #995c00 -10px -250px 0, #99ffb4 0 -300px 0;
-    transition: background-position 0.5s ease;
     animation: translate 20s linear infinite alternate, shake 0.05s linear infinite alternate; }
     .alien .aliens:hover {
       background-position: right; }
@@ -397,15 +412,15 @@ h1.type {
 
 @keyframes translate {
   to {
-    transform: translateY(40vh); } }
+    transform: translateY(calc(100vh - 410px)); } }
 
 @keyframes shake {
   to {
-    right: 70px; } }
+    right: 48px; } }
     .alien .aliens:after {
       content: '';
       position: absolute;
-      width: 75px;
+      width: 95px;
       height: 2px;
       background: #333333;
       right: -17%;
