@@ -1,0 +1,84 @@
+body, html {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+::selection {
+  color: #fff;
+  background: var(--color-pink); }
+
+h1,
+h2,
+h3,
+h4,
+h5
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-self: center; }
+
+a, a:hover {
+  text-decoration: none; }
+
+.flow-content > * + * {
+  margin-top: 2rem; }
+
+li {
+  list-style-type: none; }
+
+@font-face {
+  font-family: 'Frankfurter';
+  src: url("/fonts/Frankfurter-Std-Regular.otf"); }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+  background: conic-gradient(from -90deg at bottom center, papayawhip, peachpuff); }
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 92vh;
+  border: 5px solid #212529;
+  background: conic-gradient(from 0.15turn at top right, black, #8bb7b7); }
+
+h1 {
+  font-size: 6rem;
+  background: linear-gradient(0.25turn, #008512, #c3ff1f, #b8ffb8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 5px;
+  --stroke-color: hsl(89, 100%, 35%);
+  -webkit-text-stroke: 1.5px black;
+  text-stroke: 1.5px black;
+  font-family: Frankfurter;
+  transform: translateY(-25px) rotate(-18deg); }
+
+h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  padding: 1em; }
+
+.item {
+  width: 10vw;
+  height: 10vh;
+  border: 3px dashed #ecae28; }
