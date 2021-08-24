@@ -67,7 +67,7 @@ h1 {
   line-height: 1;
   letter-spacing: 5px;
   z-index: 2;
-  padding: 1rem;
+  margin: 1rem;
   margin-bottom: 0; }
   @media (min-width: 768px) {
     h1 {
