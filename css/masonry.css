@@ -43,8 +43,8 @@ li {
   --color-white: #fff; }
 
 @font-face {
-  font-family: "Mosk-bold";
-  src: url(/fonts/Mosk-Bold-700.ttf); }
+  font-family: 'Frankfurter';
+  src: url("/fonts/Frankfurter-Std-Regular.otf"); }
 
 body {
   min-height: 100vh;
@@ -57,6 +57,7 @@ body {
   background: linear-gradient(9deg, #620945 0%, #353a3e 100%); }
 
 .container {
+  position: relative;
   width: 75vw;
   display: grid;
   gap: 10px;
@@ -68,22 +69,38 @@ body {
   margin-top: 2em; }
 
 h1 {
-  font-size: 5em;
-  margin-bottom: .25em;
-  text-shadow: 0 2px 2px #FF0000,  -2px 5px 0 #FF7F00,  -4px 10px 0 #FFFF00, -8px 15px 0 #00FF00, -12px 20px 0 #0000FF, -16px 25px 0 #4B0082, -20px 30px 0 #9400D3; }
+  font-family: Frankfurter;
+  font-size: 4rem;
+  background: linear-gradient(0.9turn, white, #e67300, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 1.5px #000;
+  text-stroke: 1.5px #000;
+  color: transparent;
+  letter-spacing: 2px;
+  z-index: 2; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 6rem;
+      transform: rotate(355deg) translateY(40px); } }
+
+h2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  padding: 1em; }
 
 figure {
   margin: 0;
   display: grid;
   grid-template-rows: 1fr auto; }
-
-figure > img {
-  grid-row: 1 / -1;
-  grid-column: 1; }
-
-figure a {
-  color: black;
-  text-decoration: none; }
+  figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1; }
+  figure a {
+    color: #000;
+    text-decoration: none; }
 
 figcaption {
   grid-row: 2;

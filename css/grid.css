@@ -1,3 +1,39 @@
+body, html {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+::selection {
+  color: #fff;
+  background: var(--color-pink); }
+
+h1,
+h2,
+h3,
+h4,
+h5
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-self: center; }
+
+a, a:hover {
+  text-decoration: none; }
+
+.flow-content > * + * {
+  margin-top: 2rem; }
+
+li {
+  list-style-type: none; }
+
 :root {
   --color-blue: #1DA1F2;
   --color-purple: #b78cf7;
@@ -7,27 +43,37 @@
   --color-white: #fff; }
 
 @font-face {
-  font-family: "Mosk-bold";
-  src: url(/fonts/Mosk-Bold-700.ttf); }
+  font-family: 'Frankfurter';
+  src: url("/fonts/Frankfurter-Std-Regular.otf"); }
 
 body {
-  background: rgba(135, 171, 120, 0.5);
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Mosk-bold', sans-serif; }
+  background: rgba(0, 0, 0, 0.4);
+  font-family: system-ui, sans-serif; }
 
 h1 {
-  font-size: 3rem;
-  margin: 0;
-  margin-bottom: 0.25em;
-  padding: 0;
-  color: #fff;
-  text-shadow: 5px 5px 0px #3269de; }
+  font-family: Frankfurter;
+  font-size: 4rem;
+  background: linear-gradient(0.9turn, white, #3269de, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 1.5px #000;
+  text-stroke: 1.5px #000;
+  color: transparent;
+  letter-spacing: 2px;
+  z-index: 2;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 6rem;
+      transform: rotate(355deg) translateY(40px); } }
+  @media (min-width: 768px) {
+    h1 {
+      margin-bottom: 3rem; } }
 
 h2 {
   font-size: 1.25em;
@@ -36,7 +82,7 @@ h2 {
   color: rgba(0, 0, 0, 0.6); }
 
 #grid {
-  margin: 1em 1.5em 1.5em 1.5em;
+  margin: 1em 1.5em 1.5em;
   width: 75vw;
   padding: 4em;
   background: radial-gradient(closest-side, #f69d3c, #ebf8e1, #00334896);
@@ -44,7 +90,7 @@ h2 {
   grid-gap: 1.5em;
   grid-template-columns: repeat(auto-fit, 140px);
   grid-template-rows: repeat(auto-fit, 250px);
-  box-shadow: 0 0px 13px 3px black; }
+  box-shadow: 0 0 13px 3px black; }
   @media (max-width: 600px) {
     #grid {
       background: linear-gradient(90deg, #fccc45 0%, #b074d9 100%); } }
@@ -52,7 +98,7 @@ h2 {
     height: 250px;
     box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    transition: all .2s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
     #grid > *:hover {
       transform: scale(1.1) rotate(-5deg);
       box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.25); }

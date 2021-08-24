@@ -1,4 +1,5 @@
 @import 'modules/reset';
+@import 'modules/header';
 
 @import 'modules/shapes/cube';
 @import 'modules/shapes/octagon.scss';
@@ -9,6 +10,9 @@
 
 body { 
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: system-ui;
     background: linear-gradient(#eef3ff, #f6fff6);
 } 
@@ -18,12 +22,25 @@ body {
 }
    
 .container {
+    position: relative;
     margin: 1em;
     padding: 2em;
     background: #fefefe;
     border: 2px solid #212543;
     border-radius: 5px;
     box-shadow: Rgb(0 0 0 / 45%) 6px 6px 3px;
+}
+
+h1 {
+    @include header(rgb(255, 255, 255), rgb(0, 148, 7));
+}
+
+h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #212529;
+    padding: 1em;
 }
 
 .shapes {

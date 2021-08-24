@@ -1,12 +1,18 @@
 @import 'modules/reset';
+@import 'modules/header';
 
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: system-ui;
     background: linear-gradient(#eef3ff, #f6fff6);
 }
 
 .container {
+    position: relative;
+    width: 95vw;
     margin: 1em;
     padding: 1em;
     background: linear-gradient(#fefefe, #fff);
@@ -16,8 +22,15 @@ body {
 }
 
 h1 {
-    margin-bottom: 1em;
-    text-shadow: 2px 2px 0px #fff, 4px 3px 0px Rgb(0 0 0 / 15%);
+  @include header(rgb(255, 255, 255), rebeccapurple);
+}
+
+h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #212529;
+  padding: 1em;
 }
 
 form {

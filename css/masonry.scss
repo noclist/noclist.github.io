@@ -1,9 +1,6 @@
 @import 'modules/reset';
 @import 'modules/colors';
-@font-face {
-    font-family: "Mosk-bold";
-    src: url(/fonts/Mosk-Bold-700.ttf);
-  }
+@import 'modules/header';
 
 body {
     min-height: 100vh;
@@ -17,45 +14,45 @@ body {
 }
 
 .container {
+    position: relative;
     width: 75vw;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: masonry;
     padding: 1em;
-    background: linear-gradient(38deg, rgba(230,115,0,1) 0%, rgba(0,130,255,1) 100%);
+    background: linear-gradient(38deg, rgba(230,115,0,1) 0%, rgba(0, 130, 255, 1) 100%);
     box-shadow: 2px 3px 13px 5px rgba(255,255,255,0.26);
-    // border: px solid white;
     margin-top:2em;
 }
 
 h1 {
-    font-size: 5em;
-    margin-bottom: .25em;
-    text-shadow: 0 2px 2px #FF0000, 
-    -2px 5px 0 #FF7F00, 
-    -4px 10px 0 #FFFF00,
-    -8px 15px 0 #00FF00,
-    -12px 20px 0 #0000FF,
-    -16px 25px 0 #4B0082,
-    -20px 30px 0 #9400D3;
+    @include header(rgb(255, 255, 255), rgba(230, 115, 0, 1));
+}
+
+h2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    padding: 1em;
 }
 
 figure {
     margin: 0;
     display: grid;
     grid-template-rows: 1fr auto;
-}
 
-figure > img {
-    grid-row: 1 / -1;
-    grid-column: 1;
-}
-
-figure a {
-    color: black;
-    text-decoration: none;
+    > img {
+        grid-row: 1 / -1;
+        grid-column: 1;
     }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
 
 figcaption {
     grid-row: 2;

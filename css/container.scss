@@ -1,9 +1,5 @@
 @import 'modules/reset';
-
-  @font-face { 
-    font-family: 'Frankfurter';
-    src: url('/fonts/Frankfurter-Std-Regular.otf');
-  } 
+@import 'modules/header';
 
 body {
     min-height: 100vh;
@@ -11,8 +7,8 @@ body {
     justify-content: center;
     align-items: center;
     font-family: system-ui;
-    
-    background: conic-gradient(from -90deg at bottom center, papayawhip, peachpuff);
+
+    background: conic-gradient(from -90deg at bottom center, rgb(255, 255, 255), peachpuff);
 }
 
 .container {
@@ -20,27 +16,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    justify-content: center;
     align-items: center;
     width: 95vw;
     height: 92vh;
     border: 5px solid #212529;
-    background: conic-gradient(from 0.15turn at top right, black, #8bb7b7);
+    background: conic-gradient(from 0.15turn at top right, #000, #8bb7b7);
 }
 
 h1 {
-    font-size: 6rem;
-    background: linear-gradient(0.25turn, hsl(128, 100%, 26%), hsl(76, 100%, 56%), hsl(120, 100%, 86%));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 5px;
-    --stroke-color: hsl(89, 100%, 35%);
-    -webkit-text-stroke: 1.5px black;
-    text-stroke: 1.5px black;
-    font-family: Frankfurter;
-    transform: translateY(-25px) rotate(-18deg);
-}
+    @include header(rgb(255, 255, 255), hsl(120, 100%, 86%));
+  }
 
 h2 {
     position: absolute;

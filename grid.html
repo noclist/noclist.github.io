@@ -6,9 +6,9 @@
     <title>A CSS Grid</title>
     <link rel="stylesheet" href="css/grid.css">
 </head>
-<body class="grid-body">
-    <h1>These are my kids</h1>
-    <h2>in a CSS grid.</h2>
+<body>
+    <h1>CSS Grid</h1>
+    <h2>These are my kids in a CSS grid.</h2>
     <div id="grid"></div>
 </body>
 </html>
@@ -16,7 +16,7 @@
 <script>
     var grid = document.getElementById('grid');
 
-    for(var i = 1; i < 31; i++) {
+    for(var i = 1; i < 37; i++) {
         grid.innerHTML += '<div><a href="images/grid/' + i + '.jpg">' + '<img src="images/grid/thumbs/' + i + '_tn.jpg">' + '</a></div>';
     }
 </script>
