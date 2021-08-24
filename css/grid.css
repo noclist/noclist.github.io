@@ -64,12 +64,15 @@ h1 {
   -webkit-text-stroke: 1.5px #000;
   text-stroke: 1.5px #000;
   color: transparent;
-  letter-spacing: 2px;
+  line-height: 1;
+  letter-spacing: 5px;
   z-index: 2;
+  padding: 1rem;
   margin-bottom: 0; }
   @media (min-width: 768px) {
     h1 {
       font-size: 6rem;
+      letter-spacing: 2px;
       transform: rotate(355deg) translateY(40px); } }
   @media (min-width: 768px) {
     h1 {
