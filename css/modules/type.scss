@@ -1,7 +1,8 @@
-h1.type {
+.type {
     @include bp-custom-hide(1224px, inline-block);
 
     font-family: 'Source Code Pro', monospace;
+    font-size: 2em;
     position: relative;
     width: max-content; 
     background: #fff;

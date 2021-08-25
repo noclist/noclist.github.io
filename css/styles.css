@@ -38,21 +38,21 @@ li {
   list-style-type: none; }
 
 :root {
-  --color-blue: #1DA1F2;
-  --color-purple: #b78cf7;
-  --color-pink: #ff7c94;
-  --color-yellow: #ffcf0d;
-  --color-black: #212529;
-  --color-white: #fff; }
+  --color-blue: hsl(203, 89%, 53%);
+  --color-purple: hsl(264, 87%, 76%);
+  --color-pink: hsl(349, 100%, 74%);
+  --color-yellow: hsl(48, 100%, 53%);
+  --color-black: hsl(210, 11%, 15%);
+  --color-white: hsl(0, 0%, 100%); }
 
 /* icons */
 :root {
-  --color-blue: #1DA1F2;
-  --color-purple: #b78cf7;
-  --color-pink: #ff7c94;
-  --color-yellow: #ffcf0d;
-  --color-black: #212529;
-  --color-white: #fff; }
+  --color-blue: hsl(203, 89%, 53%);
+  --color-purple: hsl(264, 87%, 76%);
+  --color-pink: hsl(349, 100%, 74%);
+  --color-yellow: hsl(48, 100%, 53%);
+  --color-black: hsl(210, 11%, 15%);
+  --color-white: hsl(0, 0%, 100%); }
 
 .fab {
   font-size: 2rem;
@@ -214,9 +214,10 @@ a:hover .fad {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1; }
 
-h1.type {
+.type {
   display: none;
   font-family: 'Source Code Pro', monospace;
+  font-size: 2em;
   position: relative;
   width: max-content;
   background: #fff;
@@ -224,30 +225,30 @@ h1.type {
   position: relative;
   margin-bottom: 1.5rem; }
   @media (min-width: 1224px) {
-    h1.type {
+    .type {
       display: inline-block; } }
-  h1.type i {
+  .type i {
     font-size: 1.5em;
     line-height: 1.2; }
-    h1.type i:first-child {
+    .type i:first-child {
       padding-left: 8px; }
-    h1.type i:last-child {
+    .type i:last-child {
       padding-right: 8px;
       display: none; }
       @media (min-width: 1338px) {
-        h1.type i:last-child {
+        .type i:last-child {
           display: inline-block; } }
-  h1.type::before, h1.type::after {
+  .type::before, .type::after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0; }
-  h1.type::before {
+  .type::before {
     animation: typewriter 5s steps(7) 1s alternate infinite;
     background: #fff; }
-  h1.type::after {
+  .type::after {
     width: 0.125em;
     background: black;
     left: -1px;
@@ -434,9 +435,29 @@ h1.type {
     width: 30px;
     right: 22%; } }
 
-@font-face {
-  font-family: 'Mosk-bold';
-  src: url("/fonts/Mosk-Bold-700.ttf"); }
+.dotted-line div {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  border-left: 5px dashed rebeccapurple; }
+  .dotted-line div:first-child {
+    left: 2250px; }
+    .dotted-line div:first-child::after {
+      content: '2250!'; }
+  .dotted-line div:nth-child(2) {
+    left: 2500px; }
+    .dotted-line div:nth-child(2)::after {
+      content: '2500!'; }
+  .dotted-line div:nth-child(3) {
+    left: 3000px; }
+    .dotted-line div:nth-child(3)::after {
+      content: '3000!'; }
+  .dotted-line div::after {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    left: -30px; }
 
 @font-face {
   font-family: 'Mosk-Extra-bold';
@@ -451,56 +472,40 @@ body {
   font-family: Mosk-Extra-bold, sans-serif; }
   @media (min-width: 600px) {
     body {
-      background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); } }
-
-.dotted-line {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 2200px;
-  z-index: 10;
-  border-left: 5px dashed rebeccapurple; }
-  .dotted-line:after {
-    content: '2200!';
-    position: absolute;
-    font-size: 1.5rem;
-    color: #fff;
-    left: -30px; }
+      background: linear-gradient(0.25turn, #3f87a6, #ecf8e2, #f69c3c); } }
 
 .carptainer {
   width: 90vw;
   padding: 0.5em 1em;
   margin: 1.2em 0;
-  background: radial-gradient(#fff, #426b7d);
-  box-shadow: #555bff 0 0 0 3px, #1ec01b 0 0 0 6px, #ffd913 0 0 0 9px, #ff9c55 0 0 0 12px, #ff5555 0 0 0 15px; }
+  background: radial-gradient(white, #416a7c);
+  box-shadow: #416a7c 0 0 0 3px, white 0 0 0 6px, #416a7c 0 0 0 9px, white 0 0 0 12px, #416a7c 0 0 0 15px; }
   @media (min-width: 768px) {
     .carptainer {
       width: 75vw;
-      background: radial-gradient(#fff, #9fe06c);
-      box-shadow: blue 0 0 0 3px, white 10px -10px 0 -1px, #1fc11b 10px -10px 0 2px, white 20px -20px 0 -2px, #ffd913 20px -20px 0 1px, white 30px -30px 0 -3px, #ff9c55 30px -30px, white 40px -40px 0 -3px, #ff5555 40px -40px; } }
+      background: radial-gradient(white, #9ee06c);
+      box-shadow: blue 0 0 0 3px, white 10px -10px 0 -1px, #1ec01b 10px -10px 0 2px, white 20px -20px 0 -2px, #ffd814 20px -20px 0 1px, white 30px -30px 0 -3px, #ff9d57 30px -30px, white 40px -40px 0 -3px, #ff5757 40px -40px; } }
   @media (min-width: 1200px) {
     .carptainer {
       margin-top: 3.2em;
       padding: 0.5em 3em;
       transform: rotate(-0.5deg); } }
 
-.header-flex {
-  display: block;
-  gap: 25px;
-  align-items: center; }
-  @media (min-width: 768px) {
-    .header-flex {
-      display: flex; } }
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    gap: 25px;
+    align-items: center; } }
 
-h1:not(.type) {
+header h1 {
   font-size: 3.5em;
   text-align: center;
   margin-bottom: 0.8em;
   margin-top: -0.2em;
-  color: #fff;
-  text-shadow: 0 2px 2px #f00,  -2px 5px 0 #ff7f00,  -4px 10px 0 #0f0f0f, -8px 15px 0 #0f0, -12px 20px 0 #00f,  -16px 25px 0 #4b0082, -20px 30px 0 #9400d3; }
+  color: white;
+  text-shadow: 0 2px 2px red, -2px 5px 0 #ff8000, -4px 10px 0 #0f0f0f, -8px 15px 0 lime, -12px 20px 0 blue, -16px 25px 0 #4a0080, -20px 30px 0 #9200d1; }
   @media (min-width: 768px) {
-    h1:not(.type) {
+    header h1 {
       font-size: 5em;
       text-align: left;
       margin-left: 1rem; } }
@@ -517,10 +522,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5em;
-  letter-spacing: 0.4em;
   padding-bottom: 1em;
-  border-bottom: 3px dashed #ff7c94;
+  border-bottom: 3px dashed #ff7a93;
   z-index: 3; }
   nav .fancy-link {
     font-size: 2.4rem;
@@ -533,10 +536,6 @@ nav {
     @media (min-width: 768px) {
       nav .fancy-link {
         -webkit-text-fill-color: var(--color-blue); } }
-  nav > div {
-    display: flex;
-    align-items: center;
-    gap: 10px; }
   nav .maze {
     background: url("/images/maze-white.png") no-repeat;
     background-size: cover;
@@ -562,14 +561,19 @@ main {
   -webkit-text-fill-color: var(--color-white);
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--color-black); }
-  main a img {
-    padding: 58px 53px;
-    background: url("/icons/Cleveland_512-grey-alt.png") no-repeat; }
-    main a img:hover {
-      background: url("/icons/Cleveland_512-blue.png") no-repeat; }
-    @media (max-width: 600px) {
-      main a img {
-        filter: drop-shadow(2px 4px 6px #000); } }
+  main .carp {
+    background-image: url("/images/lips2.png");
+    height: auto;
+    align-self: center;
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 350px;
+    position: relative; }
+    @media (min-width: 992px) {
+      main .carp {
+        flex: 0 0 260px; }
+        main .carp:hover {
+          background-image: url("/images/ben.png"); } }
   main .name {
     -webkit-text-fill-color: var(--color-purple); }
     main .name:hover {
@@ -578,31 +582,23 @@ main {
     -webkit-text-fill-color: var(--color-yellow); }
     main .city:hover {
       -webkit-text-fill-color: var(--color-white); }
+  main a img {
+    padding: 58px 53px;
+    background: url("/icons/Cleveland_512-grey-alt.png") no-repeat; }
+    main a img:hover {
+      background: url("/icons/Cleveland_512-blue.png") no-repeat; }
+    @media (max-width: 600px) {
+      main a img {
+        filter: drop-shadow(2px 4px 6px black); } }
   main:hover {
     -webkit-text-fill-color: var(--color-pink); }
     main:hover img {
       filter: hue-rotate(0); }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     main {
       font-size: 4em;
-      text-align: left; } }
-  @media (min-width: 992px) {
-    main {
+      text-align: left;
       flex-direction: row; } }
-
-.carp {
-  background-image: url("/images/lips2.png");
-  height: auto;
-  align-self: center;
-  background-repeat: no-repeat;
-  width: 245px;
-  height: 350px;
-  position: relative; }
-  @media (min-width: 992px) {
-    .carp {
-      flex: 0 0 260px; }
-      .carp:hover {
-        background-image: url("/images/ben.png"); } }
 
 footer {
   margin-top: 1.5em; }
@@ -611,5 +607,4 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0;
-    padding: 0;
-    list-style: none; }
+    padding: 0; }

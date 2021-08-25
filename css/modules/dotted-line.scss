@@ -1,0 +1,40 @@
+.dotted-line {
+    div {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        border-left: 5px dashed hsl(270, 50%, 40%);
+
+        &:first-child {
+            left: 2250px;
+
+            &::after {
+                content: '2250!';
+            }
+        }
+
+        &:nth-child(2) {
+            left: 2500px;
+
+            &::after {
+                content: '2500!';
+            }
+        }
+
+        &:nth-child(3) {
+            left: 3000px;
+
+            &::after {
+                content: '3000!';
+            }
+        }
+
+        &::after {
+            position: absolute;
+            font-size: 1.5rem;
+            color: hsl(0, 0%, 100%);
+            left: -30px;
+        }
+    }
+}
