@@ -112,12 +112,12 @@ form {
 .form-field.select {
   display: grid;
   position: relative;
-  grid-template-areas: "select";
+  grid-template-areas: 'select';
   align-items: center; }
   .form-field.select select, .form-field.select::after {
     grid-area: select; }
   .form-field.select::after {
-    content: "";
+    content: '';
     justify-self: end;
     width: 0.8em;
     height: 0.5em;
@@ -128,7 +128,7 @@ form {
     width: 100%;
     margin: 0;
     padding: 0 1em 0 0;
-    border: none;
+    border: 0;
     background-color: transparent;
     color: inherit;
     font-family: inherit;
