@@ -5,7 +5,7 @@
     src: url('/fonts/Frankfurter-Std-Regular.otf');
 } 
 
-@mixin header($color1, $color2) {
+@mixin header($color1, $color2) { 
     font-family: Frankfurter;
     font-size: 4rem;
     background: linear-gradient(0.9turn, $color1, $color2, $color1);
@@ -17,11 +17,12 @@
     line-height: 1;
     letter-spacing: 5px;
     z-index: 2;
-    margin: 1rem;
+    margin: 1rem 1rem 0;
 
     @media (min-width: $bp-sm) {
         font-size: 6rem;
         letter-spacing: 2px;
+        margin-bottom: 3rem;
         transform: rotate(355deg) translateY(40px);
     }
 }

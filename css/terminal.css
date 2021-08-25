@@ -59,11 +59,12 @@ h1 {
   line-height: 1;
   letter-spacing: 5px;
   z-index: 2;
-  margin: 1rem; }
+  margin: 1rem 1rem 0; }
   @media (min-width: 768px) {
     h1 {
       font-size: 6rem;
       letter-spacing: 2px;
+      margin-bottom: 3rem;
       transform: rotate(355deg) translateY(40px); } }
 
 h2 {

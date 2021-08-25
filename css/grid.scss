@@ -15,17 +15,10 @@ body {
 
     h1 {
         @include header(rgb(255, 255, 255), #3269de);
-        margin-bottom: 0;
-
-        @media (min-width: $bp-sm) { 
-            margin-bottom: 3rem;
-        }
     }
 
     h2 {
         font-size: 1.25em;
-        margin: 0;
-        padding: 0;
         color: hsla(0, 0, 0, 0.6);
     }
     
