@@ -123,13 +123,13 @@ form {
     opacity: 0;
 
     &:focus + .input__control {
-      box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.15em rebeccapurple;
+      box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.15em hsl(270, 50%, 40%);
     }
   }
 
   &__input {
     display: grid;
-    grid-template-areas: "input";
+    grid-template-areas: 'input';
     place-content: center;
     font-size: 1em;
 

@@ -1,0 +1,35 @@
+@import 'modules/reset';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+    background: radial-gradient(circle at top left, rgba(0, 255, 106, 1) 0%, rgb(22, 17, 78) 75%, rgb(174, 173, 190) 100%);
+}
+
+.container {
+    width: 95vw;
+    height: 95vh;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-gap: 1rem;
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        background: radial-gradient(at center, #fff, #ff7300);
+        border: 2.5px dashed #fff;
+    }
+}
+
