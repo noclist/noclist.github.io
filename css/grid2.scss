@@ -1,4 +1,6 @@
 @import 'modules/reset';
+@import 'modules/breakpoints';
+@import 'modules/header';
 
 body {
     display: flex;
@@ -11,25 +13,148 @@ body {
 
 .container {
     width: 95vw;
-    height: 95vh;
+    min-height: 95vh;
     border: 5px solid #fff;
     border-radius: 5px;
+    margin: 1rem;
     padding: 1rem;
+    text-align: center;
     box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+}
+
+h1 {
+    @include header(rgb(255, 255, 255), rgb(255, 255, 255));
+
+    @media (min-width: $bp-sm) {
+        transform: rotate(0deg) translateY(0);
+        margin: 0 0 1rem 0;
+    }
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     grid-gap: 1rem;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 4fr)
+                        repeat(4, 1fr);
+    grid-template-areas:
+                'one two four four'
+                'one two five seven'
+                'one three five eight'
+                'one three six eight'
+                'one three six nine'
+                'one three six ten'; 
 
     > div {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 5rem;
-        background: radial-gradient(at center, #fff, #ff7300);
-        border: 2.5px dashed #fff;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 1rem;
+        filter: contrast(25%);
+        border: 2.5px solid hsl(0, 0%, 100%);
+        background: no-repeat center / cover;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        .details {
+            display: flex;
+            gap: 0.5rem;
+            transition: all 0.5s ease;
+
+            .rank {
+                background-color: rgba(255,255,255,0.75);
+                width: 50px;
+                height: 25px;
+                border-bottom-right-radius: 5px;
+                transition: all 0.5s ease;
+            }
+    
+            .title {
+                opacity: 0;
+                color: #fff;
+                transition: all 0.5s ease;
+            }
+        }
+
+        &:hover {
+            filter: contrast(100%);
+            background-position: bottom;
+
+            .details {
+                background: rgb(0 0 0 / 20%);
+                border-radius: 5px;
+                padding: 0.2rem;
+                // transform: translate(18%, 100%);
+
+                .rank {
+                    border-radius: 10px;
+                    width: 75px;
+                    margin-top: 0.1rem;
+                }
+
+                .title { 
+                    opacity: 1;
+                    padding: 0.1rem;
+                    border-top: 2px solid rgba(255, 255, 255, 0.75);
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+                }
+            }
+        }
+
+        &:not(.narrow):hover {
+            .details {
+                transform: translate(18%, 100%);
+            }
+        }
+
+        &.one {
+            grid-area: one;
+            background-image: url(/images/movies/2020/1.jpg);
+        }
+
+        &.two {
+            grid-area: two;
+            background-image: url(/images/movies/2020/2.jpg);
+        }
+
+        &.three {
+            grid-area: three;
+            background-image: url(/images/movies/2020/3.jpg);
+        }
+
+        &.four {
+            grid-area: four;
+            background-image: url(/images/movies/2020/4-2.jpg);
+        }
+
+        &.five {
+            grid-area: five;
+            background-image: url(/images/movies/2020/5.jpg);
+        }
+
+        &.six {
+            grid-area: six;
+            background-image: url(/images/movies/2020/6.jpg);
+        }
+
+        &.seven {
+            grid-area: seven;
+            background-image: url(/images/movies/2020/7.jpg);
+        }
+
+        &.eight {
+            grid-area: eight;
+            background-image: url(/images/movies/2020/8.jpg);
+        }
+
+        &.nine {
+            grid-area: nine;
+            background-image: url(/images/movies/2020/9-2.jpg);
+        }
+
+        &.ten {
+            grid-area: ten;
+            background-image: url(/images/movies/2020/10.jpg);
+        }
     }
 }
-
