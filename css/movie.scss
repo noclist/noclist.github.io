@@ -1,6 +1,7 @@
 @import 'modules/reset';
 @import 'modules/breakpoints';
 @import 'modules/header';
+@import 'modules/select';
 
 body {
     display: flex;
@@ -24,6 +25,10 @@ body {
 
 h1 {
     @include header(rgb(255, 255, 255), rgb(255, 255, 255));
+
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 
     @media (min-width: $bp-sm) {
         transform: rotate(0deg) translateY(0);
@@ -72,14 +77,14 @@ h1 {
         min-height: 2rem;
         border: 2.5px solid hsl(0, 0%, 100%);
         background: no-repeat center / cover;
-        filter: contrast(50%);
+        filter: contrast(100%);
         cursor: pointer;
         transition: all 0.5s ease;
 
         .details {
             display: flex;
             gap: 0.5rem;
-            background: rgb(0 0 0 / 0%);
+            background: Rgb(0 0 0 / 0%);
             border-radius: 5px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
@@ -102,11 +107,11 @@ h1 {
         }
 
         &:hover {
-            filter: contrast(100%);
+            filter: contrast(150%);
             background-position: bottom;
 
             .details {
-                background: rgb(0 0 0 / 20%);
+                background: Rgb(0 0 0 / 20%);
 
                 .rank {
                     border-radius: 10px;
@@ -129,52 +134,42 @@ h1 {
 
         &.one {
             grid-area: one;
-            background-image: url(/images/movies/2020/1.jpg);
         }
 
         &.two {
             grid-area: two;
-            background-image: url(/images/movies/2020/2.jpg);
         }
 
         &.three {
             grid-area: three;
-            background-image: url(/images/movies/2020/3.jpg);
         }
 
         &.four {
             grid-area: four;
-            background-image: url(/images/movies/2020/4-2.jpg);
         }
 
         &.five {
             grid-area: five;
-            background-image: url(/images/movies/2020/5.jpg);
         }
 
         &.six {
             grid-area: six;
-            background-image: url(/images/movies/2020/6.jpg);
         }
 
         &.seven {
             grid-area: seven;
-            background-image: url(/images/movies/2020/7.jpg);
         }
 
         &.eight {
             grid-area: eight;
-            background-image: url(/images/movies/2020/8.jpg);
         }
 
         &.nine {
             grid-area: nine;
-            background-image: url(/images/movies/2020/9-2.jpg);
         }
 
         &.ten {
             grid-area: ten;
-            background-image: url(/images/movies/2020/10.jpg);
             max-height: 2rem;
         }
     }
