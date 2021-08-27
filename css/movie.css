@@ -51,18 +51,18 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: system-ui, sans-serif;
-  background: radial-gradient(circle at top left, #00ff6a 0%, #16114e 75%, #aeadbe 100%);
+  background: #212529;
 }
 
 .container {
-  width: 95vw;
-  min-height: 95vh;
+  width: 90vw;
   border: 5px solid #fff;
   border-radius: 5px;
   margin: 1rem;
   padding: 1rem;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+  background: radial-gradient(circle at top left, #00ff6a 0%, #16114e 75%, #aeadbe 100%);
+  box-shadow: rgba(255, 255, 255, 0.56) 0 22px 70px 4px;
 }
 
 h1 {
@@ -105,16 +105,21 @@ h1 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 1rem;
-  filter: contrast(25%);
+  min-height: 2rem;
   border: 2.5px solid white;
   background: no-repeat center/cover;
-  transition: all 0.5s ease;
+  filter: contrast(50%);
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .grid > div .details {
   display: flex;
   gap: 0.5rem;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: translateX(-1px);
   transition: all 0.5s ease;
 }
 .grid > div .details .rank {
@@ -135,17 +140,13 @@ h1 {
 }
 .grid > div:hover .details {
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 0.2rem;
 }
 .grid > div:hover .details .rank {
   border-radius: 10px;
   width: 75px;
-  margin-top: 0.1rem;
 }
 .grid > div:hover .details .title {
   opacity: 1;
-  padding: 0.1rem;
   border-top: 2px solid rgba(255, 255, 255, 0.75);
   border-bottom: 2px solid rgba(255, 255, 255, 0.75);
 }
@@ -191,4 +192,5 @@ h1 {
 .grid > div.ten {
   grid-area: ten;
   background-image: url(/images/movies/2020/10.jpg);
+  max-height: 2rem;
 }

@@ -8,18 +8,19 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: system-ui, sans-serif;
-    background: radial-gradient(circle at top left, rgba(0, 255, 106, 1) 0%, rgb(22, 17, 78) 75%, rgb(174, 173, 190) 100%);
+    background: #212529;
 }
 
 .container {
-    width: 95vw;
-    min-height: 95vh;
+    width: 90vw;
     border: 5px solid #fff;
     border-radius: 5px;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+    background: radial-gradient(circle at top left, rgba(0, 255, 106, 1) 0%, rgb(22, 17, 78) 75%, rgb(174, 173, 190) 100%);
+    // background: radial-gradient(circle at top left, #1B1111 0%, #07ADF525 25%, #F7A7F3 50%, #1B1111 75%);
+    box-shadow: rgba(255, 255, 255, 0.56) 0 22px 70px 4px;
 }
 
 h1 {
@@ -49,18 +50,23 @@ h1 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size: 1rem;
-        filter: contrast(25%);
+        min-height: 2rem;
         border: 2.5px solid hsl(0, 0%, 100%);
         background: no-repeat center / cover;
-        transition: all 0.5s ease;
+        filter: contrast(50%);
         cursor: pointer;
+        transition: all 0.5s ease;
 
         .details {
             display: flex;
             gap: 0.5rem;
+            background: rgb(0 0 0 / 0%);
+            border-radius: 5px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transform: translateX(-1px);
             transition: all 0.5s ease;
-
+            
             .rank {
                 background-color: rgba(255,255,255,0.75);
                 width: 50px;
@@ -82,19 +88,14 @@ h1 {
 
             .details {
                 background: rgb(0 0 0 / 20%);
-                border-radius: 5px;
-                padding: 0.2rem;
-                // transform: translate(18%, 100%);
 
                 .rank {
                     border-radius: 10px;
                     width: 75px;
-                    margin-top: 0.1rem;
                 }
 
                 .title { 
                     opacity: 1;
-                    padding: 0.1rem;
                     border-top: 2px solid rgba(255, 255, 255, 0.75);
                     border-bottom: 2px solid rgba(255, 255, 255, 0.75);
                 }
@@ -155,6 +156,7 @@ h1 {
         &.ten {
             grid-area: ten;
             background-image: url(/images/movies/2020/10.jpg);
+            max-height: 2rem;
         }
     }
 }
