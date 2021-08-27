@@ -61,7 +61,7 @@ body {
   margin: 1rem;
   padding: 1rem;
   text-align: center;
-  background: radial-gradient(circle at top left, #00ff6a 0%, #16114e 75%, #aeadbe 100%);
+  background: radial-gradient(circle at top left, #96e9c6 0%, #28bd7f 25%, #0d3f2a 100%);
   box-shadow: rgba(255, 255, 255, 0.56) 0 22px 70px 4px;
 }
 
@@ -91,15 +91,29 @@ h1 {
   h1 {
     transform: rotate(0deg) translateY(0);
     margin: 0 0 1rem 0;
+    font-size: 4rem;
+    letter-spacing: 1.5vw;
   }
+}
+h1 .year {
+  color: #000;
+  -webkit-text-stroke: 1.5px #fff;
+  text-stroke: 1.5px #fff;
 }
 
 .grid {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 3fr 2fr 1fr 1fr;
-  grid-template-rows: repeat(2, 4fr) repeat(4, 1fr);
-  grid-template-areas: "one two four four" "one two five seven" "one three five eight" "one three six eight" "one three six nine" "one three six ten";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 5fr 4fr 3fr 2fr 1fr 1fr;
+  grid-template-areas: "one one one one one" "two two two three three" "four four five five five" "six six six seven seven" "eight eight eight eight eight" "nine nine nine ten ten";
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 4fr) repeat(4, 1fr);
+    grid-template-areas: "one two four four" "one two five seven" "one three five eight" "one three six eight" "one three six nine" "one three six ten";
+  }
 }
 .grid > div {
   display: flex;

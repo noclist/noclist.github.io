@@ -18,8 +18,7 @@ body {
     margin: 1rem;
     padding: 1rem;
     text-align: center;
-    background: radial-gradient(circle at top left, rgba(0, 255, 106, 1) 0%, rgb(22, 17, 78) 75%, rgb(174, 173, 190) 100%);
-    // background: radial-gradient(circle at top left, #1B1111 0%, #07ADF525 25%, #F7A7F3 50%, #1B1111 75%);
+    background: radial-gradient(circle at top left, hsl(155, 65%, 75%) 0%, hsl(155, 65%, 45%) 25%, hsl(155, 65%, 15%) 100%);
     box-shadow: rgba(255, 255, 255, 0.56) 0 22px 70px 4px;
 }
 
@@ -29,22 +28,42 @@ h1 {
     @media (min-width: $bp-sm) {
         transform: rotate(0deg) translateY(0);
         margin: 0 0 1rem 0;
+        font-size: 4rem;
+        letter-spacing: 1.5vw;
+    }
+
+    .year {
+        color: #000;
+        -webkit-text-stroke: 1.5px #fff;
+        text-stroke: 1.5px #fff;
     }
 }
 
 .grid {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 3fr 2fr 1fr 1fr;
-    grid-template-rows: repeat(2, 4fr)
-                        repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 5fr 4fr 3fr 2fr 1fr 1fr;
     grid-template-areas:
-                'one two four four'
-                'one two five seven'
-                'one three five eight'
-                'one three six eight'
-                'one three six nine'
-                'one three six ten'; 
+                "one one one one one"
+                "two two two three three"
+                "four four five five five"
+                "six six six seven seven"
+                "eight eight eight eight eight"
+                "nine nine nine ten ten";
+
+    @media(min-width: $bp-sm) {
+        grid-template-columns: 3fr 2fr 1fr 1fr;
+        grid-template-rows: repeat(2, 4fr)
+                            repeat(4, 1fr);
+        grid-template-areas:
+                    'one two four four'
+                    'one two five seven'
+                    'one three five eight'
+                    'one three six eight'
+                    'one three six nine'
+                    'one three six ten'; 
+    }
 
     > div {
         display: flex;
