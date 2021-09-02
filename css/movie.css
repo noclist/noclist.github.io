@@ -158,7 +158,8 @@ h1 {
         transition: all 0.5s ease; }
     .grid > div:hover {
       filter: contrast(150%);
-      background-position: bottom; }
+      background-position: bottom;
+      box-shadow: 1px 1px 15px 0 #000; }
       .grid > div:hover .details {
         background: Rgb(0 0 0/50%);
         padding: 0.5em; }
@@ -170,7 +171,7 @@ h1 {
           border-top: 2px solid rgba(255, 255, 255, 0.75);
           border-bottom: 2px solid rgba(255, 255, 255, 0.75); }
     .grid > div.large {
-      font-size: 1.5rem; }
+      font-size: 1.1rem; }
       .grid > div.large .rank {
         height: 35px; }
       @media (min-width: 768px) {

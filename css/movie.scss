@@ -116,6 +116,7 @@ h1 {
         &:hover {
             filter: contrast(150%);
             background-position: bottom;
+            box-shadow: 1px 1px 15px 0 #000;
 
             .details {
                 background: Rgb(0 0 0/50%);
@@ -134,10 +135,8 @@ h1 {
             }
         }
 
-
-
         &.large {
-            font-size: 1.5rem;
+            font-size: 1.1rem; 
 
             .rank {
                 height: 35px;
