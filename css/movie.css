@@ -75,7 +75,17 @@ body {
   padding: 1rem;
   text-align: center;
   background: radial-gradient(circle at top left, #96e9c6 0%, #28bd7f 25%, #0d3f2a 100%);
-  box-shadow: rgba(255, 255, 255, 0.56) 0 22px 70px 4px; }
+  box-shadow: rgba(128, 83, 83, 0.56) 0 22px 70px 4px; }
+  .container-2020 {
+    background: radial-gradient(circle at top left, #c8bc1e 0%, #172e59 25%, white 100%); }
+  .container-2019 {
+    background: radial-gradient(circle at top left, #101D25 0%, #79514B 35%, #457985 85%); }
+  .container-2018 {
+    background: radial-gradient(circle at top left, #fff 0%, #B81309 50%, #2E4E5C 75%); }
+  .container-2017 {
+    background: radial-gradient(circle at top left, #ED8124 0%, #C4CADA 50%, #F2D750 100%); }
+  .container-2016 {
+    background: radial-gradient(circle at top left, #809AB0 0%, #CD6064 50%, #96E7E1 100%); }
 
 h1 {
   font-family: Frankfurter;
