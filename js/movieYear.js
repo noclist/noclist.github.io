@@ -1,6 +1,6 @@
 function getYear() { 
     year = document.getElementById('movieYear').value;
-    window.location.href = '../movies/' + year + '.html';
+    window.location.href = '/_site/movies/' + year + '/index.html';
 }
 
 docReady(function() {
