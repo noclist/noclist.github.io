@@ -2,3 +2,4 @@
 gulpfile.js
 .stylelintrc.json
 node_modules
+_site
