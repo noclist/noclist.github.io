@@ -7,7 +7,8 @@ docReady(function() {
 
     const grid = document.querySelector('.grid');
     const gridItems = grid.querySelectorAll(':scope > div');
-    const year = document.getElementById('movieYear').value;
+    const year = window.location.href.substring(29, 33);
+    document.getElementById('movieYear').value = year;
 
     gridItems.forEach((item, i) => {
         item.style.backgroundImage = `url(/images/movies/${year}/${i+1}.jpg)`;
