@@ -93,10 +93,10 @@ h2 {
     #grid {
       background: linear-gradient(90deg, #fccc45 0%, #b074d9 100%); } }
   #grid > * {
-    height: 250px;
     box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    height: 250px; }
     #grid > *:hover {
       transform: scale(1.1) rotate(-5deg);
       box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.25); }
