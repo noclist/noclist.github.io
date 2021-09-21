@@ -1,5 +1,6 @@
 @import 'modules/reset';
 @import 'modules/header';
+@import 'modules/breakpoints';
 
 body {
     min-height: 100vh;
@@ -13,12 +14,19 @@ body {
 .container {
     position: relative;
     width: 95vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
     margin: 1em;
     padding: 1em;
     background: linear-gradient(#fefefe, #fff);
     border: 2px solid #212529;
     border-radius: 5px;
     box-shadow: Rgb(0 0 0 / 45%) 6px 6px 3px;
+
+    @media(min-width: $bp-sm) {
+      flex-direction: row;
+    } 
 }
 
 h1 {
@@ -38,21 +46,22 @@ form {
     margin-top: 1.5rem;
   }
 
-  label {
-    font-weight: 700;
-    line-height: 1;
-
-    &:not(.form-control) {
-      display: block;
-    }
-
-    + .form-field {
-      margin-top: 0.5em;
-    }
-  }
-
   &--inline {
       display: inline-block;
+  }
+}
+
+
+label {
+  font-weight: 700;
+  line-height: 1;
+
+  &:not(.form-control) {
+    display: block;
+  }
+
+  + .form-field {
+    margin-top: 0.5em;
   }
 }
 
@@ -182,5 +191,58 @@ form {
 
   input:checked + .input__control::before {
     transform: scale(1);
+  }
+}
+
+.btn {
+  color: var(--btn-clr, black);
+  border: 4px solid var(--btn-clr, black);
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin-top: 0.5em;
+  background: 0;
+  font-family: inherit;
+  text-decoration: none;
+  line-height: inherit;
+  transition: transform 300ms linear;
+
+  &.btn-teal {
+    --btn-clr: teal;
+    --origin: left;
+  }
+
+  &.btn-purple {
+    --btn-clr: purple;
+  }
+
+  &.btn-red {
+    --btn-clr: firebrick;
+    --origin: right;
+  }
+
+  &:hover,
+  &:focus {
+    color: white;
+  }
+
+  + .btn {
+    margin-left: 2em;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--btn-clr);
+    transform: scale(0, 1);
+    transform-origin: var(--origin, center);
+    transition: transform 300ms ease;
+  }
+
+  &:hover::after {
+    transform: scale(1, 1);
   }
 }

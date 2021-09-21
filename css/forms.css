@@ -49,12 +49,18 @@ body {
 .container {
   position: relative;
   width: 95vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
   margin: 1em;
   padding: 1em;
   background: linear-gradient(#fefefe, #fff);
   border: 2px solid #212529;
   border-radius: 5px;
   box-shadow: Rgb(0 0 0/45%) 6px 6px 3px; }
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row; } }
 
 h1 {
   font-family: Frankfurter;
@@ -85,16 +91,16 @@ form {
 .form-group + .form-group {
   margin-top: 1.5rem; }
 
-.form-group label {
-  font-weight: 700;
-  line-height: 1; }
-  .form-group label:not(.form-control) {
-    display: block; }
-  .form-group label + .form-field {
-    margin-top: 0.5em; }
-
 .form-group--inline {
   display: inline-block; }
+
+label {
+  font-weight: 700;
+  line-height: 1; }
+  label:not(.form-control) {
+    display: block; }
+  label + .form-field {
+    margin-top: 0.5em; }
 
 .form-field {
   width: 100%;
@@ -190,3 +196,40 @@ form {
 
 .radio input:checked + .input__control::before {
   transform: scale(1); }
+
+.btn {
+  color: var(--btn-clr, black);
+  border: 4px solid var(--btn-clr, black);
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin-top: 0.5em;
+  background: 0;
+  font-family: inherit;
+  text-decoration: none;
+  line-height: inherit;
+  transition: transform 300ms linear; }
+  .btn.btn-teal {
+    --btn-clr: teal;
+    --origin: left; }
+  .btn.btn-purple {
+    --btn-clr: purple; }
+  .btn.btn-red {
+    --btn-clr: firebrick;
+    --origin: right; }
+  .btn:hover, .btn:focus {
+    color: white; }
+  .btn + .btn {
+    margin-left: 2em; }
+  .btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--btn-clr);
+    transform: scale(0, 1);
+    transform-origin: var(--origin, center);
+    transition: transform 300ms ease; }
+  .btn:hover::after {
+    transform: scale(1, 1); }
