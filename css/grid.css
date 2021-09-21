@@ -88,6 +88,7 @@ h2 {
   grid-gap: 1.5em;
   grid-template-columns: repeat(auto-fit, 140px);
   grid-template-rows: repeat(auto-fit, 250px);
+  justify-content: center;
   box-shadow: 0 0 13px 3px black; }
   @media (max-width: 600px) {
     #grid {
