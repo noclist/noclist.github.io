@@ -76,6 +76,10 @@ body {
     background: repeating-linear-gradient(to right, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7) 100%/20px; }
   body.body-2016 {
     background: linear-gradient(#ffa600 1px, transparent 1px) 100%/20px 20px, linear-gradient(to right, #444cf7 1px, #e5e5f7 1px) 100%/20px; }
+  body.body-2015 {
+    background-image: linear-gradient(#ffa600 2px, transparent 2px), linear-gradient(90deg, #ffa600 2px, transparent 2px), linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(90deg, #444cf7 1px, #e5e5f7 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; }
 
 .container {
   width: 95vw;
@@ -99,6 +103,8 @@ body {
     background: radial-gradient(circle at top left, #ED8124 0%, #C4CADA 65%, #F2D750 100%); }
   .container-2016 {
     background: radial-gradient(circle at top left, #809AB0 0%, #CD6064 65%, #96E7E1 100%); }
+  .container-2015 {
+    background: radial-gradient(circle at top left, #343E3D 0%, #1D13EA 85%, #FF0046 100%); }
 
 h1 {
   font-family: Frankfurter;
@@ -139,7 +145,7 @@ h1 {
       gap: 3rem; } }
 
 .grid {
-  height: 100%;
+  height: 80vh;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(5, 1fr);
@@ -201,10 +207,6 @@ h1 {
       @media (min-width: 768px) {
         .grid > div.large:hover .details {
           transform: translate(10%, 20%); } }
-    .grid > div.narrow {
-      max-height: 2rem; }
-      .grid > div.narrow:hover .details {
-        padding: 0.1rem; }
     .grid > div.one {
       grid-area: one; }
     .grid > div.two {
