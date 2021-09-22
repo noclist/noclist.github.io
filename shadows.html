@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <link rel="stylesheet" href="css/shadows.css">
+
+
+
+</head>
+<body>
+    <svg viewBox="0 0 500 200">
+        <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+        <text width="500">
+            <textPath xlink:href="#curve">
+                The Perfect Drop Shadow
+            </textPath>
+        </text>
+    </svg>
+
+    <section class="wrapper">
+        <h1>hsl(220 100% 80%)</h1>
+    <div class="box dark">
+        <strong>hsl(0 0% 0% / 0.5)</strong>
+        <p>Shadows that use a transparent black appear too desaturated.</p>                    
+    </div>
+    <div class="box light">
+        <strong>hsl(220 100% 50%)</strong>
+        <p>Shadows that match the hue and saturation of the background with reduced lightness appear too bright.</p>
+    </div>
+    <div class="box goldilocks">
+        <strong>hsl(220 60% 50%)</strong>
+        <p>The perfect shadow matches the hue of the background with reduced saturation and lightness.</p>
+    </div>
+  </section>
+</body>
+</html>
