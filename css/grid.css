@@ -92,7 +92,7 @@ h2 {
   box-shadow: 0 0 13px 3px black; }
   @media (max-width: 600px) {
     #grid {
-      background: linear-gradient(90deg, #fccc45 0%, #b074d9 100%); } }
+      padding: 1em; } }
   #grid > * {
     box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.5);
     overflow: hidden;

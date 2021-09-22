@@ -35,7 +35,7 @@ body {
         box-shadow: 0 0 13px 3px rgba(0, 0, 0, 75%);
         
         @media(max-width: $bp-xs) {
-            background: linear-gradient(90deg, rgba(252, 204, 69, 1) 0%, rgba(176, 116, 217, 1) 100%);
+            padding: 1em;
         }
     
         > * {
