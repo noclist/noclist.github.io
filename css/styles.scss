@@ -180,6 +180,7 @@ main {
 
     .name {
         -webkit-text-fill-color: var(--color-purple);
+        cursor: pointer;
 
         &:hover {
             -webkit-text-fill-color: var(--color-white);

@@ -575,7 +575,8 @@ main {
         main .carp:hover {
           background-image: url("/images/ben.png"); } }
   main .name {
-    -webkit-text-fill-color: var(--color-purple); }
+    -webkit-text-fill-color: var(--color-purple);
+    cursor: pointer; }
     main .name:hover {
       -webkit-text-fill-color: var(--color-white); }
   main .city {
