@@ -52,7 +52,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: Rgb(255 176 0/10%);
   font-family: system-ui, sans-serif; }
 
 h1 {
