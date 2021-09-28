@@ -1,0 +1,221 @@
+@mixin grid-item($amount) {
+    @for $i from 1 through $amount {
+        &:nth-of-type(#{$amount}n + #{$i}) {
+            grid-column: #{$i + $i - 1} / span 3;
+            @if $i % 2 == 0 {
+                grid-row: calc(var(--counter) + var(--counter) - 1) / span 2;
+            }
+        }
+    }
+
+    @for $i from 1 through 20 {
+        &:nth-of-type(n + #{$i * $amount + 1}) {
+            --counter: #{$i + 1};
+        }
+    }
+}
+
+body {
+    background: hsl(0, 0%, 15%);
+    font-family: system-ui;
+    margin: 1em;
+}
+
+.honeycomb {
+    --amount: 1;
+    
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr 2fr) 1fr;
+    gap: 0.5rem 1rem;
+    margin: 0 auto;
+
+    @keyframes gap {
+        to { gap: 1rem 2rem; }
+    }
+    
+    .hex {
+        position: relative;
+		grid-column: 1 / span 3;
+		grid-row: calc(var(--counter) + var(--counter)) / span 2;
+		filter: drop-shadow(0 0 10px hsl(0, 0%, 15%));
+		padding-bottom: 90%;
+        transition: all 5ms ease;
+
+        &:nth-child(odd) {
+            transform: rotate(180deg);
+
+            span {
+                transform: rotate(180deg);
+            }
+        }
+
+        &:hover {
+            transform: rotate(0) scale(1.05);
+
+            &:nth-child(odd) {
+                transform: rotate(180deg) scale(1.05);
+            }
+        }
+
+        &:nth-child(-n + 44) > * {
+            background-color: rgb(255, 163, 232);
+        }
+
+        &:nth-child(-n + 40) > * {
+            background-color: rgb(101, 255, 209);
+        }
+
+        &:nth-child(-n + 36) > * {
+            background-color: rgb(255, 87, 87);
+        }
+
+        &:nth-child(-n + 32) > * {
+            background-color: rgb(187, 255, 0);
+        }
+
+        &:nth-child(-n + 28) > * {
+            background-color: rgb(255, 209, 156);
+        }
+
+        &:nth-child(-n + 24) > * {
+            background-color: rgb(151, 87, 255);
+        }
+
+        &:nth-child(-n + 20) > * {
+            background-color: rgb(255, 255, 255);
+        }
+
+        &:nth-child(-n + 16) > * {
+            background-color: rgb(0, 140, 255);
+        }
+
+        &:nth-child(-n + 12) > * {
+            background-color: rgb(255, 230, 0);
+        }
+
+        &:nth-child(-n + 8) > * {
+            background-color: rgb(0, 255, 13);
+        }
+
+        &:nth-child(-n + 4) > * {
+            background-color: rgb(255, 136, 0);
+        }
+    }
+
+    .hex-content {
+        position: absolute;
+		height: 100%;
+		width: 100%;
+
+		color: hsl(0, 0%, 15%);
+		clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+		display: flex;
+		justify-content: center;
+		align-items: end;
+        
+        background-color: hsl(60, 100%, 50%);
+        background-image: url('/images/bee.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+
+        @keyframes buzz {
+
+          }
+
+        span {
+            display: none;
+            margin-bottom: 0.5em;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .honeycomb {
+        animation: gap 5s linear infinite alternate;
+
+        .hex-content {
+            background-size: 30%;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .honeycomb {
+
+        .hex-content {
+            animation: buzz 1s linear infinite;
+
+            span {
+                font-size: 3.5rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .honeycomb {
+
+
+        .hex-content {
+            background-size: 40%;
+
+            span {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width: 360px) {
+	.honeycomb {
+			--amount: 2;
+            --counter: 1;
+		}
+
+    .hex {
+        @include grid-item(2);
+    }
+}
+
+@media (min-width: 361px) and (max-width: 450px) {
+	.honeycomb {
+            --amount: 3;
+			--counter: 1;
+		}
+
+    .hex {
+        @include grid-item(3);
+    }
+}
+
+@media (min-width: 451px) and (max-width: 1439px) {
+	.honeycomb {
+            --amount: 4;
+			--counter: 1;
+		}
+
+    .hex {
+        @include grid-item(4);
+    }
+}
+
+@media (min-width: 1440px) {
+	.honeycomb {
+            --amount: 5;
+			--counter: 1;
+		}
+
+    .hex {
+        @include grid-item(5);
+    }
+}
+

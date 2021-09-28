@@ -547,6 +547,12 @@ nav {
     @media (min-width: 768px) {
       nav .maze {
         background-image: url("/images/maze.png"); } }
+  nav .bee {
+    background: url("/images/bee-icon.png") 100%/cover no-repeat;
+    width: 50px;
+    height: 55px; }
+    nav .bee:hover {
+      background: url("/images/bee-icon2.png") 100%/cover no-repeat; }
   @media (min-width: 768px) {
     nav {
       border-bottom: 0; } }

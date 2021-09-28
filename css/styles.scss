@@ -143,6 +143,16 @@ nav {
         }
     }
 
+    .bee {  
+        background: url('/images/bee-icon.png') 100%/cover no-repeat;
+        width: 50px;
+        height: 55px;
+
+        &:hover {
+            background: url('/images/bee-icon2.png') 100%/cover no-repeat;
+        }
+    }
+
     @media (min-width: $bp-sm) {
         border-bottom: 0;
     }
