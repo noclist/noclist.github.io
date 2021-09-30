@@ -21,7 +21,8 @@ body {
   gap: 1.5em;
   background: #fcfcfc;
   border: 0.5vmin solid var(--dark);
-  padding: 2em 3em; }
+  padding: 2em 3em;
+  margin: 2em; }
 
 main {
   display: grid;
