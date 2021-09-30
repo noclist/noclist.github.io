@@ -1,0 +1,57 @@
+
+:root {
+    --dark: hsl(210, 11%, 15%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: system-ui;
+    color: var(--dark);
+}
+
+.container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    background: hsl(0, 0%, 99%);
+    border: 0.5vmin solid var(--dark);
+    padding: 2em 3em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.25em;
+
+    div {
+        display: grid;
+        place-content: center;
+        padding: 1em;
+        background: hsl(0, 0%, 100%);
+        border: 0.5vmin solid var(--dark);
+        cursor: pointer;
+
+        &:hover {
+            background: hsl(0, 0%, 95%);
+        }
+    }
+}
+
+i {
+    font-size: 2em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
