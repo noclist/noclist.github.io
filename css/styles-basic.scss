@@ -54,5 +54,11 @@ i {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    @media(min-width: 650px) {
+        justify-content: space-between;
+    }
 }
