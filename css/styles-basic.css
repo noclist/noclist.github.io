@@ -24,6 +24,16 @@ body {
   padding: 2em 3em;
   margin: 2em; }
 
+header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em; }
+  header img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px; }
+
 main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
