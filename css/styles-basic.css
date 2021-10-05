@@ -27,7 +27,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  gap: 0.5em; }
+  gap: 0.25em; }
   header img {
     width: 25px;
     height: 25px;

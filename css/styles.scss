@@ -65,7 +65,7 @@ body {
 header {
     @media(min-width: $bp-sm) {
         display: flex;
-        gap: 25px;
+        gap: 0.25em;
         align-items: center;
     }
 
@@ -88,6 +88,13 @@ header {
             text-align: left;
             margin-left: 1rem;
         }
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: -40px;
     }
 } 
 
