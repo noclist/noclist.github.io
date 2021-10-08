@@ -491,30 +491,27 @@ body {
       padding: 0.5em 3em;
       transform: rotate(-0.5deg); } }
 
-@media (min-width: 768px) {
-  header {
-    display: flex;
-    gap: 0.25em;
-    align-items: center; } }
-
-header h1 {
-  font-size: 3.5em;
-  text-align: center;
-  margin-bottom: 0.8em;
-  margin-top: -0.2em;
-  color: white;
-  text-shadow: 0 2px 2px red, -2px 5px 0 #ff8000, -4px 10px 0 #0f0f0f, -8px 15px 0 lime, -12px 20px 0 blue, -16px 25px 0 #4a0080, -20px 30px 0 #9200d1; }
-  @media (min-width: 768px) {
-    header h1 {
-      font-size: 5em;
-      text-align: left;
-      margin-left: 1rem; } }
-
-header img {
-  width: 25px;
-  height: 25px;
-  position: relative;
-  top: -40px; }
+header {
+  display: flex;
+  gap: 0.25em;
+  align-items: center; }
+  header h1 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 0.8em;
+    margin-top: -0.2em;
+    color: white;
+    text-shadow: 0 2px 2px red, -2px 5px 0 #ff8000, -4px 10px 0 #0f0f0f, -8px 15px 0 lime, -12px 20px 0 blue, -16px 25px 0 #4a0080, -20px 30px 0 #9200d1; }
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 5em;
+        text-align: left;
+        margin-left: 1rem; } }
+  header img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -40px; }
 
 .wrapper {
   display: flex;

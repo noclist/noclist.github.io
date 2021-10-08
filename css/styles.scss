@@ -63,11 +63,9 @@ body {
 } 
   
 header {
-    @media(min-width: $bp-sm) {
-        display: flex;
-        gap: 0.25em;
-        align-items: center;
-    }
+    display: flex;
+    gap: 0.25em;
+    align-items: center;
 
     h1 { 
         font-size: 3.5em;
