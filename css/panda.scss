@@ -23,6 +23,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 15vmin;
+      height: 15vmin;
+      background: black;
+      border-radius: 50%;
+      top: 10.2vmin;
+      left: 12.4vmin;
+      box-shadow: 30vmin 0 #000;
+    }
   }
 
   .panda {
@@ -33,19 +47,6 @@
     border-radius: 50%;
     background: #fff;
     z-index: 2;
-
-    &:before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      width: 15vmin;
-      height: 15vmin;
-      background: black;
-      border-radius: 50%;
-      top: -4vmin;
-      left: -2.1vmin;
-      box-shadow: 30vmin 0 #000;
-    }
   }
 
   .eyes {

@@ -20,7 +20,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
+  .circle:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 15vmin;
+    height: 15vmin;
+    background: black;
+    border-radius: 50%;
+    top: 10.2vmin;
+    left: 12.4vmin;
+    box-shadow: 30vmin 0 #000; }
 
 .panda {
   position: relative;
@@ -30,17 +42,6 @@
   border-radius: 50%;
   background: #fff;
   z-index: 2; }
-  .panda:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 15vmin;
-    height: 15vmin;
-    background: black;
-    border-radius: 50%;
-    top: -4vmin;
-    left: -2.1vmin;
-    box-shadow: 30vmin 0 #000; }
 
 .eyes {
   position: relative; }
