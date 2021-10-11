@@ -15,33 +15,29 @@
 <body>
     <div class="canvas">
         <h1>CSS Art Gallery</h1>
-        <div class="container">
-            <div class="frame bear">
-                <a href="panda.html">
-                    <i class="fas fa-paw"></i>
-                </a>
+        <div class="gallery">
+            <div class="bear" onClick="navigate('panda')">
+                <i class="fas fa-paw"></i>
             </div>
-            <div class="frame alien">
-                <a href="alien.html">
-                    <i class="fas fa-alien"></i>
-                </a>
+            <div class="alien" onClick="navigate('alien')">
+                <i class="fas fa-alien"></i>
             </div>
-            <div class="frame robot">
-                <a href="robot.html">
-                    <i class="fas fa-robot"></i>
-                </a>
+            <div class="robot" onClick="navigate('robot')">
+                <i class="fas fa-robot"></i>
             </div>
-            <div class="frame monkey">
-                <a href="monkey.html">
-                    <i class="fas fa-monkey"></i>
-                </a>
+            <div class="monkey" onClick="navigate('monkey')">
+                <i class="fas fa-monkey"></i>
             </div>
-            <div class="frame dino">
-                <a href="dino.html">
-                    <i class="fas fa-paw-claws"></i>
-                </a>
+            <div class="dino" onClick="navigate('dino')">
+                <i class="fas fa-paw-claws"></i>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    function navigate(url) {
+        window.location.href='/' + url + '.html';
+    }
+</script>

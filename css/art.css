@@ -15,41 +15,82 @@
   gap: 1em;
   position: relative; }
 
-.container {
+.gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas: "bear alien alien monkey monkey" "bear alien alien monkey monkey" "dino dino dino monkey monkey" "dino dino dino robot robot" "dino dino dino robot robot";
   gap: 1.5em;
   margin: 1em; }
-
-.frame {
-  padding: 2em;
-  background: #fff;
-  display: grid;
-  place-content: center;
-  border: 2rem solid #212529;
-  filter: drop-shadow(0 0 6px black); }
-  .frame.bear {
-    grid-area: bear; }
-  .frame.alien {
-    grid-area: alien; }
-  .frame.robot {
-    grid-area: robot; }
-  .frame.monkey {
-    grid-area: monkey; }
-  .frame.dino {
-    grid-area: dino; }
-  .frame i {
-    font-size: 15vmin;
-    text-align: center; }
-    .frame i.fa-robot {
-      color: #999; }
-    .frame i.fa-alien {
-      color: #95ff7d; }
-    .frame i.fa-paw {
+  .gallery div {
+    padding: 2em;
+    background: #fff;
+    display: grid;
+    place-content: center;
+    border: 2rem solid #212529;
+    filter: drop-shadow(0 0 6px black);
+    cursor: pointer; }
+    .gallery div.bear {
+      grid-area: bear;
       color: #5c452f; }
-    .frame i.fa-monkey {
-      color: #ff7b00; }
-    .frame i.fa-paw-claws {
-      color: #8EC0DB; }
+    .gallery div.alien {
+      grid-area: alien;
+      color: #95ff7d; }
+    .gallery div.robot {
+      grid-area: robot;
+      color: #999; }
+    .gallery div.monkey {
+      grid-area: monkey;
+      color: #ff7b00;
+      background-color: Hsl(60deg 18% 20%);
+      border: solid 5vmin #eee;
+      border-bottom-color: #fff;
+      border-left-color: #eee;
+      border-radius: 2px;
+      border-right-color: #eee;
+      border-top-color: #ddd;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25); }
+      .gallery div.monkey:before, .gallery div.monkey:after {
+        content: '';
+        position: absolute; }
+      .gallery div.monkey:before {
+        bottom: -2vmin;
+        left: -2vmin;
+        right: -2vmin;
+        top: -2vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset; }
+      .gallery div.monkey:after {
+        bottom: -2.5vmin;
+        left: -2.5vmin;
+        right: -2.5vmin;
+        top: -2.5vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
+    .gallery div.dino {
+      grid-area: dino;
+      color: #8EC0DB;
+      background-color: Hsl(60deg 18% 20%);
+      border: solid 5vmin #eee;
+      border-bottom-color: #fff;
+      border-left-color: #eee;
+      border-radius: 2px;
+      border-right-color: #eee;
+      border-top-color: #ddd;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25); }
+      .gallery div.dino:before, .gallery div.dino:after {
+        content: '';
+        position: absolute; }
+      .gallery div.dino:before {
+        bottom: -2vmin;
+        left: -2vmin;
+        right: -2vmin;
+        top: -2vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset; }
+      .gallery div.dino:after {
+        bottom: -2.5vmin;
+        left: -2.5vmin;
+        right: -2.5vmin;
+        top: -2.5vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
+    .gallery div i {
+      font-size: 15vmin;
+      text-align: center; }
