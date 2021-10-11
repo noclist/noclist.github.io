@@ -21,13 +21,13 @@
     padding: 2em;
     width: 85vmin;
     background: #fff;
-    grid-template-columns: repeat(auto-fit, 125px);
+    border-radius: 95% 5% 87% 13% / 13% 78% 22% 87%;
+    grid-template-columns: repeat(auto-fit, 150px);
     grid-template-rows: repeat(auto-fit, 125px);
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
-    border: 2rem solid #212529;
     filter: drop-shadow(0 0 8px hsl(0, 0%, 0%));
 
   div {
