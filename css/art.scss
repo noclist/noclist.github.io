@@ -52,16 +52,37 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 250px;
     grid-template-areas: 
-              "bear alien alien monkey monkey"
-              "bear alien alien monkey monkey"
-              "dino dino dino monkey monkey"
-              "dino dino dino robot robot"
-              "dino dino dino robot robot";
+              "bear"
+              "alien"
+              "dino"
+              "monkey"
+              "robot";
     gap: 1.5em;
-    margin: 1em;
+    margin: 1.5em;
+
+    @media(min-width: 500px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+                "bear alien"
+                "monkey alien"
+                "monkey dino"
+                "robot dino"
+                "robot dino";
+    }
+
+    @media(min-width: 750px) {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: 
+                "bear alien alien monkey monkey"
+                "bear alien alien monkey monkey"
+                "dino dino dino monkey monkey"
+                "dino dino dino robot robot"
+                "dino dino dino robot robot";
+      gap: 3em;
+    }
 
     div {
         padding: 2em;
