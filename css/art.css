@@ -6,7 +6,7 @@
 
 .canvas {
   background: #e6e6e6;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -16,33 +16,40 @@
   position: relative; }
 
 .container {
-  padding: 2em;
-  width: 85vmin;
-  background: #fff;
-  grid-template-columns: repeat(auto-fit, 150px);
-  grid-template-rows: repeat(auto-fit, 125px);
   display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "bear alien alien monkey monkey" "bear alien alien monkey monkey" "dino dino dino monkey monkey" "dino dino dino robot robot" "dino dino dino robot robot";
+  gap: 1.5em;
+  margin: 1em; }
+
+.frame {
+  padding: 2em;
+  background: #fff;
+  display: grid;
+  place-content: center;
   border: 2rem solid #212529;
-  filter: drop-shadow(0 0 8px black); }
-  .container div {
-    display: grid;
-    place-content: center;
-    border: .5vmin solid #000;
-    width: 100%;
-    height: 125px; }
-  .container i {
+  filter: drop-shadow(0 0 6px black); }
+  .frame.bear {
+    grid-area: bear; }
+  .frame.alien {
+    grid-area: alien; }
+  .frame.robot {
+    grid-area: robot; }
+  .frame.monkey {
+    grid-area: monkey; }
+  .frame.dino {
+    grid-area: dino; }
+  .frame i {
     font-size: 15vmin;
     text-align: center; }
-    .container i.fa-robot {
+    .frame i.fa-robot {
       color: #999; }
-    .container i.fa-alien {
+    .frame i.fa-alien {
       color: #95ff7d; }
-    .container i.fa-paw {
+    .frame i.fa-paw {
       color: #5c452f; }
-    .container i.fa-monkey {
+    .frame i.fa-monkey {
       color: #ff7b00; }
-    .container i.fa-paw-claws {
+    .frame i.fa-paw-claws {
       color: #8EC0DB; }
