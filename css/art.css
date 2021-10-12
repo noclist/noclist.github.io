@@ -12,8 +12,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 1em;
-  position: relative; }
+  gap: 1em; }
 
 .gallery {
   display: grid;
@@ -25,15 +24,19 @@
     .gallery {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "bear alien" "monkey alien" "monkey dino" "robot dino" "robot dino" "tree tree"; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1100px) {
     .gallery {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "bear alien alien monkey monkey tree" "bear alien alien monkey monkey tree" "dino dino dino monkey monkey tree" "dino dino dino robot robot tree" "dino dino dino robot robot tree";
       gap: 3em; } }
+  @media (min-width: 1500px) {
+    .gallery {
+      grid-template-areas: "monkey monkey bear tree tree tree" "monkey monkey bear tree tree tree" "dino dino dino tree tree tree" "dino dino dino alien robot robot" "dino dino dino alien robot robot"; } }
   @media (min-width: 1800px) {
     .gallery {
       width: 90vw;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: "bear alien alien monkey monkey tree" "bear alien alien monkey monkey tree" "dino dino dino monkey monkey tree" "dino dino dino robot robot tree" "dino dino dino robot robot tree"; } }
+      gap: 5em; } }
   .gallery div {
     padding: 2em;
     background: #fff;
@@ -53,30 +56,7 @@
       color: #999; }
     .gallery div.monkey {
       grid-area: monkey;
-      color: #ff7b00;
-      background-color: Hsl(60deg 18% 20%);
-      border: solid 5vmin #eee;
-      border-bottom-color: #fff;
-      border-left-color: #eee;
-      border-radius: 2px;
-      border-right-color: #eee;
-      border-top-color: #ddd;
-      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25); }
-      .gallery div.monkey:before, .gallery div.monkey:after {
-        content: '';
-        position: absolute; }
-      .gallery div.monkey:before {
-        bottom: -2vmin;
-        left: -2vmin;
-        right: -2vmin;
-        top: -2vmin;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset; }
-      .gallery div.monkey:after {
-        bottom: -2.5vmin;
-        left: -2.5vmin;
-        right: -2.5vmin;
-        top: -2.5vmin;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
+      color: #ff7b00; }
     .gallery div.dino {
       grid-area: dino;
       color: #8EC0DB;
@@ -105,7 +85,30 @@
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
     .gallery div.tree {
       grid-area: tree;
-      color: #4E9A06; }
+      color: #4E9A06;
+      background-color: Hsl(60deg 18% 20%);
+      border: solid 5vmin #eee;
+      border-bottom-color: #fff;
+      border-left-color: #eee;
+      border-radius: 2px;
+      border-right-color: #eee;
+      border-top-color: #ddd;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25); }
+      .gallery div.tree:before, .gallery div.tree:after {
+        content: '';
+        position: absolute; }
+      .gallery div.tree:before {
+        bottom: -2vmin;
+        left: -2vmin;
+        right: -2vmin;
+        top: -2vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset; }
+      .gallery div.tree:after {
+        bottom: -2.5vmin;
+        left: -2.5vmin;
+        right: -2.5vmin;
+        top: -2.5vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
     .gallery div i {
       font-size: 15vmin;
       text-align: center; }
