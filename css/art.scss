@@ -58,6 +58,7 @@
               "bear"
               "alien"
               "dino"
+              "tree"
               "monkey"
               "robot";
     gap: 1.5em;
@@ -70,24 +71,24 @@
                 "monkey alien"
                 "monkey dino"
                 "robot dino"
-                "robot dino";
+                "robot dino"
+                "tree tree";
     }
 
     @media(min-width: 1000px) {
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: 
-                "bear alien alien monkey monkey"
-                "bear alien alien monkey monkey"
-                "dino dino dino monkey monkey"
-                "dino dino dino robot robot"
-                "dino dino dino robot robot";
       gap: 3em;
     }
 
     @media(min-width: 1800px) {
       width: 90vw;
-      gap: 5em;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: 
+                "bear alien alien monkey monkey tree"
+                "bear alien alien monkey monkey tree"
+                "dino dino dino monkey monkey tree"
+                "dino dino dino robot robot tree"
+                "dino dino dino robot robot tree";
     }
 
     div {
@@ -126,6 +127,11 @@
             color: #8EC0DB;
 
             @include frame;
+        }
+
+        &.tree {
+          grid-area: tree;
+          color: #4E9A06;
         }
     
         i {

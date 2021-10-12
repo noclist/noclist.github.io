@@ -18,23 +18,22 @@
 .gallery {
   display: grid;
   grid-template-columns: 250px;
-  grid-template-areas: "bear" "alien" "dino" "monkey" "robot";
+  grid-template-areas: "bear" "alien" "dino" "tree" "monkey" "robot";
   gap: 1.5em;
   margin: 1.5em; }
   @media (min-width: 500px) {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "bear alien" "monkey alien" "monkey dino" "robot dino" "robot dino"; } }
+      grid-template-areas: "bear alien" "monkey alien" "monkey dino" "robot dino" "robot dino" "tree tree"; } }
   @media (min-width: 1000px) {
     .gallery {
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: "bear alien alien monkey monkey" "bear alien alien monkey monkey" "dino dino dino monkey monkey" "dino dino dino robot robot" "dino dino dino robot robot";
       gap: 3em; } }
   @media (min-width: 1800px) {
     .gallery {
       width: 90vw;
-      gap: 5em; } }
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "bear alien alien monkey monkey tree" "bear alien alien monkey monkey tree" "dino dino dino monkey monkey tree" "dino dino dino robot robot tree" "dino dino dino robot robot tree"; } }
   .gallery div {
     padding: 2em;
     background: #fff;
@@ -104,6 +103,9 @@
         right: -2.5vmin;
         top: -2.5vmin;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
+    .gallery div.tree {
+      grid-area: tree;
+      color: #4E9A06; }
     .gallery div i {
       font-size: 15vmin;
       text-align: center; }
