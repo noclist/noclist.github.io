@@ -25,12 +25,16 @@
     .gallery {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "bear alien" "monkey alien" "monkey dino" "robot dino" "robot dino"; } }
-  @media (min-width: 750px) {
+  @media (min-width: 1000px) {
     .gallery {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, 1fr);
       grid-template-areas: "bear alien alien monkey monkey" "bear alien alien monkey monkey" "dino dino dino monkey monkey" "dino dino dino robot robot" "dino dino dino robot robot";
       gap: 3em; } }
+  @media (min-width: 1800px) {
+    .gallery {
+      width: 90vw;
+      gap: 5em; } }
   .gallery div {
     padding: 2em;
     background: #fff;
