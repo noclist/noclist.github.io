@@ -16,13 +16,13 @@
 .gallery {
   display: grid;
   grid-template-columns: 250px;
-  grid-template-areas: "bear" "alien" "dino" "tree" "monkey" "robot";
+  grid-template-areas: "bear" "dino" "alien" "tree" "monkey" "robot";
   gap: 1.5em;
   margin: 1.5em; }
   @media (min-width: 500px) {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "bear alien" "monkey alien" "monkey dino" "robot dino" "robot dino" "tree tree"; } }
+      grid-template-areas: "bear dino" "monkey dino" "monkey dino" "robot alien" "robot alien" "tree tree"; } }
   @media (min-width: 1100px) {
     .gallery {
       grid-template-columns: repeat(6, 1fr);

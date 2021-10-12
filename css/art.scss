@@ -53,8 +53,8 @@
     grid-template-columns: 250px;
     grid-template-areas: 
               "bear"
-              "alien"
               "dino"
+              "alien"
               "tree"
               "monkey"
               "robot";
@@ -64,11 +64,11 @@
     @media(min-width: 500px) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: 
-                "bear alien"
-                "monkey alien"
+                "bear dino"
                 "monkey dino"
-                "robot dino"
-                "robot dino"
+                "monkey dino"
+                "robot alien"
+                "robot alien"
                 "tree tree";
     }
 
