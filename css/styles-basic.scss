@@ -61,88 +61,42 @@ main {
             background: hsl(0, 0%, 95%);
         }
 
-        --fa-secondary-opacity: 0.8;
+        @media(min-width: 1180px) {
 
-        &.art {
-            grid-area: 1 / 1 / 3 / 3;
+            --fa-secondary-opacity: 0.8;
 
-            i {
-                --fa-primary-color: #2BA9C8;
-                --fa-secondary-color: #EEC194;
-                font-size: 3em;
+            &.art {
+                grid-area: 1 / 1 / 3 / 3;
             }
-        }
 
-        &.film {
-            grid-area: 1 / 5 / 3 / 7;
-
-            i {
-                --fa-primary-color: #212529;
-                --fa-secondary-color: #A5ABAB;
-                font-size: 3em;
+            &.film {
+                grid-area: 1 / 5 / 3 / 7;
             }
-        }
 
-        &.form {
-            grid-area: 3 / 3 / 5 / 5;
-
-            i {
-                --fa-primary-color: #fafafa;
-                --fa-secondary-color: #5873E1;
-                font-size: 3em;
+            &.form {
+                grid-area: 3 / 3 / 5 / 5;
             }
-        }
 
-        &.shapes {
-            grid-area: 4 / 5 / 6 / 7;
-
-            i {
-                --fa-primary-color: #73BF43;
-                --fa-secondary-color: #864C9E;
-                font-size: 3em;
+            &.shapes {
+                grid-area: 4 / 5 / 6 / 7;
             }
-        }
 
-        &.ddd {
-            grid-area: 4 / 1 / 6 / 3;
-
-            i {
-                --fa-primary-color: #212529;
-                --fa-secondary-color: hsla(197, 100%, 50%, 0.749);
-                font-size: 3em;
+            &.ddd {
+                grid-area: 4 / 1 / 6 / 3;
             }
-        }
 
-        &.hex {
-            grid-area: 1 / 3 / 3 / 4;
-
-            i {
-                --fa-primary-color: #EFB711;
-                --fa-secondary-color: #6B312C;
-                font-size: 2em;
+            &.hex {
+                grid-area: 1 / 3 / 3 / 4;
             }
-        }
 
-        &.shadow {
-            grid-area: 5 / 4 / 7 / 5;
-            
-
-            i {
-                --fa-primary-color: #212529;
-                --fa-secondary-color: hsl(48, 100%, 50%);
-                font-size: 2em;
+            &.shadow {
+                grid-area: 5 / 4 / 7 / 5;
             }
-        }
 
-        &.grail {
-            grid-area: 6 / 1 / 7 / 4;
-            display: flex;
-            gap: 1em;
-
-            i {
-                --fa-primary-color: #CC8A0C;
-                --fa-secondary-color: #4B5161;
-                font-size: 2em;
+            &.grail {
+                grid-area: 6 / 1 / 7 / 4;
+                display: flex;
+                gap: 1em;
             }
         }
     }
@@ -150,6 +104,46 @@ main {
 
 i {
     font-size: 2em;
+
+    &.fa-palette {
+        --fa-primary-color: #2BA9C8;
+        --fa-secondary-color: #EEC194;
+    }
+
+    &.fa-film-alt {
+        --fa-primary-color: #212529;
+        --fa-secondary-color: #A5ABAB;
+    }
+
+    &.fa-file-invoice {
+        --fa-primary-color: #fafafa;
+        --fa-secondary-color: #5873E1;
+    }
+
+    &.fa-shapes {
+        --fa-primary-color: #73BF43;
+        --fa-secondary-color: #864C9E;
+    }
+
+    &.fa-cubes {
+        --fa-primary-color: #212529;
+        --fa-secondary-color: hsla(197, 100%, 50%, 0.749);
+    }
+
+    &.fa-hexagon {
+        --fa-primary-color: #EFB711;
+        --fa-secondary-color: #6B312C;
+    }
+
+    &.fa-lightbulb-on {
+        --fa-primary-color: #212529;
+        --fa-secondary-color: hsl(48, 100%, 50%);
+    }
+
+    &.fa-trophy {
+        --fa-primary-color: #CC8A0C;
+        --fa-secondary-color: #4B5161;
+    }
 }
 
 footer {
