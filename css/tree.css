@@ -107,8 +107,8 @@
     left: 24vmin;
     top: 22vmin; }
   .cherry:nth-child(3) {
-    left: 1vmin;
-    top: 3vmin; }
+    left: 1.5vmin;
+    top: 5vmin; }
   .cherry:nth-child(4) {
     left: 30vmin;
     top: 3vmin; }
@@ -116,8 +116,8 @@
     left: -1vmin;
     top: 20vmin; }
   .cherry:last-child {
-    left: 10vmin;
-    top: 10vmin; }
+    left: 13vmin;
+    top: 13vmin; }
 
 .stem {
   position: absolute;
