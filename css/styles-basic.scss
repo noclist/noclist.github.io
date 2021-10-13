@@ -61,9 +61,42 @@ main {
             background: hsl(0, 0%, 95%);
         }
 
-        @media(min-width: 1180px) {
+        @media(min-width: 600px) {
 
-            --fa-secondary-opacity: 0.8;
+            &.art {
+                grid-area: 1 / 1 / 2 / 3;
+            }
+
+            &.film {
+                grid-area: 2 / 1 / 3 / 3;
+            }
+
+            &.shapes {
+                grid-area: 4 / 1 / 5 / 3;
+            }
+
+            &.form {
+                grid-area: 6 / 1 / 7 / 3;
+            }
+
+            &.aliens {
+                grid-area: 10 / 1 / 13 / 2;
+            }
+
+            &.grid {
+                grid-area: 8 / 2 / 11 / 3;
+            }
+
+            &.maze {
+                grid-area: 13 / 2 / 14 / 3;
+            }
+
+            &.text {
+                grid-area: 13 / 1 / 14 / 2;
+            }
+        }
+
+        @media(min-width: 1180px) {
 
             &.art {
                 grid-area: 1 / 1 / 3 / 3;
@@ -103,6 +136,7 @@ main {
 }
 
 i {
+    --fa-secondary-opacity: 0.8;
     font-size: 2em;
 
     &.fa-palette {
@@ -143,6 +177,35 @@ i {
     &.fa-trophy {
         --fa-primary-color: #CC8A0C;
         --fa-secondary-color: #4B5161;
+    }
+
+    &.fa-alien-monster {
+        --fa-primary-color: #212529;
+        --fa-secondary-color: #00F600;
+    }
+
+    &.fa-th {
+        --fa-primary-color: #0000F7;
+        --fa-secondary-color: #F70000;
+    }
+
+    &.fa-chimney {
+        --fa-primary-color: #B1AD94;
+        --fa-secondary-color: #BE5A3E;
+    }
+
+    &.fa-text-size {
+        --fa-primary-color: #FF66C4;
+        --fa-secondary-color: #818181;
+    }
+
+    &.fa-wave-square {
+        --fa-secondary-color: #FF450C;
+    }
+
+    &.fa-city {
+        --fa-primary-color: #147DAA;
+        --fa-secondary-color: #FEC402;
     }
 }
 
