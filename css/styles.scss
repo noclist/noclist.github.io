@@ -36,14 +36,12 @@ body {
 
 header {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 0.25em;
 
     img {
         width: 25px;
         height: 25px;
-        position: relative;
-        top: 5px;
     }
 }
 
@@ -67,7 +65,7 @@ main {
         cursor: pointer;
 
         &:hover {
-            background: hsl(0, 0%, 95%);
+            background: hsl(0, 0%, 97%);
         }
 
         @media(min-width: 600px) {
@@ -283,7 +281,7 @@ footer {
     gap: 1.5em;
 
     a {
-        color: #212529;
+        color: hsl(210, 11, 40%);
     }
 
     @media(min-width: 650px) {

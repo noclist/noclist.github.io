@@ -25,13 +25,11 @@ body {
 
 header {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 0.25em; }
   header img {
     width: 25px;
-    height: 25px;
-    position: relative;
-    top: 5px; }
+    height: 25px; }
 
 p {
   font-size: 1.2em; }
@@ -50,7 +48,7 @@ main {
     border: 0.5vmin solid var(--dark);
     cursor: pointer; }
     main div:hover {
-      background: #f2f2f2; }
+      background: #f7f7f7; }
     @media (min-width: 600px) {
       main div.art {
         grid-area: 1 / 1 / 2 / 3; }
@@ -179,7 +177,7 @@ footer {
   flex-wrap: wrap;
   gap: 1.5em; }
   footer a {
-    color: #212529; }
+    color: #5b6671; }
   @media (min-width: 650px) {
     footer {
       justify-content: space-between; } }
