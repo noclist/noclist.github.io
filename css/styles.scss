@@ -51,8 +51,6 @@ p {
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     gap: 0.25em;
 
     div {
@@ -86,20 +84,8 @@ main {
                 grid-area: 6 / 1 / 7 / 3;
             }
 
-            &.aliens {
-                grid-area: 10 / 1 / 13 / 2;
-            }
-
             &.grid {
-                grid-area: 8 / 2 / 11 / 3;
-            }
-
-            &.maze {
-                grid-area: 13 / 2 / 14 / 3;
-            }
-
-            &.text {
-                grid-area: 13 / 1 / 14 / 2;
+                grid-area: 8 / 2 / 10 / 3;
             }
         }
 

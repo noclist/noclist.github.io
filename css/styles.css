@@ -36,8 +36,6 @@ p {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   gap: 0.25em; }
   main div {
     display: grid;
@@ -58,14 +56,8 @@ main {
         grid-area: 4 / 1 / 5 / 3; }
       main div.form {
         grid-area: 6 / 1 / 7 / 3; }
-      main div.aliens {
-        grid-area: 10 / 1 / 13 / 2; }
       main div.grid {
-        grid-area: 8 / 2 / 11 / 3; }
-      main div.maze {
-        grid-area: 13 / 2 / 14 / 3; }
-      main div.text {
-        grid-area: 13 / 1 / 14 / 2; } }
+        grid-area: 8 / 2 / 10 / 3; } }
     @media (min-width: 1180px) {
       main div.art {
         grid-area: 1 / 1 / 5 / 3; }
