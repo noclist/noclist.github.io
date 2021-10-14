@@ -1,159 +1,116 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-
-    <title>carps space</title>
-    
-    <meta name="description" content="Ben Carpenter's website">
-    <meta name="author" content="Ben Carpenter">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="icons/favicon.ico" /> 
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="icons/favicon-basic.ico" /> 
+    <title>carps space</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/styles.css?v=5.0">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-
-    <a href="coasters/cleveland.html"><img class="coaster clip-path" src="images/coasters/cleveland.jpg"></a>
-    <a href="coasters/lake-erie.html"><img class="coaster lake-erie" src="images/coasters/lake-erie.png"></a>
-    <a href="coasters/playhouse.html"><img class="coaster playhouse" src="images/coasters/playhouse.png"></a>
-    <a href="coasters/ohio.html"><img class="coaster ohio" src="images/coasters//ohio.png"></a>
     
-    <div class="alien">
-        <a href="aliens.html"><div class="ufo"></div></a>
-        <a class="aliens" href="aliens.html"><i class="fas fa-alien-monster"></i></a>
-    </div>
-
-    <div class="dotted-line">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-    <div class="carptainer">
-        <div class="sticky">
-            <ul>
-                <li>
-                    <a href="#" contenteditable>
-                        <i class="fal fa-pencil-alt"></i>
-                        <p>
-                            <span style="font-size: 1.4rem;">container queries</span><br />
-                            <span style="font-size: 1.4rem;">subgrid</span><br />
-                            <span style="font-size: 1.4rem;">variable fonts</span><br />
-                            <span style="font-size: 1.4rem;">scroll timeline</span><br />
-                        </p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="container">
         <header>
-            <a href="gradient.html">
-                <h1>carps space</h1>
-            </a>
-            <a href="basic.html"><img src="images/bw.png"></a>
-            <div class="type">
-                <i class="fal fa-bicycle"></i>
-                <i class="fal fa-biking"></i>
-                <i class="far fa-bicycle"></i>
-                <i class="far fa-biking"></i>
-                <i class="fas fa-bicycle"></i>
-                <i class="fas fa-biking"></i>
-            </h1>
+            <h1>carps space</h1>
+            <a href="index-enhanced.html"><img src="/images/color.png"></a>
         </header>
-    
-        <div class="wrapper">
-            <nav>
-                <a class="fancy-link" href="forms.html"><i class="fas fa-file-invoice"></i></a>
-                <a class="fancy-link" href="grid.html"><i class="fas fa-th"></i></a>
-                <a class="fancy-link" href="shapes.html"><i class="fas fa-shapes"></i></a>
-                <a class="fancy-link" href="holygrail.html"><i class="fas fa-trophy"></i></a>
-                <a href="maze2.html"><div class="maze"></div></a>
-                <a href="honeycomb.html"><div class="bee"></div></a>
-                <a class="fancy-link" href="masonry.html"><i class="fas fa-chimney"></i></a>
-                <a class="fancy-link" href="3d.html"><i class="fas fa-vr-cardboard"></i></a>
-                <a class="fancy-link" href="dashboard.html"><i class="fas fa-tachometer-alt-fast"></i></a>
-                <a class="fancy-link" href="container.html"><i class="fas fa-box"></i></a>
-                <a class="fancy-link" href="/_site/movies/2020/index.html"><i class="fas fa-film-alt"></i></a>
-            </nav>
-    
-            <main>
-                <a href="text.html">
-                    <div class="carp">
-                        <div class="outer-bubble">
-                            <div class="text-bubble">
-                                <div class="inner-bubble"></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <div class="text">Ben <span class="name" onClick="navigate('shadows')">Carpenter</span> is a front end web
-                    developer in <br /><span class="city">Cleveland</span>, Ohio.</div>
-                <a href="terminal.html"><img /></a>
-            </main>
-        </div>
-    
+        <p>Ben Carpenter is a front end developer in Cleveland, Ohio.</p>
+        <main>
+
+            <div class="art" onClick="navigate('art')">
+                <i class="fad fa-palette"></i>
+                <h2>CSS Art Gallery</h2>
+            </div>
+
+            <div class="film" onClick="navigate('_site/movies/2020/index')">
+                <i class="fad fa-film-alt"></i>
+                <h2>Top Ten Films</h2>
+            </div>
+            
+            <div class="form" onClick="navigate('forms')">
+                <i class="fad fa-file-invoice"></i>
+                <h2>Form Controls</h2>
+            </div>
+
+            <div class="shapes" onClick="navigate('shapes')">
+                <i class="fad fa-shapes"></i>
+                <h2>CSS Shapes</h2>
+            </div>
+
+            <div class="ddd" onClick="navigate('3d')">
+                <i class="fad fa-cubes"></i>
+                <h2>3D CSS</h2>
+            </div>
+
+            <div class="hex" onClick="navigate('honeycomb')">
+                <i class="fad fa-hexagon"></i>
+                <h3>Honeycomb Grid</h3>
+            </div>
+
+            <div class="shadow" onClick="navigate('shadows')">
+                <i class="fad fa-lightbulb-on"></i>
+                <h3>Box Shadows</h3>
+            </div>
+
+            <div class="grail" onClick="navigate('holygrail')">
+                <i class="fad fa-trophy"></i>
+                <h3>The Holy Grail Layout</h3>
+            </div>
+
+            <div class="aliens" onClick="navigate('aliens')">
+                <i class="fad fa-alien-monster"></i>
+                <h3>Aliens!</h3>
+            </div>
+
+            <div class="grid" onClick="navigate('grid')">
+                <i class="fad fa-th"></i>
+                <h2>A CSS Grid</h2>
+            </div>
+
+            <div onClick="navigate('masonry')">
+                <i class="fad fa-chimney"></i>
+                <h3>Masonry Layout</h3>
+            </div>
+
+            <div class="maze" onClick="navigate('maze')">
+                <i class="fad fa-wave-square"></i>
+                <h3>A Maze</h3>
+            </div>
+            
+            <div class="text" onClick="navigate('text')">
+                <i class="fad fa-text-size"></i>
+                <h3>Text Effects</h3>
+            </div>
+            
+            <div class="terminal" onClick="navigate('terminal')">
+                <i class="fad fa-city"></i>
+                <h3>The Terminal Tower</h3>
+            </div>
+            
+            <div onClick="navigate('container')"><i class="fal fa-container-storage"></i></div>
+            <div onClick="navigate('coasters/index')"><i class="fal fa-mug"></i></div>
+
+
+
+            <div onClick="navigate('dashboard')"><i class="fal fa-browser"></i></div>
+            
+            
+        </main>
         <footer>
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="https://www.twitter.com/afewgoodben" target="_blank" class="hvr-icon-bounce">
-                        <i class="fab fa-twitter hvr-icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.instagram.com/beneleventwelve/" target="_blank" class="hvr-icon-bounce">
-                        <i class="fab fa-instagram hvr-icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.facebook.com/spacejam" target="_blank" class="hvr-icon-bounce">
-                        <i class="fab fa-facebook hvr-icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.last.fm/user/noclist" target="_blank" class="hvr-icon-bounce">
-                        <i class="fab fa-lastfm hvr-icon"></i>
-                    </a>
-                </li>
-    
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/ben-carpenter-2556299/" target="_blank" class="hvr-icon-bounce">
-                        <i class="fab fa-linkedin hvr-icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://github.com/noclist/" target="_blank" class="hvr-icon-bounce">
-                        <i class="fab fa-github hvr-icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.strava.com/athletes/45181835" target="_blank" class="hvr-icon-bounce">
-                        <i class="fab fa-strava hvr-icon"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://letterboxd.com/benjammin/" target="_blank" class="hvr-icon-bounce">
-                        <div class="circles hvr-icon">
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-strava"></i>
+            <i class="fab fa-lastfm-square"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github-square"></i>
         </footer>
-    </div>
-</body>
+   </div>
 </html>
+
 <script>
     function navigate(url) {
         window.location.href='/' + url + '.html';

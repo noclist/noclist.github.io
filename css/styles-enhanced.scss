@@ -1,0 +1,253 @@
+@import 'modules/reset';
+@import 'modules/breakpoints';
+@import 'modules/colors';  
+@import 'modules/icons';
+@import 'modules/hover';  
+  
+@import 'modules/type';
+@import 'modules/stickynote'; 
+@import 'modules/coasters'; 
+@import 'modules/text-bubble'; 
+@import 'modules/alien';
+@import 'modules/dotted-line'; 
+ 
+@font-face { 
+    font-family: 'Mosk-Extra-bold';
+    src: url('/fonts/Mosk Extra-Bold 800.ttf');
+} 
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    background: #fff;
+    font-family: Mosk-Extra-bold, sans-serif;
+     
+    @media(min-width: $bp-xs) {
+        background: linear-gradient(0.25turn, hsl(198, 45%, 45%), hsl(94, 62%, 93%), hsl(31, 91%, 60%));
+    }
+}   
+
+.carptainer { 
+    width: 90vw;
+    padding: 0.5em 1em;
+    margin: 1.2em 0;
+    background: radial-gradient(hsl(0, 0%, 100%), hsl(198, 31%, 37%));
+    box-shadow: hsl(198, 31%, 37%) 0 0 0 3px,
+                hsl(0, 0%, 100%) 0 0 0 6px,
+                hsl(198, 31%, 37%) 0 0 0 9px,
+                hsl(0, 0%, 100%) 0 0 0 12px,
+                hsl(198, 31%, 37%) 0 0 0 15px;
+
+    @media (min-width: $bp-sm) {
+        width: 75vw;
+        background: radial-gradient(hsl(0, 0%, 100%), hsl(94, 65%, 65%));
+        box-shadow: hsl(240, 100%, 50%) 0 0 0 3px, 
+                    hsl(0, 0%, 100%) 10px -10px 0 -1px,
+                    hsl(119, 75%, 43%) 10px -10px 0 2px, 
+                    hsl(0, 0%, 100%) 20px -20px 0 -2px, 
+                    hsl(50, 100%, 54%) 20px -20px 0 1px, 
+                    hsl(0, 0%, 100%) 30px -30px 0 -3px, 
+                    hsl(25, 100%, 67%) 30px -30px, 
+                    hsl(0, 0%, 100%) 40px -40px 0 -3px, 
+                    hsl(0, 100%, 67%) 40px -40px;
+    }   
+    
+    @media(min-width: $bp-lg) {
+        margin-top: 3.2em;
+        padding: 0.5em 3em;
+        transform: rotate(-0.5deg);
+    }
+} 
+  
+header {
+    display: flex;
+    gap: 0.25em;
+    align-items: center;
+
+    h1 { 
+        font-size: 3.5em;
+        text-align: center;
+        margin-bottom: 0.8em;
+        margin-top: -0.2em;
+        color: hsl(0, 0%, 100%);
+        text-shadow: 0 2px 2px hsl(0, 100%, 50%), 
+                    -2px 5px 0 hsl(30, 100%, 50%), 
+                    -4px 10px 0 hsl(0, 0%, 6%),
+                    -8px 15px 0 hsl(120, 100%, 50%),
+                    -12px 20px 0 hsl(240, 100%, 50%), 
+                    -16px 25px 0 hsl(275, 100%, 25%),
+                    -20px 30px 0 hsl(282, 100%, 41%);
+    
+        @media(min-width: $bp-sm) {
+            font-size: 5em;
+            text-align: left;
+            margin-left: 1rem;
+        }
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: -40px;
+    }
+} 
+
+.wrapper { 
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: $bp-sm) {
+        flex-direction: column;
+    }
+}   
+    
+nav { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    padding-bottom: 1em;
+    border-bottom: 3px dashed hsl(349, 100%, 74%);
+    z-index: 3;
+    
+    .fancy-link { 
+        font-size: 2.4rem;
+        margin: 0 15px;
+ 
+        -webkit-text-fill-color: var(--color-white);
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: var(--color-black);
+
+        &:hover {
+            -webkit-text-fill-color: var(--color-pink);
+        }
+
+        @media(min-width: $bp-sm) {
+            -webkit-text-fill-color: var(--color-blue);
+        }
+    } 
+
+    .maze {  
+        background: url('/images/maze-white.png') no-repeat;
+        background-size: cover;
+        width: 55px;
+        height: 55px;
+        transition: transform 1s ease-out;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+ 
+        @media(min-width: $bp-sm) {
+            background-image: url('/images/maze.png');
+        }
+    }
+
+    .bee {  
+        background: url('/images/bee-icon.png') 100%/cover no-repeat;
+        width: 50px;
+        height: 55px;
+
+        &:hover {
+            background: url('/images/bee-icon2.png') 100%/cover no-repeat;
+        }
+    }
+
+    @media (min-width: $bp-sm) {
+        border-bottom: 0;
+    }
+}  
+ 
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    text-align: center;
+
+    -webkit-text-fill-color: var(--color-white);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--color-black);
+
+    .carp {
+        background-image: url('/images/lips2.png');
+        height: auto;
+        align-self: center;
+        background-repeat: no-repeat;
+        width: 245px;
+        height: 350px;
+        position: relative;
+    
+        @media (min-width: $bp-md) {
+            flex: 0 0 260px;
+    
+            &:hover {
+                background-image: url('/images/ben.png');
+            }
+        }
+    }
+
+    .name {
+        -webkit-text-fill-color: var(--color-purple);
+        cursor: pointer;
+
+        &:hover {
+            -webkit-text-fill-color: var(--color-white);
+        }
+    }      
+
+    .city {
+        -webkit-text-fill-color: var(--color-yellow);
+
+        &:hover {
+            -webkit-text-fill-color: var(--color-white);
+        }
+    }
+
+    a {
+        img {
+            padding: 58px 53px;
+            background: url('/icons/Cleveland_512-grey-alt.png') no-repeat;
+
+            &:hover {
+                background: url('/icons/Cleveland_512-blue.png') no-repeat;
+            }
+
+            @media(max-width: $bp-xs) {
+                filter: drop-shadow(2px 4px 6px hsl(0, 0%, 0%));
+            }
+        }
+    }
+
+    &:hover {
+        -webkit-text-fill-color: var(--color-pink);
+
+        img {
+            filter: hue-rotate(0);
+        }
+    }
+
+    @media(min-width: $bp-md) {
+        font-size: 4em;
+        text-align: left;
+        flex-direction: row;  
+    }
+}
+ 
+footer { 
+    margin-top: 1.5em;
+
+    ul { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+}
