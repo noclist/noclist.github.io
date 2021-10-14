@@ -463,13 +463,9 @@ li {
 
 @keyframes triangle {
   to {
-    border-left: 25px solid #ebba70;
-    border-right: 25px solid #90d81d;
-    border-bottom: 25px solid #d84f9f;
-    border-top: 25px solid #487c78;
     border-radius: 0;
     box-shadow: none;
-    transform: rotate(45deg); } }
+    transform: rotate(90deg); } }
 
 body {
   min-height: 100vh;

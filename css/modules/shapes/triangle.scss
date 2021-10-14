@@ -17,12 +17,8 @@
 
 @keyframes triangle {
     to {
-        border-left: 25px solid rgb(235, 186, 112);
-        border-right: 25px solid rgb(144, 216, 29);
-        border-bottom: 25px solid rgb(216, 79, 159);
-        border-top: 25px solid rgb(72, 124, 120);
         border-radius: 0;
         box-shadow: none;
-        transform: rotate(45deg);
+        transform: rotate(90deg);
     }
 }
