@@ -85,7 +85,7 @@ main {
             }
 
             &.film {
-                grid-area: 2 / 1 / 3 / 3;
+                grid-area: 3 / 1 / 4 / 3;
             }
 
             &.shapes {
@@ -98,6 +98,29 @@ main {
 
             &.grid {
                 grid-area: 8 / 2 / 10 / 3;
+            }
+        }
+
+        @media(min-width: 900px) {
+
+            &.art {
+                grid-area: 1 / 1 / 3 / 3;
+            }
+
+            &.film {
+                grid-area: 3 / 1 / 5 / 2;
+            }
+
+            &.shapes {
+                grid-area: 5 / 2 / 7 / 3;
+            }
+
+            &.form {
+                grid-area: 7 / 1 / 8 / 3;
+            }
+
+            &.grid {
+                grid-area: 9 / 1 / 11 / 2;
             }
         }
 
