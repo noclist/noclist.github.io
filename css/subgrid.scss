@@ -1,0 +1,72 @@
+@import 'modules/reset';
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 1em;
+    text-align: center;
+    font-family: system-ui;
+    color: #212529;
+    background: hsl(343, 18%, 98%)
+}
+
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, minmax(100px, auto));
+    gap: 0.25em;
+    width: 75vw;
+    border-radius: 5px;
+
+    > div {
+        display: grid;
+        place-content: center;
+        background: hsl(64, 100%, 75%);
+        border: 0.25vmin solid #212529;
+    }
+
+    > .item {
+        display: grid;
+        grid-area: 2 / 2 / 4 / 9;
+        grid-template-columns: subgrid;
+        grid-template-rows: repeat(3, 80px);
+        gap: 0.25em;
+
+        > div {
+            display: grid;
+            grid-area: 1 / 1 / 4 / 8;
+      
+            border: 0.25vmin solid #212529;
+            padding: 1em 0 0 30vmin;
+        }
+
+        .subitem {
+            place-content: center;
+            background: hsl(133, 100%, 80%);
+            padding: 0 0.5em;
+
+            &-1 {
+                grid-area: 1 / 1 / 2 / 4;
+            }
+
+            &-2 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+            &-3 {
+                grid-area: 2 / 3 / 3 / 6;
+            }
+
+            &-4 {
+                grid-area: 2 / 6 / 3 / 7;
+            }
+
+            &-5 {
+                grid-area: 3 / 5 / 4 / 8;
+            }
+          }
+      }
+  }
+  

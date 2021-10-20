@@ -183,6 +183,9 @@ i {
     --fa-primary-color: #B9B9B9;
     --fa-secondary-color: #1D3741;
     font-size: 3em; }
+  i.fa-border-outer {
+    --fa-primary-color: #212529;
+    --fa-secondary-color: hsl(210, 44%, 29%); }
 
 footer {
   display: flex;
