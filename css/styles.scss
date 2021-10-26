@@ -184,8 +184,16 @@ main {
                 @include flex;
             }
 
+            &.subgrid {
+                grid-area: 8 / 6 / 10 / 7;
+            }
+
+            &.snap {
+                grid-area: 10 / 2 / 11 / 4;
+            }
+
             &.text {
-                grid-area: 10 / 1 / 11 / 4;
+                grid-area: 11 / 1 / 12 / 4;
                 @include flex;
             }
 
@@ -194,7 +202,7 @@ main {
             }
 
             &.terminal {
-                grid-area: 9 / 6 / 11 / 7;
+                grid-area: 10 / 6 / 12 / 7;
             }
         }
     }
@@ -297,6 +305,11 @@ i {
     &.fa-border-outer {
         --fa-primary-color: #212529;
         --fa-secondary-color: hsl(210, 44%, 29%);
+    }
+
+    &.fa-mouse {
+        --fa-primary-color: #212529;
+        --fa-secondary-color: #BEBCBD;
     }
 }
 
