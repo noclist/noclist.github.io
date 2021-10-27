@@ -2,7 +2,7 @@
 @mixin flex {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 :root {
@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    width: 70vw;
+    width: 75vw;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -52,7 +52,7 @@ header {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     width: 100%;
     text-align: center;
 
@@ -64,6 +64,21 @@ p {
 main {
     display: grid;
     gap: 0.25em;
+
+    @media(min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: repeat(13, 120px);
+    }
+
+    @media(min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(10, 120px);
+    }
+
+    @media(min-width: 1180px) {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(12, 80px);
+    }
 
     div {
         display: grid;
@@ -78,238 +93,312 @@ main {
             background: hsl(0, 0%, 97%);
         }
 
-        @media(min-width: 600px) {
+        &.art {
+            i {
+                --fa-primary-color: #2BA9C8;
+                --fa-secondary-color: #EEC194;
+            }
+        }
 
+        &.film {
+            i {
+                --fa-primary-color: #212529;
+                --fa-secondary-color: #A5ABAB;
+            }
+        }
+
+        &.shapes {
+            i {
+                --fa-primary-color: #73BF43;
+                --fa-secondary-color: #864C9E;
+            }
+        }
+
+        &.grid {
+            i {
+                --fa-primary-color: #0000F7;
+                --fa-secondary-color: #ff8928;
+            }
+        }
+
+        &.form {
+            i {
+                --fa-primary-color: #fafafa;
+                --fa-secondary-color: #5873E1;
+            }
+        }
+
+        &.grail {
+            i {
+                --fa-primary-color: hsl(39, 89%, 47%);
+                --fa-secondry-color: #4B5161;
+            }
+        }
+
+        &.ddd {
+            i {
+                --fa-primary-color: #212529;
+                --fa-secondary-color: hsla(197, 100%, 50%, 0.749);
+            }
+        }
+
+        &.shadow {
+            i {
+                --fa-primary-color: #212529;
+                --fa-secondary-color: hsl(48, 100%, 50%);
+            }
+        }
+
+        &.masonry {
+            i {
+                --fa-primary-color: #B1AD94;
+                --fa-secondary-color: #BE5A3E;
+            }
+        }
+
+        &.honeycomb {
+            i {
+                --fa-primary-color: #EFB711;
+                --fa-secondary-color: #6B312C;
+            }
+        }
+
+        &.cquery {
+            i {
+                --fa-primary-color: #AE3B24;
+                --fa-secondary-color: #EC1C24;
+            }
+        }
+
+        &.snap {
+            i {
+                --fa-primary-color: #212529;
+                --fa-secondary-color: #BEBCBD;
+            }
+        }
+
+        &.subgrid {
+            i {
+                --fa-primary-color: #212529;
+                --fa-secondary-color: hsl(210, 44%, 29%);
+            }
+        }
+
+        &.dash {
+            i {
+                --fa-primary-color: #BDE5F5;
+                --fa-secondary-color: #212529;
+            }
+        }
+
+        &.text {
+            i {
+                --fa-primary-color: #FF66C4;
+                --fa-secondary-color: #818181;
+            }
+        }
+
+        &.maze {
+            i {
+                --fa-secondary-color: #FF450C;
+            }
+        }
+
+        &.aliens {
+            i {
+                --fa-primary-color: #212529;
+                --fa-secondary-color: #00F600;
+            }
+        }
+
+        &.cleveland {
+            i {
+                --fa-primary-color: #B9B9B9;
+                --fa-secondary-color: #1D3741;
+            }
+        }
+
+        &.terminal {
+            i {
+                --fa-primary-color: hsl(198, 79%, 15%);
+                --fa-secondary-color: #fff;
+            }
+        }
+
+        @media(min-width: 600px) {
             &.art {
-                grid-area: 1 / 1 / 2 / 3;
+                grid-column: 1 / 3;
             }
 
             &.film {
-                grid-area: 3 / 1 / 4 / 3;
+                grid-row: 2 / 4;
             }
 
             &.shapes {
-                grid-area: 4 / 1 / 5 / 3;
-            }
-
-            &.form {
-                grid-area: 6 / 1 / 7 / 3;
+                grid-row: 3 / 5;
             }
 
             &.grid {
-                grid-area: 8 / 2 / 10 / 3;
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+            &.form {
+                grid-area: 5 / 1 / 6 / 3;
+            }
+
+            &.grail {
+                grid-row: 6 / 8;
+            }
+
+            &.shadow {
+                grid-area: 8 / 1 / 9 / 3;
+            }
+
+            &.snap {
+                grid-area: 9 / 2 / 11 / 3;
             }
         }
 
         @media(min-width: 900px) {
-
             &.art {
                 grid-area: 1 / 1 / 3 / 3;
             }
 
             &.film {
-                grid-area: 3 / 1 / 5 / 2;
-            }
-
-            &.shapes {
-                grid-area: 5 / 2 / 7 / 3;
-            }
-
-            &.form {
-                grid-area: 7 / 1 / 8 / 3;
+                grid-area: 1 / 3 / 4 / 4;
             }
 
             &.grid {
-                grid-area: 9 / 1 / 11 / 2;
+                grid-area: 4 / 2 / 5 / 4;
             }
         }
 
         @media(min-width: 1180px) {
-
             &.art {
-                grid-area: 1 / 1 / 5 / 3;
-            }
-
-            &.hex {
-                grid-area: 1 / 3 / 3 / 4;
-            }
-
-            &.masonry {
-                grid-area: 1 / 4 / 3 / 5;
-            }
-
-            &.dash {
-                grid-area: 1 / 6 / 2 / 7;
-            }
-
-            &.form {
-                grid-area: 3 / 3 / 5 / 5;
+                grid-area: 1 / 1 / 3 / 4;
             }
 
             &.film {
-                grid-area: 1 / 5 / 6 / 6;
-            }
-
-            &.ddd {
-                grid-area: 5 / 1 / 6 / 3;
-            }
-
-            &.shadow {
-                grid-area: 5 / 4 / 8 / 5;
-            }
-
-            &.cquery {
-                grid-area: 5 / 6 / 6 / 7;
-            }
-
-            &.grail {
-                grid-area: 6 / 1 / 7 / 4;
-                @include flex;
+                grid-area: 2 / 4 / 5 / 6;
             }
 
             &.shapes {
-                grid-area: 6 / 5 / 8 / 7;
-            }
-
-            &.aliens {
-                grid-area: 8 / 1 / 10 / 2;
-            }
-
-            &.maze {
-                grid-area: 7 / 2 / 10 / 3;
+                grid-area: 3 / 6 / 5 / 8;
             }
 
             &.grid {
-                grid-area: 8 / 3 / 9 / 6;
+                grid-area: 5 / 5 / 7 / 7;
+            }
+
+            &.form {
+                grid-area: 7 / 2 / 9 / 4;
+            }
+
+            &.grail {
+                grid-area: 7 / 5 / 8 / 8;
                 @include flex;
             }
 
-            &.subgrid {
-                grid-area: 8 / 6 / 10 / 7;
+            &.ddd {
+                grid-area: 6 / 4 / 8 / 5;
+            }
+
+            &.shadow {
+                grid-area: 8 / 1 / 11 / 2;
+            }
+
+            &.masonry {
+                grid-area: 1 / 7 / 3 / 8;
+           }
+
+           &.honeycomb {
+                grid-area: 5 / 1 / 6 / 3;
+                @include flex;
+            }
+
+            &.cquery {
+                grid-area: 10 / 5 / 12 / 7;
             }
 
             &.snap {
-                grid-area: 10 / 2 / 11 / 4;
+                grid-area: 3 / 1 / 5 / 2;
             }
 
-            &.text {
-                grid-area: 11 / 1 / 12 / 4;
+            &.subgrid {
+                grid-area: 8 / 7 / 10 / 8;
+            }
+
+            &.dash {
+                grid-area: 9 / 3 / 10 / 6;
                 @include flex;
             }
 
+            &.text {
+                grid-area: 4 / 2 / 5 / 3;
+            }
+
+            &.maze {
+                grid-area: 11 / 1 / 12 / 2;
+            }         
+               
+            &.aliens {
+                grid-area: 11 / 4 / 12 / 5;
+            }
+
             &.cleveland {
-                grid-area: 9 / 4 / 11 / 6;
+                grid-area: 12 / 5 / 13 / 6;
             }
 
             &.terminal {
-                grid-area: 10 / 6 / 12 / 7;
+                grid-area: 12 / 6 / 13 / 8;
+                @include flex;
             }
         }
     }
 }
 
 i {
-    --fa-secondary-opacity: 0.8;
     font-size: 2em;
+    --fa-secondary-opacity: 0.8;
+}
 
-    &.fa-palette {
-        --fa-primary-color: #2BA9C8;
-        --fa-secondary-color: #EEC194;
-        font-size: 3em;
+.xl {
+    i {
+        font-size: 4em;
     }
 
-    &.fa-film-alt {
-        --fa-primary-color: #212529;
-        --fa-secondary-color: #A5ABAB;
-        font-size: 3em;
+    h2 {
+        font-size: 1.75em;
+    }
+}
+
+.lg {
+    i {
+        font-size: 3.1em;
     }
 
-    &.fa-file-invoice {
-        --fa-primary-color: #fafafa;
-        --fa-secondary-color: #5873E1;
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+.md {
+    i {
+        font-size: 2.3em;
     }
 
-    &.fa-shapes {
-        --fa-primary-color: #73BF43;
-        --fa-secondary-color: #864C9E;
-        font-size: 3em;
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+.sm {
+    i {
+        font-size: 2.1em;
     }
 
-    &.fa-cubes {
-        --fa-primary-color: #212529;
-        --fa-secondary-color: hsla(197, 100%, 50%, 0.749);
-        font-size: 3em;
-    }
-
-    &.fa-hexagon {
-        --fa-primary-color: #EFB711;
-        --fa-secondary-color: #6B312C;
-    }
-
-    &.fa-lightbulb-on {
-        --fa-primary-color: #212529;
-        --fa-secondary-color: hsl(48, 100%, 50%);
-    }
-
-    &.fa-trophy {
-        --fa-primary-color: #CC8A0C;
-        --fa-secondary-color: #4B5161;
-    }
-
-    &.fa-alien-monster {
-        --fa-primary-color: #212529;
-        --fa-secondary-color: #00F600;
-    }
-
-    &.fa-th {
-        --fa-primary-color: #0000F7;
-        --fa-secondary-color: #F70000;
-        font-size: 3em;
-    }
-
-    &.fa-chimney {
-        --fa-primary-color: #B1AD94;
-        --fa-secondary-color: #BE5A3E;
-    }
-
-    &.fa-text-size {
-        --fa-primary-color: #FF66C4;
-        --fa-secondary-color: #818181;
-    }
-
-    &.fa-wave-square {
-        --fa-secondary-color: #FF450C;
-    }
-
-    &.fa-place-of-worship {
-        --fa-primary-color: #147DAA;
-        --fa-secondary-color: #fff;
-    }
-
-    &.fa-desktop {
-        --fa-primary-color: #BDE5F5;
-        --fa-secondary-color: #212529;
-    }
-
-    &.fa-container-storage {
-        --fa-primary-color: #AE3B24;
-        --fa-secondary-color: #EC1C24;
-    }
-
-    &.fa-wind-turbine {
-        --fa-primary-color: #B9B9B9;
-        --fa-secondary-color: #1D3741;
-        font-size: 3em;
-    }
-
-    &.fa-border-outer {
-        --fa-primary-color: #212529;
-        --fa-secondary-color: hsl(210, 44%, 29%);
-    }
-
-    &.fa-mouse {
-        --fa-primary-color: #212529;
-        --fa-secondary-color: #BEBCBD;
+    h2 {
+        font-size: 1.1em;
     }
 }
 
