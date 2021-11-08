@@ -57,7 +57,7 @@ main {
     main {
       grid-template-columns: repeat(7, 1fr);
       grid-template-rows: repeat(12, 80px); } }
-  main div {
+  main section {
     display: grid;
     place-content: center;
     text-align: center;
@@ -65,135 +65,135 @@ main {
     background: white;
     border: 0.5vmin solid var(--dark);
     cursor: pointer; }
-    main div:hover {
+    main section:hover {
       background: #f7f7f7; }
-    main div.art i {
+    main section.art i {
       --fa-primary-color: #2BA9C8;
       --fa-secondary-color: #EEC194; }
-    main div.film i {
+    main section.film i {
       --fa-primary-color: #212529;
       --fa-secondary-color: #A5ABAB; }
-    main div.shapes i {
+    main section.shapes i {
       --fa-primary-color: #73BF43;
       --fa-secondary-color: #864C9E; }
-    main div.grid i {
+    main section.grid i {
       --fa-primary-color: #0000F7;
       --fa-secondary-color: #ff8928; }
-    main div.form i {
+    main section.form i {
       --fa-primary-color: #fafafa;
       --fa-secondary-color: #5873E1; }
-    main div.grail i {
+    main section.grail i {
       --fa-primary-color: hsl(39, 89%, 47%);
       --fa-secondry-color: #4B5161; }
-    main div.ddd i {
+    main section.ddd i {
       --fa-primary-color: #212529;
       --fa-secondary-color: hsla(197, 100%, 50%, 0.749); }
-    main div.shadow i {
+    main section.shadow i {
       --fa-primary-color: #212529;
       --fa-secondary-color: hsl(48, 100%, 50%); }
-    main div.masonry i {
+    main section.masonry i {
       --fa-primary-color: #B1AD94;
       --fa-secondary-color: #BE5A3E; }
-    main div.honeycomb i {
+    main section.honeycomb i {
       --fa-primary-color: #EFB711;
       --fa-secondary-color: #6B312C; }
-    main div.cquery i {
+    main section.cquery i {
       --fa-primary-color: #AE3B24;
       --fa-secondary-color: #EC1C24; }
-    main div.snap i {
+    main section.snap i {
       --fa-primary-color: #212529;
       --fa-secondary-color: #BEBCBD; }
-    main div.subgrid i {
+    main section.subgrid i {
       --fa-primary-color: #212529;
       --fa-secondary-color: hsl(210, 44%, 29%); }
-    main div.dash i {
+    main section.dash i {
       --fa-primary-color: #BDE5F5;
       --fa-secondary-color: #212529; }
-    main div.text i {
+    main section.text i {
       --fa-primary-color: #FF66C4;
       --fa-secondary-color: #818181; }
-    main div.maze i {
+    main section.maze i {
       --fa-secondary-color: #FF450C; }
-    main div.aliens i {
+    main section.aliens i {
       --fa-primary-color: #212529;
       --fa-secondary-color: #00F600; }
-    main div.cleveland i {
+    main section.cleveland i {
       --fa-primary-color: #B9B9B9;
       --fa-secondary-color: #1D3741; }
-    main div.terminal i {
+    main section.terminal i {
       --fa-primary-color: hsl(198, 79%, 15%);
       --fa-secondary-color: #fff; }
     @media (min-width: 600px) {
-      main div.art {
+      main section.art {
         grid-column: 1 / 3; }
-      main div.film {
+      main section.film {
         grid-row: 2 / 4; }
-      main div.shapes {
+      main section.shapes {
         grid-row: 3 / 5; }
-      main div.grid {
+      main section.grid {
         grid-area: 2 / 2 / 3 / 3; }
-      main div.form {
+      main section.form {
         grid-area: 5 / 1 / 6 / 3; }
-      main div.grail {
+      main section.grail {
         grid-row: 6 / 8; }
-      main div.shadow {
+      main section.shadow {
         grid-area: 8 / 1 / 9 / 3; }
-      main div.snap {
+      main section.snap {
         grid-area: 9 / 2 / 11 / 3; } }
     @media (min-width: 900px) {
-      main div.art {
+      main section.art {
         grid-area: 1 / 1 / 3 / 3; }
-      main div.film {
+      main section.film {
         grid-area: 1 / 3 / 4 / 4; }
-      main div.grid {
+      main section.grid {
         grid-area: 4 / 2 / 5 / 4; } }
     @media (min-width: 1180px) {
-      main div.art {
+      main section.art {
         grid-area: 1 / 1 / 3 / 4; }
-      main div.film {
+      main section.film {
         grid-area: 2 / 4 / 5 / 6; }
-      main div.shapes {
+      main section.shapes {
         grid-area: 3 / 6 / 5 / 8; }
-      main div.grid {
+      main section.grid {
         grid-area: 5 / 5 / 7 / 7; }
-      main div.form {
+      main section.form {
         grid-area: 7 / 2 / 9 / 4; }
-      main div.grail {
+      main section.grail {
         grid-area: 7 / 5 / 8 / 8;
         display: flex;
         align-items: center;
         gap: 0.5em; }
-      main div.ddd {
+      main section.ddd {
         grid-area: 6 / 4 / 8 / 5; }
-      main div.shadow {
+      main section.shadow {
         grid-area: 8 / 1 / 11 / 2; }
-      main div.masonry {
+      main section.masonry {
         grid-area: 1 / 7 / 3 / 8; }
-      main div.honeycomb {
+      main section.honeycomb {
         grid-area: 5 / 1 / 6 / 3;
         display: flex;
         align-items: center;
         gap: 0.5em; }
-      main div.cquery {
+      main section.cquery {
         grid-area: 10 / 5 / 12 / 7; }
-      main div.snap {
+      main section.snap {
         grid-area: 3 / 1 / 5 / 2; }
-      main div.subgrid {
+      main section.subgrid {
         grid-area: 8 / 7 / 10 / 8; }
-      main div.dash {
+      main section.dash {
         grid-area: 9 / 3 / 10 / 6;
         display: flex;
         align-items: center;
         gap: 0.5em; }
-      main div.text {
+      main section.text {
         grid-area: 4 / 2 / 5 / 3; }
-      main div.maze {
+      main section.maze {
         grid-area: 11 / 1 / 12 / 2; }
-      main div.aliens {
+      main section.aliens {
         grid-area: 11 / 4 / 12 / 5; }
-      main div.cleveland {
+      main section.cleveland {
         grid-area: 12 / 5 / 13 / 6; }
-      main div.terminal {
+      main section.terminal {
         grid-area: 12 / 6 / 13 / 8;
         display: flex;
         align-items: center;
