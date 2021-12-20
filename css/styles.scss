@@ -1,9 +1,5 @@
-
-@mixin flex {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-}
+@import 'mixins/flex';
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
 :root {
     --dark: hsl(210, 11%, 15%);
@@ -19,7 +15,7 @@ body {
     min-height: 100vh;
     display: grid;
     place-content: center;
-    font-family: system-ui;
+    font-family: 'Major Mono Display', monospace;
     background: hsl(0, 0%, 98%);
     color: var(--dark);
 }
@@ -29,23 +25,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    background: hsl(143, 56%, 95%);
-    background: radial-gradient(hsl(143, 56%, 85%), #fff);
     border: 0.5vmin solid var(--dark);
     padding: 1.5em 3em;
     margin-top: 4em;
     margin-bottom: 2em;
-
-    box-shadow:
-        0 0 0 10px #ee6352,
-        0 0 0 20px #d45379,
-        0 0 0 30px #a4558f,
-        0 0 0 40px #6d588e,
-        0 0 0 50px #405378;
+    background: linear-gradient( 89.9deg,  rgba(255,243,110,1) 16.9%, rgba(30,204,214,1) 55.1%, hsl(220, 94%, 60%) 90.7% );
 
     box-shadow: 
-        #fff 10px -10px 0 -1px,
-        #ee6352 10px -10px 0 2px, 
+        #fff 8px -8px 0 -1px,
+        #ee6352 8px -8px 0 2px, 
         #fff 20px -20px 0 -2px, 
         #d45379 20px -20px 0 1px, 
         #fff 30px -30px 0 -3px, 
@@ -88,12 +76,12 @@ main {
         place-content: center;
         text-align: center;
         padding: 1em;
-        background: hsl(0, 0%, 100%);
+        background: conic-gradient(at 0% 0%, snow, white);
         border: 0.5vmin solid var(--dark);
         cursor: pointer;
 
         &:hover {
-            background: hsl(0, 0%, 98%);
+            background: conic-gradient(from .5turn at bottom center, hsl(306, 100%, 80%), white); 
         }
 
         &.art {
@@ -231,53 +219,53 @@ main {
             }
         }
 
-        @media(min-width: 600px) {
-            &.art {
-                grid-column: 1 / 3;
-            }
+        // @media(min-width: 600px) {
+        //     &.art {
+        //         grid-column: 1 / 3;
+        //     }
 
-            &.film {
-                grid-row: 2 / 4;
-            }
+        //     &.film {
+        //         grid-row: 2 / 4;
+        //     }
 
-            &.shapes {
-                grid-row: 3 / 5;
-            }
+        //     &.shapes {
+        //         grid-row: 3 / 5;
+        //     }
 
-            &.grid {
-                grid-area: 2 / 2 / 3 / 3;
-            }
+        //     &.grid {
+        //         grid-area: 2 / 2 / 3 / 3;
+        //     }
 
-            &.form {
-                grid-area: 5 / 1 / 6 / 3;
-            }
+        //     &.form {
+        //         grid-area: 5 / 1 / 6 / 3;
+        //     }
 
-            &.grail {
-                grid-row: 6 / 8;
-            }
+        //     &.grail {
+        //         grid-row: 6 / 8;
+        //     }
 
-            &.shadow {
-                grid-area: 8 / 1 / 9 / 3;
-            }
+        //     &.shadow {
+        //         grid-area: 8 / 1 / 9 / 3;
+        //     }
 
-            &.snap {
-                grid-area: 9 / 2 / 11 / 3;
-            }
-        }
+        //     &.snap {
+        //         grid-area: 9 / 2 / 11 / 3;
+        //     }
+        // }
 
-        @media(min-width: 900px) {
-            &.art {
-                grid-area: 1 / 1 / 3 / 3;
-            }
+        // @media(min-width: 900px) {
+        //     &.art {
+        //         grid-area: 1 / 1 / 3 / 3;
+        //     }
 
-            &.film {
-                grid-area: 1 / 3 / 4 / 4;
-            }
+        //     &.film {
+        //         grid-area: 1 / 3 / 4 / 4;
+        //     }
 
-            &.grid {
-                grid-area: 4 / 2 / 5 / 4;
-            }
-        }
+        //     &.grid {
+        //         grid-area: 4 / 2 / 5 / 4;
+        //     }
+        // }
 
         @media(min-width: 1180px) {
             &.art {
@@ -302,7 +290,7 @@ main {
             }
 
             &.ddd {
-                grid-area: 6 / 4 / 8 / 7;
+                grid-area: 6 / 4 / 8 / 6;
             }
 
             &.masonry {
@@ -310,7 +298,7 @@ main {
            }
 
             &.grail {
-                grid-area: 8 / 1 / 10 / 3;
+                grid-area: 8 / 1 / 11 / 3;
             }
 
             &.cquery {
@@ -318,43 +306,36 @@ main {
             }
 
             &.terminal {
-                grid-area: 9 / 6 / 10 / 8;
+                grid-area: 9 / 6 / 11 / 8;
                 @include flex;
             }
-
+            &.snap {
+                // grid-area: 3 / 1 / 5 / 2;
+                grid-column-start: 3;
+            }
+            
             // &.shadow {
             //     grid-area: 8 / 1 / 11 / 2;
             // }
-
             //&.honeycomb {
             //    grid-area: 8 / 2 / 10 / 3;
             //}
-
-            // &.snap {
-            //     grid-area: 3 / 1 / 5 / 2;
-            // }
-
             // &.subgrid {
             //     grid-area: 8 / 7 / 10 / 8;
             // }
-
             // &.dash {
             //     grid-area: 9 / 3 / 10 / 6;
             //     @include flex;
             // }
-
             // &.text {
             //     grid-area: 4 / 2 / 5 / 3;
             // }
-
             // &.maze {
             //     grid-area: 11 / 1 / 12 / 2;
-            // }         
-               
+            // }        
             // &.aliens {
             //     grid-area: 11 / 4 / 12 / 5;
             // }
-
             // &.cleveland {
             //     grid-area: 12 / 5 / 13 / 6;
             // }

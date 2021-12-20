@@ -1,109 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui; }
+  font-family: system-ui;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Sacramento", cursive;
+  text-shadow: 1px 1px 2px #ff002b;
+}
 
 .canvas {
   background: #e6e6e6;
+  background: conic-gradient(from -90deg at 50% 105%, white, orchid);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 1em; }
+  gap: 1em;
+}
 
 .gallery {
   display: grid;
   grid-template-columns: 250px;
-  grid-template-areas: "bear" "dino" "alien" "tree" "monkey" "robot";
+  grid-template-areas: "bear" "dino" "alien" "tree" "monkey" "robot";
   gap: 1.5em;
-  margin: 1.5em; }
-  @media (min-width: 500px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "bear dino" "monkey dino" "monkey dino" "robot alien" "robot alien" "tree tree"; } }
-  @media (min-width: 1100px) {
-    .gallery {
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: "bear alien alien monkey monkey tree" "bear alien alien monkey monkey tree" "dino dino dino monkey monkey tree" "dino dino dino robot robot tree" "dino dino dino robot robot tree";
-      gap: 3em; } }
-  @media (min-width: 1500px) {
-    .gallery {
-      grid-template-areas: "monkey monkey bear tree tree tree" "monkey monkey bear tree tree tree" "dino dino dino tree tree tree" "dino dino dino alien robot robot" "dino dino dino alien robot robot"; } }
-  .gallery div {
-    padding: 2em;
-    background: #fff;
-    display: grid;
-    place-content: center;
-    border: 2rem solid #212529;
-    filter: drop-shadow(0 0 6px black);
-    cursor: pointer; }
-    .gallery div.bear {
-      grid-area: bear;
-      color: #5c452f; }
-    .gallery div.alien {
-      grid-area: alien;
-      color: #95ff7d; }
-    .gallery div.robot {
-      grid-area: robot;
-      color: #999; }
-    .gallery div.monkey {
-      grid-area: monkey;
-      color: #ff7b00; }
-    .gallery div.dino {
-      grid-area: dino;
-      color: #8EC0DB;
-      background-color: Hsl(60deg 18% 20%);
-      border: solid 5vmin #eee;
-      border-bottom-color: #fff;
-      border-left-color: #eee;
-      border-radius: 2px;
-      border-right-color: #eee;
-      border-top-color: #ddd;
-      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25); }
-      .gallery div.dino:before, .gallery div.dino:after {
-        content: '';
-        position: absolute; }
-      .gallery div.dino:before {
-        bottom: -2vmin;
-        left: -2vmin;
-        right: -2vmin;
-        top: -2vmin;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset; }
-      .gallery div.dino:after {
-        bottom: -2.5vmin;
-        left: -2.5vmin;
-        right: -2.5vmin;
-        top: -2.5vmin;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
-    .gallery div.tree {
-      grid-area: tree;
-      color: #4E9A06;
-      background-color: Hsl(60deg 18% 20%);
-      border: solid 5vmin #eee;
-      border-bottom-color: #fff;
-      border-left-color: #eee;
-      border-radius: 2px;
-      border-right-color: #eee;
-      border-top-color: #ddd;
-      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25); }
-      .gallery div.tree:before, .gallery div.tree:after {
-        content: '';
-        position: absolute; }
-      .gallery div.tree:before {
-        bottom: -2vmin;
-        left: -2vmin;
-        right: -2vmin;
-        top: -2vmin;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset; }
-      .gallery div.tree:after {
-        bottom: -2.5vmin;
-        left: -2.5vmin;
-        right: -2.5vmin;
-        top: -2.5vmin;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
-    .gallery div i {
-      font-size: 15vmin;
-      text-align: center; }
+  margin: 1.5em;
+}
+@media (min-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "bear dino" "monkey dino" "monkey dino" "robot alien" "robot alien" "tree tree";
+  }
+}
+@media (min-width: 1100px) {
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "bear alien alien monkey monkey tree" "bear alien alien monkey monkey tree" "dino dino dino monkey monkey tree" "dino dino dino robot robot tree" "dino dino dino robot robot tree";
+    gap: 3em;
+  }
+}
+@media (min-width: 1500px) {
+  .gallery {
+    grid-template-areas: "monkey monkey monkey tree  tree  tree" "monkey monkey monkey tree  tree  tree" "dino   dino   bear   tree  tree  tree" "dino   dino   bear   robot robot ball" "dino   dino   bear   robot robot ball" "dino   dino   cube   alien  block  block" "dino   dino   cube   alien  block  block";
+  }
+}
+.gallery div {
+  padding: 2em;
+  background: #fff;
+  display: grid;
+  place-content: center;
+  border: 2rem solid #212529;
+  filter: drop-shadow(0 0 6px black);
+  cursor: pointer;
+}
+.gallery div i {
+  transition: transform 0.1s ease-in;
+}
+.gallery div:hover i {
+  transform: scale(1.2) rotate(-5deg);
+}
+.gallery div.bear {
+  grid-area: bear;
+  color: #97724e;
+}
+.gallery div.alien {
+  grid-area: alien;
+  color: #2fff00;
+}
+.gallery div.robot {
+  grid-area: robot;
+  color: gray;
+}
+.gallery div.monkey {
+  grid-area: monkey;
+  color: #ff7b00;
+}
+.gallery div.dino {
+  grid-area: dino;
+  color: #8EC0DB;
+  background-color: #3c3c2a;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.gallery div.dino:before, .gallery div.dino:after {
+  content: "";
+  position: absolute;
+}
+.gallery div.dino:before {
+  bottom: -2vmin;
+  left: -2vmin;
+  right: -2vmin;
+  top: -2vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+}
+.gallery div.dino:after {
+  bottom: -2.5vmin;
+  left: -2.5vmin;
+  right: -2.5vmin;
+  top: -2.5vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.gallery div.tree {
+  grid-area: tree;
+  color: #b2ff6b;
+  background-color: #3c3c2a;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.gallery div.tree:before, .gallery div.tree:after {
+  content: "";
+  position: absolute;
+}
+.gallery div.tree:before {
+  bottom: -2vmin;
+  left: -2vmin;
+  right: -2vmin;
+  top: -2vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+}
+.gallery div.tree:after {
+  bottom: -2.5vmin;
+  left: -2.5vmin;
+  right: -2.5vmin;
+  top: -2.5vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.gallery div.ball {
+  grid-area: ball;
+  color: #0063cc;
+}
+.gallery div.cube {
+  grid-area: cube;
+  color: #ff80d5;
+  background-color: #3c3c2a;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.gallery div.cube:before, .gallery div.cube:after {
+  content: "";
+  position: absolute;
+}
+.gallery div.cube:before {
+  bottom: -2vmin;
+  left: -2vmin;
+  right: -2vmin;
+  top: -2vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+}
+.gallery div.cube:after {
+  bottom: -2.5vmin;
+  left: -2.5vmin;
+  right: -2.5vmin;
+  top: -2.5vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.gallery div.q-block {
+  grid-area: block;
+  color: yellow;
+  background-color: #3c3c2a;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.gallery div.q-block:before, .gallery div.q-block:after {
+  content: "";
+  position: absolute;
+}
+.gallery div.q-block:before {
+  bottom: -2vmin;
+  left: -2vmin;
+  right: -2vmin;
+  top: -2vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+}
+.gallery div.q-block:after {
+  bottom: -2.5vmin;
+  left: -2.5vmin;
+  right: -2.5vmin;
+  top: -2.5vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.gallery div i {
+  font-size: 15vmin;
+  text-align: center;
+}
+.gallery div i.dino-icon {
+  height: 150px;
+  width: 130px;
+  background: url("/icons/dinosaur.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

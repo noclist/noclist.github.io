@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 :root {
   --dark: hsl(210, 11%, 15%);
 }
@@ -12,7 +13,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  font-family: system-ui;
+  font-family: "Major Mono Display", monospace;
   background: #fafafa;
   color: var(--dark);
 }
@@ -22,14 +23,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  background: #ebf9f1;
-  background: radial-gradient(#c3eed4, #fff);
   border: 0.5vmin solid var(--dark);
   padding: 1.5em 3em;
   margin-top: 4em;
   margin-bottom: 2em;
-  box-shadow: 0 0 0 10px #ee6352, 0 0 0 20px #d45379, 0 0 0 30px #a4558f, 0 0 0 40px #6d588e, 0 0 0 50px #405378;
-  box-shadow: #fff 10px -10px 0 -1px, #ee6352 10px -10px 0 2px, #fff 20px -20px 0 -2px, #d45379 20px -20px 0 1px, #fff 30px -30px 0 -3px, #a4558f 30px -30px, #fff 40px -40px 0 -3px, #6d588e 40px -40px, #fff 50px -50px 0 -3px, #405378 50px -50px;
+  background: linear-gradient(89.9deg, #fff36e 16.9%, #1eccd6 55.1%, #3979f9 90.7%);
+  box-shadow: #fff 8px -8px 0 -1px, #ee6352 8px -8px 0 2px, #fff 20px -20px 0 -2px, #d45379 20px -20px 0 1px, #fff 30px -30px 0 -3px, #a4558f 30px -30px, #fff 40px -40px 0 -3px, #6d588e 40px -40px, #fff 50px -50px 0 -3px, #405378 50px -50px;
 }
 
 p {
@@ -68,12 +67,12 @@ main section {
   place-content: center;
   text-align: center;
   padding: 1em;
-  background: white;
+  background: conic-gradient(at 0% 0%, snow, white);
   border: 0.5vmin solid var(--dark);
   cursor: pointer;
 }
 main section:hover {
-  background: #fafafa;
+  background: conic-gradient(from 0.5turn at bottom center, #ff99f5, white);
 }
 main section.art {
   border-radius: 50%;
@@ -159,43 +158,6 @@ main section.terminal i {
   --fa-primary-color: hsl(198, 79%, 15%);
   --fa-secondary-color: #fff;
 }
-@media (min-width: 600px) {
-  main section.art {
-    grid-column: 1/3;
-  }
-  main section.film {
-    grid-row: 2/4;
-  }
-  main section.shapes {
-    grid-row: 3/5;
-  }
-  main section.grid {
-    grid-area: 2/2/3/3;
-  }
-  main section.form {
-    grid-area: 5/1/6/3;
-  }
-  main section.grail {
-    grid-row: 6/8;
-  }
-  main section.shadow {
-    grid-area: 8/1/9/3;
-  }
-  main section.snap {
-    grid-area: 9/2/11/3;
-  }
-}
-@media (min-width: 900px) {
-  main section.art {
-    grid-area: 1/1/3/3;
-  }
-  main section.film {
-    grid-area: 1/3/4/4;
-  }
-  main section.grid {
-    grid-area: 4/2/5/4;
-  }
-}
 @media (min-width: 1180px) {
   main section.art {
     grid-area: 1/1/5/4;
@@ -216,22 +178,25 @@ main section.terminal i {
     gap: 0.5em;
   }
   main section.ddd {
-    grid-area: 6/4/8/7;
+    grid-area: 6/4/8/6;
   }
   main section.masonry {
     grid-area: 3/7/9/8;
   }
   main section.grail {
-    grid-area: 8/1/10/3;
+    grid-area: 8/1/11/3;
   }
   main section.cquery {
     grid-area: 8/3/10/6;
   }
   main section.terminal {
-    grid-area: 9/6/10/8;
+    grid-area: 9/6/11/8;
     display: flex;
     align-items: center;
     gap: 0.5em;
+  }
+  main section.snap {
+    grid-column-start: 3;
   }
 }
 

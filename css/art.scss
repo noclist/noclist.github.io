@@ -1,35 +1,5 @@
-@mixin frame {
-  background-color: Hsl(60deg 18% 20%);
-  border: solid 5vmin #eee;
-  border-bottom-color:#fff;
-  border-left-color:#eee;
-  border-radius:2px;
-  border-right-color:#eee;
-  border-top-color:#ddd;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-
-  &:before,
-  &:after {
-    content: '';
-    position:absolute;
-  }
-
-  &:before {
-    bottom: -2vmin;
-    left: -2vmin;
-    right: -2vmin;
-    top: -2vmin;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25) inset;
-  }
-
-  &:after {
-    bottom:-2.5vmin;
-    left:-2.5vmin;
-    right:-2.5vmin;
-    top:-2.5vmin;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-  }
-}
+@import 'mixins/frame';
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 * {
     margin: 0;
@@ -38,8 +8,15 @@
     font-family: system-ui;
 }
 
+h1 {
+  font-size: 5rem;
+  font-family: 'Sacramento', cursive;
+  text-shadow: 1px 1px 2px rgb(255, 0, 43);
+}
+
 .canvas {
     background: hsl(0, 0%, 90%);
+    background: conic-gradient(from -90deg at 50% 105%, white, orchid);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -86,11 +63,13 @@
 
     @media(min-width: 1500px) {
       grid-template-areas: 
-                "monkey monkey bear tree tree tree"
-                "monkey monkey bear tree tree tree"
-                "dino dino dino tree tree tree"
-                "dino dino dino alien robot robot"
-                "dino dino dino alien robot robot";
+                "monkey monkey monkey tree  tree  tree"
+                "monkey monkey monkey tree  tree  tree"
+                "dino   dino   bear   tree  tree  tree"
+                "dino   dino   bear   robot robot ball"
+                "dino   dino   bear   robot robot ball"
+                "dino   dino   cube   alien  block  block"
+                "dino   dino   cube   alien  block  block";
     }
 
     div {
@@ -101,20 +80,30 @@
         border: 2rem solid #212529;
         filter: drop-shadow(0 0 6px hsl(0, 0%, 0%));
         cursor: pointer;
+
+        i {
+          transition: transform 0.1s ease-in;
+        }
+
+        &:hover {
+          i {
+            transform: scale(1.2) rotate(-5deg);
+          }
+        }
     
         &.bear {
             grid-area: bear;
-            color: #5c452f;
+            color: hsl(29, 32%, 45%);
         }
       
         &.alien {
             grid-area: alien;
-            color: #95ff7d;
+            color: hsl(109, 100%, 50%);
         }
       
         &.robot {
             grid-area: robot;
-            color: #999;
+            color: hsl(0, 0%, 50%);
         }
       
         &.monkey {
@@ -131,14 +120,41 @@
 
         &.tree {
           grid-area: tree;
-          color: #4E9A06;
+          color: #b2ff6b;
 
           @include frame;
         }
+
+        &.ball {
+          grid-area: ball;
+          color: hsl(211, 100%, 40%);
+        }
+
+        &.cube {
+          grid-area: cube;
+          color: hsl(320, 100%, 75%);
+
+          @include frame
+        }
+
+        &.q-block {
+          grid-area: block;
+          color: yellow;
+          @include frame
+        }
+        
     
         i {
           font-size: 15vmin;
           text-align: center;
+
+          &.dino-icon {
+            height: 150px;
+            width: 130px;
+            background: url('/icons/dinosaur.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
         }
     }
 }
