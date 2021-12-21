@@ -12,64 +12,41 @@ h1 {
   font-size: 5rem;
   font-family: 'Sacramento', cursive;
   text-shadow: 1px 1px 2px rgb(255, 0, 43);
+  margin: 0 auto;
 }
 
 .canvas {
-    background: hsl(0, 0%, 90%);
     background: conic-gradient(from -90deg at 50% 105%, white, orchid);
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1em;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 250px;
-    grid-template-areas: 
-              "bear"
-              "dino"
-              "alien"
-              "tree"
-              "monkey"
-              "robot";
-    gap: 1.5em;
-    margin: 1.5em;
+    gap: 2em;
+    margin: 2em;
 
     @media(min-width: 500px) {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: 
-                "bear dino"
-                "monkey dino"
-                "monkey dino"
-                "robot alien"
-                "robot alien"
-                "tree tree";
+    }
+
+    @media(min-width: 800px) {
+      grid-template-columns: repeat(3, 1fr);
     }
 
     @media(min-width: 1100px) {
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: 
-                "bear alien alien monkey monkey tree"
-                "bear alien alien monkey monkey tree"
-                "dino dino dino monkey monkey tree"
-                "dino dino dino robot robot tree"
-                "dino dino dino robot robot tree";
-      gap: 3em;
-    }
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-    @media(min-width: 1500px) {
-      grid-template-areas: 
-                "monkey monkey monkey tree  tree  tree"
-                "monkey monkey monkey tree  tree  tree"
-                "dino   dino   bear   tree  tree  tree"
-                "dino   dino   bear   robot robot ball"
-                "dino   dino   bear   robot robot ball"
-                "dino   dino   cube   alien  block  block"
-                "dino   dino   cube   alien  block  block";
+      div.col-span-2 {
+        grid-column-end: span 2;
+      }
+
+      div.row-span-2 {
+        grid-row-end: span 2;
+      }
     }
 
     div {
@@ -90,55 +67,54 @@ h1 {
             transform: scale(1.2) rotate(-5deg);
           }
         }
+
+        &.dino {
+          // grid-area: dino;
+          color: #8EC0DB;
+
+          @include frame;
+      }
     
         &.bear {
-            grid-area: bear;
+            // grid-area: bear;
             color: hsl(29, 32%, 45%);
         }
       
         &.alien {
-            grid-area: alien;
+            // grid-area: alien;
             color: hsl(109, 100%, 50%);
         }
       
         &.robot {
-            grid-area: robot;
+            // grid-area: robot;
             color: hsl(0, 0%, 50%);
         }
       
         &.monkey {
-            grid-area: monkey;
             color: #ff7b00;
         }
       
-        &.dino {
-            grid-area: dino;
-            color: #8EC0DB;
-
-            @include frame;
-        }
-
         &.tree {
-          grid-area: tree;
+          // grid-area: tree;
           color: #b2ff6b;
 
           @include frame;
         }
 
         &.ball {
-          grid-area: ball;
+          // grid-area: ball;
           color: hsl(211, 100%, 40%);
         }
 
         &.cube {
-          grid-area: cube;
+          // grid-area: cube;
           color: hsl(320, 100%, 75%);
 
           @include frame
         }
 
         &.q-block {
-          grid-area: block;
+          // grid-area: block;
           color: yellow;
           @include frame
         }

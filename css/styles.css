@@ -58,8 +58,7 @@ main {
 }
 @media (min-width: 1180px) {
   main {
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(9, 80px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 main section {
@@ -74,12 +73,35 @@ main section {
 main section:hover {
   background: conic-gradient(from 0.5turn at bottom center, #ff99f5, white);
 }
+@media (min-width: 1100px) {
+  main section.col-span-2 {
+    grid-column-end: span 2;
+  }
+  main section.row-span-2 {
+    grid-row-end: span 2;
+  }
+  main section.col-start-1 {
+    grid-column-start: 1;
+  }
+  main section.col-start-3 {
+    grid-column-start: 3;
+  }
+  main section.row-start-3 {
+    grid-row-start: 3;
+  }
+  main section.row-start-5 {
+    grid-row-start: 5;
+  }
+}
 main section.art {
   border-radius: 50%;
 }
 main section.art i {
   --fa-primary-color: #2BA9C8;
   --fa-secondary-color: #EEC194;
+}
+main section.film {
+  border-radius: 50%;
 }
 main section.film i {
   --fa-primary-color: #212529;
@@ -97,7 +119,7 @@ main section.grid i {
   --fa-secondary-color: #ff8928;
 }
 main section.form i {
-  --fa-primary-color: #fafafa;
+  --fa-primary-color: #e7e7e7;
   --fa-secondary-color: #5873E1;
 }
 main section.grail {
@@ -158,47 +180,6 @@ main section.terminal i {
   --fa-primary-color: hsl(198, 79%, 15%);
   --fa-secondary-color: #fff;
 }
-@media (min-width: 1180px) {
-  main section.art {
-    grid-area: 1/1/5/4;
-  }
-  main section.film {
-    grid-area: 1/4/3/8;
-  }
-  main section.shapes {
-    grid-area: 3/4/6/7;
-  }
-  main section.grid {
-    grid-area: 5/1/7/4;
-  }
-  main section.form {
-    grid-area: 7/1/8/4;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-  }
-  main section.ddd {
-    grid-area: 6/4/8/6;
-  }
-  main section.masonry {
-    grid-area: 3/7/9/8;
-  }
-  main section.grail {
-    grid-area: 8/1/11/3;
-  }
-  main section.cquery {
-    grid-area: 8/3/10/6;
-  }
-  main section.terminal {
-    grid-area: 9/6/11/8;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-  }
-  main section.snap {
-    grid-column-start: 3;
-  }
-}
 
 i {
   font-size: 2em;
@@ -206,10 +187,10 @@ i {
 }
 
 .xl i {
-  font-size: 4em;
+  font-size: 4.5em;
 }
 .xl h2 {
-  font-size: 1.75em;
+  font-size: 2em;
 }
 
 .lg i {
@@ -227,10 +208,10 @@ i {
 }
 
 .sm i {
-  font-size: 2.1em;
+  font-size: 2.3em;
 }
 .sm h2 {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 footer {

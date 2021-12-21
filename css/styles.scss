@@ -67,8 +67,7 @@ main {
     }
 
     @media(min-width: 1180px) {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(9, 80px);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     section {
@@ -84,6 +83,33 @@ main {
             background: conic-gradient(from .5turn at bottom center, hsl(306, 100%, 80%), white); 
         }
 
+        @media(min-width: 1100px) {
+
+            &.col-span-2 {
+                grid-column-end: span 2;
+            }
+    
+            &.row-span-2 {
+                grid-row-end: span 2;
+            }
+
+            &.col-start-1 {
+                grid-column-start: 1;
+            }
+
+            &.col-start-3 {
+                grid-column-start: 3;
+            }
+
+            &.row-start-3 {
+                grid-row-start: 3;
+            }
+
+            &.row-start-5 {
+                grid-row-start: 5;
+            }
+        }
+
         &.art {
             border-radius: 50%;
             i {
@@ -93,6 +119,7 @@ main {
         }
 
         &.film {
+            border-radius: 50%;
             i {
                 --fa-primary-color: #212529;
                 --fa-secondary-color: #A5ABAB;
@@ -116,7 +143,7 @@ main {
 
         &.form {
             i {
-                --fa-primary-color: #fafafa;
+                --fa-primary-color: #e7e7e7;
                 --fa-secondary-color: #5873E1;
             }
         }
@@ -218,128 +245,6 @@ main {
                 --fa-secondary-color: #fff;
             }
         }
-
-        // @media(min-width: 600px) {
-        //     &.art {
-        //         grid-column: 1 / 3;
-        //     }
-
-        //     &.film {
-        //         grid-row: 2 / 4;
-        //     }
-
-        //     &.shapes {
-        //         grid-row: 3 / 5;
-        //     }
-
-        //     &.grid {
-        //         grid-area: 2 / 2 / 3 / 3;
-        //     }
-
-        //     &.form {
-        //         grid-area: 5 / 1 / 6 / 3;
-        //     }
-
-        //     &.grail {
-        //         grid-row: 6 / 8;
-        //     }
-
-        //     &.shadow {
-        //         grid-area: 8 / 1 / 9 / 3;
-        //     }
-
-        //     &.snap {
-        //         grid-area: 9 / 2 / 11 / 3;
-        //     }
-        // }
-
-        // @media(min-width: 900px) {
-        //     &.art {
-        //         grid-area: 1 / 1 / 3 / 3;
-        //     }
-
-        //     &.film {
-        //         grid-area: 1 / 3 / 4 / 4;
-        //     }
-
-        //     &.grid {
-        //         grid-area: 4 / 2 / 5 / 4;
-        //     }
-        // }
-
-        @media(min-width: 1180px) {
-            &.art {
-                grid-area: 1 / 1 / 5 / 4;
-            }
-
-            &.film {
-                grid-area: 1 / 4 / 3 / 8;
-            }
-
-            &.shapes {
-                grid-area: 3 / 4 / 6 / 7;
-            }
-
-            &.grid {
-                grid-area: 5 / 1 / 7 / 4;
-            }
-
-            &.form {
-                grid-area: 7 / 1 / 8 / 4;
-                @include flex;
-            }
-
-            &.ddd {
-                grid-area: 6 / 4 / 8 / 6;
-            }
-
-            &.masonry {
-                grid-area: 3 / 7 / 9 / 8;
-           }
-
-            &.grail {
-                grid-area: 8 / 1 / 11 / 3;
-            }
-
-            &.cquery {
-                grid-area: 8 / 3 / 10 / 6;
-            }
-
-            &.terminal {
-                grid-area: 9 / 6 / 11 / 8;
-                @include flex;
-            }
-            &.snap {
-                // grid-area: 3 / 1 / 5 / 2;
-                grid-column-start: 3;
-            }
-            
-            // &.shadow {
-            //     grid-area: 8 / 1 / 11 / 2;
-            // }
-            //&.honeycomb {
-            //    grid-area: 8 / 2 / 10 / 3;
-            //}
-            // &.subgrid {
-            //     grid-area: 8 / 7 / 10 / 8;
-            // }
-            // &.dash {
-            //     grid-area: 9 / 3 / 10 / 6;
-            //     @include flex;
-            // }
-            // &.text {
-            //     grid-area: 4 / 2 / 5 / 3;
-            // }
-            // &.maze {
-            //     grid-area: 11 / 1 / 12 / 2;
-            // }        
-            // &.aliens {
-            //     grid-area: 11 / 4 / 12 / 5;
-            // }
-            // &.cleveland {
-            //     grid-area: 12 / 5 / 13 / 6;
-            // }
-        }
     }
 }
 
@@ -350,11 +255,11 @@ i {
 
 .xl {
     i {
-        font-size: 4em;
+        font-size: 4.5em;
     }
 
     h2 {
-        font-size: 1.75em;
+        font-size: 2em;
     }
 }
 
@@ -380,11 +285,11 @@ i {
 
 .sm {
     i {
-        font-size: 2.1em;
+        font-size: 2.3em;
     }
 
     h2 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 
