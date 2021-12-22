@@ -3,6 +3,11 @@
 @import 'modules/header';
 @import 'modules/select';
 
+@font-face {
+    font-family: "Theater";
+    src: url("/fonts/Theater_Bold.otf");
+  }
+
 body {
     display: flex;
     justify-content: center;
@@ -10,33 +15,7 @@ body {
     min-height: 100vh;
     font-family: system-ui, sans-serif;
     background: #212529;
-
-    &.body-2020 {
-        background: repeating-linear-gradient(45deg, #444cf7, #444cf7 5px, #e5e5f7 5px, #e5e5f7 25px);
-    }
-
-    &.body-2019 {
-        background: repeating-linear-gradient(-45deg, #444cf7, #444cf7 5px, #e5e5f7 5px, #e5e5f7 25px);
-    }
-
-    &.body-2018 {
-        background: repeating-linear-gradient(0deg, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7) 100% / 20px 20px;
-    }
-
-    &.body-2017 {
-        background: repeating-linear-gradient(to right, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7) 100% / 20px;
-    }
-
-    &.body-2016 {
-        background: linear-gradient(#ffa600 1px, transparent 1px) 100% / 20px 20px,
-                    linear-gradient(to right, #444cf7 1px, #e5e5f7 1px) 100% / 20px;
-    }
-
-    &.body-2015 {
-        background-image:  linear-gradient(#ffa600 2px, transparent 2px), linear-gradient(90deg, #ffa600 2px, transparent 2px), linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(90deg, #444cf7 1px, #e5e5f7 1px);
-        background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-        background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-    }
+    background: hsl(0, 13%, 98%);
 }
 
 .container {
@@ -44,41 +23,15 @@ body {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    border: 5px solid #fff;
     border-radius: 5px;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
-    background: radial-gradient(circle at top left, hsl(155, 65%, 75%) 0%, hsl(155, 65%, 45%) 25%, hsl(155, 65%, 15%) 100%);
-    box-shadow: rgba(128, 83, 83, 0.56) 0 22px 70px 4px;
-
-    &-2020 {
-        background: radial-gradient(circle at top left, hsl(56, 74%, 45%) 0%, hsl(219, 59%, 22%) 25%, hsl(0, 0%, 100%) 100%);
-    }
-
-    &-2019 {
-        background: radial-gradient(circle at top left, #101D25 0%, #79514B 35%, #457985 85%);
-    }
-
-    &-2018 {
-        background: radial-gradient(circle at top left, #fff 0%, #B81309 50%, #2E4E5C 75%);
-    }
-
-    &-2017 {
-        background: radial-gradient(circle at top left, #ED8124 0%, #C4CADA 65%, #F2D750 100%);
-    }
-
-    &-2016 {
-        background: radial-gradient(circle at top left, #809AB0 0%, #CD6064 65%, #96E7E1 100%);
-    }
-
-    &-2015 {
-        background: radial-gradient(circle at top left, #343E3D 0%, #1D13EA 85%, #FF0046 100%);
-    }
 }
 
 h1 {
-    @include header(rgb(255, 255, 255), rgb(255, 255, 255));
+    @include header(rgb(0, 0, 0), rgb(0, 0, 0));
+    font-family: Theater;
 
     display: flex;
     flex-direction: column;
@@ -136,7 +89,7 @@ h1 {
         justify-content: flex-start;
         align-items: flex-start;
         min-height: 2rem;
-        border: 2.5px solid hsl(0, 0%, 100%);
+        border: 2.5px solid #000;
         background: no-repeat center / cover;
         filter: contrast(100%);
         cursor: pointer;
