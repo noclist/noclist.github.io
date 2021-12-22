@@ -37,30 +37,29 @@
   background: #FFD503;
   border: 15px solid #000;
   border-radius: 20px;
+  transition: transform 0.1s ease-out;
 }
-.block:before, .block:after {
-  position: absolute;
-  content: "";
+.block:hover {
+  transform: translateY(-12px) scale(1.03);
 }
-.block:before {
-  width: 2.5vmin;
-  height: 2.5vmin;
-  top: 1vmin;
-  left: 1vmin;
+.block .rivets {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.8vmin;
+}
+.block .rivets div {
+  width: 3.8vmin;
+  height: 3.8vmin;
   background: #B48E0E;
   border: 0.7vmin solid #000;
   border-radius: 50%;
-  box-shadow: 14.1vw 0 0 -0.65vh #b48e0e, 14.1vw 0 0 0px #000;
 }
-.block:after {
-  width: 2.5vmin;
-  height: 2.5vmin;
-  bottom: 1vmin;
-  left: 1vmin;
-  background: #B48E0E;
-  border: 0.7vmin solid #000;
-  border-radius: 50%;
-  box-shadow: 14.1vw 0 0 -0.65vh #b48e0e, 14.1vw 0 0 0px #000;
+.block .rivets div:nth-child(even) {
+  justify-self: end;
+}
+.block .rivets div:nth-child(3), .block .rivets div:nth-child(4) {
+  align-self: end;
 }
 .block span {
   font-family: block;
