@@ -24,11 +24,14 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
-    // animation: spin 60s linear infinite;
+    animation: spin 0.5s linear infinite alternate;
 
     @keyframes spin {
         0% {
-            transform: rotate(360deg);
+            transform: rotate(1deg);
+        }
+        100% {
+          transform: rotate(-1deg);
         }
     }
   }
