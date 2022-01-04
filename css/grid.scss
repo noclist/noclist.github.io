@@ -3,34 +3,42 @@
 @import 'modules/breakpoints';
 @import 'modules/header';
 
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: Rgb(255 176 0 / 10%);
-    font-family: system-ui, sans-serif;
+    background: hsl(0, 0%, 90%);
+    font-family: 'Major Mono Display', monospace;
 }
 
     h1 {
-        @include header(rgb(255, 255, 255), #3269de);
+        font-family:  'Major Mono Display', monospace;
+        font-size: 6rem;
+        line-height: 1;
+        letter-spacing: 5px;
+        z-index: 2;
+        margin-bottom: 1rem;
     }
 
     h2 {
         font-size: 1.25em;
         color: hsla(0, 0, 0, 0.6);
+        margin-bottom: 1rem;
     }
     
     #grid {
         margin: 1em 1.5em 1.5em;
-        width: 75vw;
+        width: 95vw;
         padding: 4em;
-        background: radial-gradient(closest-side, #f69d3c, #ebf8e1, #00334896);
+        background: #fff;
         display: grid;
         grid-gap: 1.5em;
-        grid-template-columns: repeat(auto-fit, 140px);
-        grid-template-rows: repeat(auto-fit, 250px);
+        grid-template-columns: repeat(auto-fit, 240px);
+        grid-template-rows: repeat(auto-fit, 240px);
         justify-content: center;
         box-shadow: 0 0 13px 3px rgba(0, 0, 0, 75%);
         
@@ -39,13 +47,12 @@ body {
         }
     
         > * {
-            box-shadow: 7px 7px 6px hsla(0, 0%, 0%, 0.5);
             overflow: hidden;
-            transition: all 0.2s ease-in-out;
-            height: 250px;
+            transition: all 0.25s ease-in-out;
+            height: 240px;
     
             &:hover {
-                transform: scale(1.1) rotate(-5deg);
+                transform: scale(1.05);
                 box-shadow: 10px 10px 9px hsla(0, 0%, 0%, 0.25);
             }
         }
