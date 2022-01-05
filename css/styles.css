@@ -16,6 +16,7 @@ body {
   font-family: "Major Mono Display", monospace;
   background: #fafafa;
   color: var(--dark);
+  text-align: center;
 }
 
 .container {
