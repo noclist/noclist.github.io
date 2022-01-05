@@ -132,6 +132,7 @@ main {
         }
 
         &.grid {
+            border-radius: 50%;
             i {
                 --fa-primary-color: #0000F7;
                 --fa-secondary-color: #ff8928;
@@ -146,7 +147,6 @@ main {
         }
 
         &.grail {
-            border-radius: 50%;
             i {
                 --fa-primary-color: hsl(39, 89%, 47%);
                 --fa-secondry-color: #4B5161;
