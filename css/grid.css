@@ -62,40 +62,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   background: #e6e6e6;
   font-family: "Major Mono Display", monospace;
+  text-align: center;
 }
 
 h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 6rem;
-  line-height: 1;
-  letter-spacing: 5px;
-  z-index: 2;
-  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 1.25em;
   color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 1rem;
 }
 
 #grid {
-  margin: 1em 1.5em 1.5em;
   width: 95vw;
-  padding: 4em;
+  margin-bottom: 1rem;
+  padding: 1em;
   background: #fff;
   display: grid;
-  grid-gap: 1.5em;
+  gap: 1.5em;
   grid-template-columns: repeat(auto-fit, 240px);
   grid-template-rows: repeat(auto-fit, 240px);
   justify-content: center;
   box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.75);
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   #grid {
-    padding: 1em;
+    padding: 4em;
   }
 }
 #grid > * {
