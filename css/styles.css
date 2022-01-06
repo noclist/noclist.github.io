@@ -189,12 +189,7 @@ i {
   font-size: 4.5em;
 }
 .xl h2 {
-  font-size: 1.7em;
-}
-@media (min-width: 1100px) {
-  .xl h2 {
-    font-size: 2em;
-  }
+  font-size: 2em;
 }
 
 .lg i {
