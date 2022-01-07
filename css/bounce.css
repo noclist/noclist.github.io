@@ -11,7 +11,7 @@ body {
 
 h1 {
   font-family: "Major Mono Display", monospace;
-  font-size: min(15vmin, 3.5rem);
+  font-size: min(15vmin, 3rem);
   color: #ff006a;
   z-index: 10;
   margin: 1rem;
