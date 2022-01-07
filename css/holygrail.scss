@@ -62,7 +62,7 @@ body {
 
         background: hsla(0, 13%, 57%, 0.13);
         border: 3px solid #212529;
-        transition: transform 0.5s ease-in;
+        transition: transform 0.1s ease-in;
 
         i {
             font-size: 8em;
@@ -131,6 +131,11 @@ figure {
         rgba(240, 46, 170, 0.2) 15px 15px,
         rgba(240, 46, 170, 0.1) 20px 20px,
         rgba(240, 46, 170, 0.05) 25px 25px;
+    transition: transform 0.1s ease-in;
+
+    &:hover {
+        transform: rotate(-2deg);
+    }   
 
     &,
     figcaption {

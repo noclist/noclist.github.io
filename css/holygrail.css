@@ -89,7 +89,7 @@ body > * {
   gap: 1em;
   background: rgba(160, 131, 131, 0.13);
   border: 3px solid #212529;
-  transition: transform 0.5s ease-in;
+  transition: transform 0.1s ease-in;
 }
 body > * i {
   font-size: 8em;
@@ -142,6 +142,10 @@ figure {
   margin: 0 3em;
   font-size: 1.3em;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  transition: transform 0.1s ease-in;
+}
+figure:hover {
+  transform: rotate(-2deg);
 }
 figure,
 figure figcaption {
