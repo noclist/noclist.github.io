@@ -86,7 +86,7 @@ form {
   flex-direction: column;
   gap: 1em;
 }
-@media (min-width: 1175px) {
+@media (min-width: 1450px) {
   form {
     flex-direction: row;
   }
@@ -101,14 +101,25 @@ form > div:first-child {
     flex-direction: row;
   }
 }
+@media (min-width: 1450px) {
+  form > div:first-child {
+    flex: 0 0 560px;
+  }
+}
 form > div:last-child {
   display: flex;
   gap: 1em;
   flex-direction: column;
 }
-@media (min-width: 600px) {
+form > div:last-child img {
+  width: auto;
+}
+@media (min-width: 850px) {
   form > div:last-child {
     flex-direction: row;
+  }
+  form > div:last-child img {
+    width: 25%;
   }
 }
 

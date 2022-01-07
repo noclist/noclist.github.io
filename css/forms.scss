@@ -43,7 +43,7 @@ form {
   flex-direction: column;
   gap: 1em;
 
-  @media(min-width: 1175px) {
+  @media(min-width: 1450px) {
     flex-direction: row;
   }
 
@@ -55,15 +55,27 @@ form {
     @media(min-width: 625px) {
       flex-direction: row;
     }
+
+    @media(min-width: 1450px) {
+      flex: 0 0 560px;
+    }
   }
 
   > div:last-child {
     display: flex;
     gap: 1em;
     flex-direction: column;
+
+    img {
+      width: auto;
+    }
   
-      @media(min-width: 600px) {
+      @media(min-width: 850px) {
       flex-direction: row;
+
+      img {
+        width: 25%;
+      }
     }
   }
 }
