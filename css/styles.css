@@ -32,6 +32,10 @@ body {
   box-shadow: #fff 8px -8px 0 -1px, #ee6352 8px -8px 0 2px, #fff 20px -20px 0 -2px, #d45379 20px -20px 0 1px, #fff 30px -30px 0 -3px, #a4558f 30px -30px, #fff 40px -40px 0 -3px, #6d588e 40px -40px, #fff 50px -50px 0 -3px, #405378 50px -50px;
 }
 
+h1 {
+  font-size: min(15vmin, 6rem);
+}
+
 p {
   font-size: 1.3em;
   width: 100%;
