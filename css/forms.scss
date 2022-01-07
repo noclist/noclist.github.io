@@ -28,7 +28,8 @@ body {
 
 h1 {
   font-family:  'Major Mono Display', monospace;
-  font-size: 6rem;
+  font-size: min(15vmin, 6rem); 
+  margin: 0 1rem;
   text-align: center;
 }
 
@@ -40,10 +41,30 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 1em;
 
-  @media(min-width: 785px) {
+  @media(min-width: 1175px) {
     flex-direction: row;
+  }
+
+  > div:first-child {
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+  
+    @media(min-width: 625px) {
+      flex-direction: row;
+    }
+  }
+
+  > div:last-child {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  
+      @media(min-width: 600px) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -266,11 +287,10 @@ textarea {
   }
 }
 
-.turtles {
-  align-self: start;
-  align-self: center;
+// .turtles {
+//   align-self: center;
 
-  @media(min-width: 500px) {
-
-  }
-}
+//   @media(min-width: 500px) {
+//     align-self: start;
+//   }
+// }

@@ -71,7 +71,8 @@ body {
 
 h1 {
   font-family: "Major Mono Display", monospace;
-  font-size: 6rem;
+  font-size: min(15vmin, 6rem);
+  margin: 0 1rem;
   text-align: center;
 }
 
@@ -83,10 +84,30 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 1em;
 }
-@media (min-width: 785px) {
+@media (min-width: 1175px) {
   form {
+    flex-direction: row;
+  }
+}
+form > div:first-child {
+  display: flex;
+  gap: 3em;
+  flex-direction: column;
+}
+@media (min-width: 625px) {
+  form > div:first-child {
+    flex-direction: row;
+  }
+}
+form > div:last-child {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  form > div:last-child {
     flex-direction: row;
   }
 }
@@ -272,9 +293,4 @@ textarea {
 }
 .btn:hover::after {
   transform: scale(1, 1);
-}
-
-.turtles {
-  align-self: start;
-  align-self: center;
 }
