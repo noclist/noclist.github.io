@@ -97,6 +97,7 @@ main section:hover {
   background: conic-gradient(from 0.5turn at bottom center, #ff99f5, white);
 }
 main section.art {
+  padding: 2em;
   border-radius: 50%;
 }
 main section.art i {
