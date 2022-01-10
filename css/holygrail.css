@@ -88,7 +88,7 @@ body > * {
   gap: 1em;
   background: rgba(160, 131, 131, 0.13);
   border: 3px solid #212529;
-  padding: 0.5em;
+  padding: 0.5em 0;
   transition: transform 0.1s ease-in;
 }
 body > * i {
