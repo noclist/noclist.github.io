@@ -53,7 +53,7 @@ body {
   font-family: "Roboto", sans-serif;
   gap: 1.5em;
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
   background: #fcfcfc;
   display: grid;
   grid-template-areas: "header header header" "nav main aside" "footer footer footer";
@@ -97,7 +97,7 @@ body > * i {
   --fa-secondary-opacity: 1;
 }
 body > *:hover {
-  transform: scale(1.025);
+  transform: scale(1.01);
 }
 body header {
   grid-area: header;
@@ -131,8 +131,11 @@ body footer {
   align-items: center;
   background: #ffff57;
 }
+body footer h2 {
+  font-size: 3rem;
+}
 body footer i {
-  font-size: 5em;
+  font-size: 4em;
   --fa-primary-color: #F71D1B;
   --fa-secondary-color: #F7C45D;
 }

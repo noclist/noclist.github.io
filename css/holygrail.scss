@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     gap: 1.5em;
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
     background: hsl(0, 0%, 99%);
 
     display: grid;
@@ -71,7 +71,7 @@ body {
         }
 
         &:hover {
-            transform: scale(1.025);
+            transform: scale(1.01);
         }
     }
 
@@ -113,8 +113,12 @@ body {
         align-items: center;
         background: hsl(60, 100%, 67%);
 
+        h2 {
+            font-size: 3rem;
+        }
+
         i {
-            font-size: 5em;
+            font-size: 4em;
             --fa-primary-color: #F71D1B;
             --fa-secondary-color: #F7C45D;
         }
