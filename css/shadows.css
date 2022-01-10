@@ -42,7 +42,7 @@ h2 {
 
 section {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   gap: 2em;
   padding-bottom: 1.5em;
 }
@@ -51,7 +51,6 @@ section > div {
   place-content: center;
   width: 85%;
   padding: 1em;
-  margin: 0 auto;
   text-align: center;
   border: 2px solid #212529;
   background: #fffdfa;
