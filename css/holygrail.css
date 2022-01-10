@@ -114,6 +114,7 @@ body nav i {
 body main {
   grid-area: main;
   background: #85ff89;
+  padding-bottom: 1.5em;
 }
 body aside {
   grid-area: aside;
