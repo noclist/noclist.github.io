@@ -64,7 +64,14 @@ body {
 }
 
 h1 {
-  font-size: min(15vmin, 6rem);
+  font-size: 5.5vmax;
+  background: #c8849a;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-stroke: 2px #000;
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  letter-spacing: 5px;
 }
 
 h2 {
