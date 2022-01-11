@@ -13,9 +13,13 @@ body {
 h1 {
     font-family: 'Major Mono Display', monospace;
     font-size: min(15vmin, 3rem);
-    color: #ff006a;
-    z-index: 10;
     margin: 1rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-stroke: 2px #ff006a;
+    -webkit-text-stroke: 2px #ff006a;
+    color: transparent;
+    letter-spacing: 5px;
 }
 
 .container {
