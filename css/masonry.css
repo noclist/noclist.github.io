@@ -54,7 +54,13 @@ body {
 
 h1 {
   font-size: 5.5vmax;
-  color: #212529;
+  background: #ffd280;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-stroke: 2px #212529;
+  -webkit-text-stroke: 2px #212529;
+  color: transparent;
+  letter-spacing: 5px;
   text-align: center;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #212529;
