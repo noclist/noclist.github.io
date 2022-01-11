@@ -11,6 +11,7 @@ h1 {
   font-family: "Sacramento", cursive;
   text-shadow: 1px 1px 2px #ff4362;
   margin: 0 auto;
+  text-align: center;
 }
 
 .canvas {
