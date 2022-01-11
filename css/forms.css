@@ -71,13 +71,18 @@ body {
 
 h1 {
   font-family: "Major Mono Display", monospace;
-  font-size: min(15vmin, 6rem);
-  text-align: center;
+  font-size: 5.5vmax;
+  background: #97C01A;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-stroke: 2px #000;
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  letter-spacing: 5px;
 }
 
 h2 {
   font-family: "Major Mono Display", monospace;
-  text-align: center;
 }
 
 form {
