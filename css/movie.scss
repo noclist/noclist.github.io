@@ -1,6 +1,5 @@
 @import 'modules/reset';
 @import 'modules/breakpoints';
-@import 'modules/header';
 @import 'modules/select';
 
 @font-face {
@@ -30,9 +29,7 @@ body {
 }
 
 h1 {
-    @include header(rgb(0, 0, 0), rgb(0, 0, 0));
     font-family: Theater;
-
     display: flex;
     flex-direction: column;
     justify-content: center;

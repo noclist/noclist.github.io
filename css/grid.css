@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 body, html {
   margin: 0;
   padding: 0;
@@ -52,10 +51,6 @@ li {
   --color-white: hsl(0, 0%, 100%);
 }
 
-@font-face {
-  font-family: "Frankfurter";
-  src: url("/fonts/Frankfurter-Std-Regular.otf");
-}
 body {
   min-height: 100vh;
   display: flex;

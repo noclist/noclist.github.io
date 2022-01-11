@@ -41,10 +41,6 @@ li {
   list-style-type: none;
 }
 
-@font-face {
-  font-family: "Frankfurter";
-  src: url("/fonts/Frankfurter-Std-Regular.otf");
-}
 .select {
   display: flex;
   justify-content: space-between;
@@ -95,31 +91,11 @@ body {
 }
 
 h1 {
-  font-family: Frankfurter;
-  font-size: 4rem;
-  background: linear-gradient(0.9turn, black, black, black);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-stroke: 1.5px #000;
-  text-stroke: 1.5px #000;
-  color: transparent;
-  line-height: 1;
-  letter-spacing: 5px;
-  z-index: 2;
-  margin: 1rem 1rem 0;
   font-family: Theater;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0;
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 6rem;
-    letter-spacing: 2px;
-    margin-bottom: 3rem;
-    transform: rotate(355deg) translateY(40px);
-  }
 }
 h1 .select {
   justify-content: center;
