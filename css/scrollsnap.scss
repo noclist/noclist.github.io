@@ -64,7 +64,7 @@
 
       > div {
         scroll-snap-align: start;
-        width: 75vw;
+        width: 88vw;
         padding: 3rem;
         display: flex;
         align-items: center;
@@ -72,7 +72,6 @@
         text-align: center;
         flex-direction: column;
         flex-shrink: 0;
-        width: 75vw;
 
         @media (min-width: 800px) {
             width: 175px;
