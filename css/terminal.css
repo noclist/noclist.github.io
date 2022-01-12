@@ -1,97 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 body, html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 ::selection {
   color: #fff;
-  background: var(--color-pink); }
+  background: var(--color-pink);
+}
 
 h1,
 h2,
 h3,
 h4,
-h5
-p {
+h5 p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 img {
   max-width: 100%;
   height: auto;
-  align-self: center; }
+  align-self: center;
+}
 
 a, a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .flow-content > * + * {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 li {
-  list-style-type: none; }
-
-@font-face {
-  font-family: 'Frankfurter';
-  src: url("/fonts/Frankfurter-Std-Regular.otf"); }
+  list-style-type: none;
+}
 
 body {
   display: grid;
   flex-direction: column;
   place-items: center;
   text-align: center;
-  font-family: system-ui, sans-serif;
+  gap: 1em;
+  font-family: "Major Mono Display", monospace;
   background: linear-gradient(275deg, #833ab4 0%, #fcb045 100%);
-  background-size: 150%; }
+  background-size: 150%;
+  padding: 0.5em;
+}
 
 h1 {
-  font-family: Frankfurter;
-  font-size: 4rem;
-  background: linear-gradient(0.9turn, white, #0099ff, white);
-  -webkit-background-clip: text;
+  font-family: "Major Mono Display", monospace;
+  font-size: 5.5vmax;
+  background: #0099ff;
   background-clip: text;
-  -webkit-text-stroke: 1.5px #000;
-  text-stroke: 1.5px #000;
+  -webkit-background-clip: text;
+  text-stroke: 3.5px #000;
+  -webkit-text-stroke: 3.5px #000;
   color: transparent;
-  line-height: 1;
   letter-spacing: 5px;
-  z-index: 2;
-  margin: 1rem 1rem 0; }
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 6rem;
-      letter-spacing: 2px;
-      margin-bottom: 3rem;
-      transform: rotate(355deg) translateY(40px); } }
-
-h2 {
-  margin: 0.5rem; }
+}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 160px);
   width: 90vw;
-  margin: 1rem;
   justify-content: center;
   gap: 5px;
   border: 3px solid #fff;
   border-radius: 5px;
   padding: 1em;
   background: #fff;
-  box-shadow: -14px -13px 15px -10px Rgb(74 74 48/30%) inset, 0 20px 15px -10px Rgb(39 39 19/30%) inset, 0 0 10px Rgb(0 0 0/10%); }
-  @media (min-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(4, 250px);
-      width: auto; } }
-  .grid img {
-    border-radius: 5px; }
+  box-shadow: -14px -13px 15px -10px Rgb(74 74 48/30%) inset, 0 20px 15px -10px Rgb(39 39 19/30%) inset, 0 0 10px Rgb(0 0 0/10%);
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 250px);
+    width: auto;
+  }
+}
+.grid img {
+  border-radius: 5px;
+}
+.grid .middle {
+  display: none;
+}
+@media (min-width: 768px) {
   .grid .middle {
-    display: none; }
-    @media (min-width: 768px) {
-      .grid .middle {
-        display: block;
-        grid-column: 2/4;
-        grid-row: 2/4; } }
+    display: block;
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+}
