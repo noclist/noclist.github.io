@@ -1,64 +1,174 @@
-* {
-  box-sizing: border-box; }
-
-p {
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+body, html {
   margin: 0;
-  margin-bottom: 0.5em; }
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background: var(--color-pink);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.flow-content > * + * {
+  margin-top: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
 
 body {
-  margin: 0;
-  font-family: system-ui;
+  padding: 1em;
+  font-family: "Major Mono Display", monospace;
   display: grid;
-  place-content: center;
-  min-height: 100vh;
-  background: radial-gradient(#bbc9dd, #223044); }
+  justify-content: center;
+  gap: 1.5em;
+  background: radial-gradient(#dde4ee, #7793bb);
+}
 
-h1, h2 {
-  color: #fff; }
+h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 5.5vmax;
+  background: #fdbfff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-stroke: 3.5px #212529;
+  -webkit-text-stroke: 3.5px #212529;
+  color: transparent;
+  letter-spacing: 5px;
+  text-align: center;
+}
 
 .container {
-  width: 50vw;
+  width: 75vw;
   overflow-x: scroll;
   color: #212529;
   display: flex;
   align-items: center;
-  background: #fff;
+  gap: 0.5rem;
+  background: #f2f2f2;
+  padding: 0.5em;
   border: 2px solid #212529;
-  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset; }
-  .container.mandatory {
-    scroll-snap-type: x mandatory; }
-  .container.proximity {
-    scroll-snap-type: x proximity; }
-
-.child {
-  margin-left: 0.5rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
+.container.mandatory {
+  scroll-snap-type: x mandatory;
+}
+.container.proximity {
+  scroll-snap-type: x proximity;
+}
+.container > div {
   scroll-snap-align: start;
-  padding: 5rem;
+  padding: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  flex-shrink: 0; }
-  .child:first-child {
-    background: #ffb49b; }
-  .child:nth-child(2) {
-    background: #89ff99; }
-  .child:nth-child(3) {
-    background: #a4f4ff; }
-  .child:nth-child(4) {
-    background: #fdbfff; }
-  .child:nth-child(5) {
-    background: #fff895; }
-  .child:nth-child(6) {
-    background: #8587ff; }
-  .child:nth-child(7) {
-    background: #0faf45; }
-  .child:nth-child(8) {
-    background: #ffb730; }
-  .child:nth-child(9) {
-    background: #4eb8ff; }
-  .child:last-child {
-    background: #cfffb4; }
-  .child p {
-    font-weight: 700; }
+  flex-shrink: 0;
+}
+.container > div i {
+  font-size: 4.5em;
+}
+.container > div:first-child {
+  margin-left: 0;
+  background: #ffb49b;
+}
+.container > div:first-child i {
+  --fa-primary-color: #f00;
+  --fa-secondary-color: #fff;
+}
+.container > div:nth-child(2) {
+  background: #89ff99;
+}
+.container > div:nth-child(2) i {
+  --fa-primary-color: #000;
+  --fa-secondary-color: #0000ff ;
+}
+.container > div:nth-child(3) {
+  background: #a4f4ff;
+}
+.container > div:nth-child(3) i {
+  --fa-primary-color: #fff;
+  --fa-secondary-color: #000;
+}
+.container > div:nth-child(4) {
+  background: #fff895;
+}
+.container > div:nth-child(4) i {
+  --fa-primary-color: hsl(144, 95%, 36%);
+  --fa-secondary-color: hsl(359, 99%, 51%);
+}
+.container > div:nth-child(5) {
+  background: #fdbfff;
+}
+.container > div:nth-child(5) i {
+  --fa-primary-color: #000;
+  --fa-secondary-color: #000000;
+}
+.container > div:nth-child(6) {
+  background: #8587ff;
+}
+.container > div:nth-child(6) i {
+  --fa-primary-color: #000(144, 95%, 36%);
+  --fa-secondary-color: hsl(359, 99%, 51%);
+}
+.container > div:nth-child(7) {
+  background: #0faf45;
+}
+.container > div:nth-child(7) i {
+  --fa-primary-color: #000(144, 95%, 36%);
+  --fa-secondary-color: hsl(0, 0%, 100%);
+}
+.container > div:nth-child(8) {
+  background: #ffb730;
+}
+.container > div:nth-child(8) i {
+  --fa-primary-color: hsl(51, 100%, 70%);
+  --fa-secondary-color: #000;
+}
+.container > div:nth-child(9) {
+  background: #4eb8ff;
+}
+.container > div:nth-child(9) i {
+  --fa-primary-color: #c200c2;
+  --fa-secondary-color: #000;
+}
+.container > div:last-child {
+  background: #cfffb4;
+}
+.container > div:last-child i {
+  --fa-primary-color: green;
+  --fa-secondary-color: green;
+}
