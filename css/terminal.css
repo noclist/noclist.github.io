@@ -49,9 +49,9 @@ body {
   text-align: center;
   gap: 1em;
   font-family: "Major Mono Display", monospace;
-  background: linear-gradient(275deg, #833ab4 0%, #fcb045 100%);
+  background: linear-gradient(275deg, #8d3ec1 0%, #fdbf68 100%);
   background-size: 150%;
-  padding: 0.5em;
+  padding: 1em;
 }
 
 h1 {
@@ -66,33 +66,44 @@ h1 {
   letter-spacing: 5px;
 }
 
-.grid {
+main {
   display: grid;
   grid-template-columns: repeat(auto-fit, 160px);
   width: 90vw;
   justify-content: center;
-  gap: 5px;
-  border: 3px solid #fff;
-  border-radius: 5px;
+  gap: 1em;
   padding: 1em;
-  background: #fff;
-  box-shadow: -14px -13px 15px -10px Rgb(74 74 48/30%) inset, 0 20px 15px -10px Rgb(39 39 19/30%) inset, 0 0 10px Rgb(0 0 0/10%);
+  background: #f7ffcc;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 3px, rgba(6, 24, 44, 0.65) 0px 4px 6px 2px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 @media (min-width: 768px) {
-  .grid {
+  main {
     grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(4, 250px);
     width: auto;
   }
 }
-.grid img {
-  border-radius: 5px;
+main img {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  transition: all 0.1s ease-in;
 }
-.grid .middle {
-  display: none;
+main img:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+main .middle {
+  display: grid;
+  place-content: center;
+  grid-column: 1/3;
+  grid-row: 4/6;
+}
+@media (min-width: 600px) {
+  main .middle {
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
 }
 @media (min-width: 768px) {
-  .grid .middle {
-    display: block;
+  main .middle {
     grid-column: 2/4;
     grid-row: 2/4;
   }
