@@ -25,8 +25,7 @@
 }
   
   .container {
-      width: 75vw;
-      overflow-x: scroll;
+
       color: #212529;
       display: flex;
       align-items: center;
@@ -39,22 +38,35 @@
       rgba(255, 255, 255, 0.08) 0 1px 0 inset;
 
       flex-direction: column;
-
-      @media(min-width: 600px) {
-          flex-direction: row;
-      }
+      height: 50vh;
+      overflow-y: scroll;
 
       &.mandatory {
-        scroll-snap-type: x mandatory;
+        scroll-snap-type: y mandatory;
       }
 
       &.proximity {
-        scroll-snap-type: x proximity;
+        scroll-snap-type: y proximity;
+      }
+
+      @media(min-width: 800px) {
+          flex-direction: row;
+          width: 75vw;
+          height: auto;
+          overflow-x: scroll;
+
+          &.mandatory {
+            scroll-snap-type: x mandatory;
+          }
+    
+          &.proximity {
+            scroll-snap-type: x proximity;
+          }
       }
 
       > div {
         scroll-snap-align: start;
-        width: 175px;
+        width: 75vw;
         padding: 3rem;
         display: flex;
         align-items: center;
@@ -62,11 +74,14 @@
         text-align: center;
         flex-direction: column;
         flex-shrink: 0;
+        width: 75vw;
+
+        @media (min-width: 800px) {
+            width: 175px;
+        }
 
         i {
             font-size: 4.5em;
-            // --fa-primary-opacity: 1;
-            // --fa-secondary-opacity: 1;
         }
     
         &:first-child {
