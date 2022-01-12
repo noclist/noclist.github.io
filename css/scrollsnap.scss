@@ -5,7 +5,8 @@
     padding: 1em;
     font-family: 'Major Mono Display', monospace;
     display: grid;
-    justify-content: center;
+    // justify-content: center;
+    place-items: center; 
     gap: 1.5em;
     background: radial-gradient(hsl(215, 33%, 90%), hsl(215, 33%, 60%));
   }
@@ -53,6 +54,7 @@
 
       > div {
         scroll-snap-align: start;
+        width: 175px;
         padding: 3rem;
         display: flex;
         align-items: center;
