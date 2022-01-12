@@ -5,8 +5,7 @@
     padding: 1em;
     font-family: 'Major Mono Display', monospace;
     display: grid;
-    // justify-content: center;
-    place-items: center; 
+    justify-content: center;
     gap: 1.5em;
     background: radial-gradient(hsl(215, 33%, 90%), hsl(215, 33%, 60%));
   }
@@ -25,7 +24,6 @@
 }
   
   .container {
-
       color: #212529;
       display: flex;
       align-items: center;
@@ -38,7 +36,7 @@
       rgba(255, 255, 255, 0.08) 0 1px 0 inset;
 
       flex-direction: column;
-      height: 50vh;
+      height: 75vh;
       overflow-y: scroll;
 
       &.mandatory {
