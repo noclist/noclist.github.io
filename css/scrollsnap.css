@@ -80,8 +80,157 @@ h1 {
 .container.mandatory {
   scroll-snap-type: y mandatory;
 }
+.container.mandatory > div:first-child {
+  margin-left: 0;
+  background: #ffb49b;
+}
+.container.mandatory > div:first-child i {
+  --fa-primary-color: #f00;
+  --fa-secondary-color: #fff;
+}
+.container.mandatory > div:nth-child(2) {
+  background: #89ff99;
+}
+.container.mandatory > div:nth-child(2) i {
+  --fa-primary-color: #000;
+  --fa-secondary-color: #0000ff ;
+}
+.container.mandatory > div:nth-child(3) {
+  background: #a4f4ff;
+}
+.container.mandatory > div:nth-child(3) i {
+  --fa-primary-color: #fff;
+  --fa-secondary-color: #000;
+}
+.container.mandatory > div:nth-child(4) {
+  background: #fff895;
+}
+.container.mandatory > div:nth-child(4) i {
+  --fa-primary-color: hsl(144, 95%, 36%);
+  --fa-secondary-color: hsl(359, 99%, 51%);
+}
+.container.mandatory > div:nth-child(5) {
+  background: #fdbfff;
+}
+.container.mandatory > div:nth-child(5) i {
+  --fa-primary-color: #000;
+  --fa-secondary-color: #000000;
+}
+.container.mandatory > div:nth-child(6) {
+  background: #8587ff;
+}
+.container.mandatory > div:nth-child(6) i {
+  --fa-primary-color: #000(144, 95%, 36%);
+  --fa-secondary-color: hsl(359, 99%, 51%);
+}
+.container.mandatory > div:nth-child(7) {
+  background: #0faf45;
+}
+.container.mandatory > div:nth-child(7) i {
+  --fa-primary-color: #000(144, 95%, 36%);
+  --fa-secondary-color: hsl(0, 0%, 100%);
+}
+.container.mandatory > div:nth-child(8) {
+  background: #ffb730;
+}
+.container.mandatory > div:nth-child(8) i {
+  --fa-primary-color: hsl(51, 100%, 70%);
+  --fa-secondary-color: #000;
+}
+.container.mandatory > div:nth-child(9) {
+  background: #4eb8ff;
+}
+.container.mandatory > div:nth-child(9) i {
+  --fa-primary-color: #c200c2;
+  --fa-secondary-color: #000;
+}
+.container.mandatory > div:last-child {
+  background: #cfffb4;
+}
+.container.mandatory > div:last-child i {
+  --fa-primary-color: green;
+  --fa-secondary-color: green;
+}
 .container.proximity {
   scroll-snap-type: y proximity;
+}
+.container.proximity > div:first-child {
+  margin-left: 0;
+  background: #f7ff80;
+}
+.container.proximity > div:first-child i {
+  --fa-primary-color: rgb(0, 141, 54);
+  --fa-secondary-color: hsl(0, 59%, 25%);
+}
+.container.proximity > div:nth-child(2) {
+  margin-left: 0;
+  background: #13b456;
+}
+.container.proximity > div:nth-child(2) i {
+  --fa-primary-color: hsl(240, 100%, 60%);
+  --fa-secondary-color: hsl(69, 100%, 65%);
+}
+.container.proximity > div:nth-child(3) {
+  margin-left: 0;
+  background: #595959;
+}
+.container.proximity > div:nth-child(3) i {
+  --fa-primary-color: orange;
+  --fa-secondary-color: #fff;
+}
+.container.proximity > div:nth-child(4) {
+  margin-left: 0;
+  background: #b39898;
+}
+.container.proximity > div:nth-child(4) i {
+  --fa-primary-color: red;
+  --fa-secondary-color: hsl(0, 59%, 8%);
+}
+.container.proximity > div:nth-child(5) {
+  margin-left: 0;
+  background: #00adcc;
+}
+.container.proximity > div:nth-child(5) i {
+  --fa-primary-color: rgb(143, 42, 42);
+  --fa-secondary-color: hsl(0, 0%, 100%);
+}
+.container.proximity > div:nth-child(6) {
+  margin-left: 0;
+  background: #ff24ab;
+}
+.container.proximity > div:nth-child(6) i {
+  --fa-secondary-color: hsl(0, 0%, 100%);
+}
+.container.proximity > div:nth-child(7) {
+  margin-left: 0;
+  background: #ffdb38;
+}
+.container.proximity > div:nth-child(7) i {
+  --fa-primary-color: hsl(0, 3%, 30%);
+  --fa-secondary-color: hsl(0, 59%, 20%);
+}
+.container.proximity > div:nth-child(8) {
+  margin-left: 0;
+  background: #cecaba;
+}
+.container.proximity > div:nth-child(8) i {
+  --fa-primary-color: hsl(0, 3%, 30%);
+  --fa-secondary-color: hsl(251, 100%, 22%);
+}
+.container.proximity > div:nth-child(9) {
+  margin-left: 0;
+  background: #ad7100;
+}
+.container.proximity > div:nth-child(9) i {
+  --fa-primary-color: hsl(140, 100%, 69%);
+  --fa-secondary-color: hsl(39, 100%, 100%);
+}
+.container.proximity > div:last-child {
+  margin-left: 0;
+  background: #22a06b;
+}
+.container.proximity > div:last-child i {
+  --fa-secondary-color: #fff;
 }
 @media (min-width: 800px) {
   .container {
@@ -93,157 +242,8 @@ h1 {
   .container.mandatory {
     scroll-snap-type: x mandatory;
   }
-  .container.mandatory > div:first-child {
-    margin-left: 0;
-    background: #ffb49b;
-  }
-  .container.mandatory > div:first-child i {
-    --fa-primary-color: #f00;
-    --fa-secondary-color: #fff;
-  }
-  .container.mandatory > div:nth-child(2) {
-    background: #89ff99;
-  }
-  .container.mandatory > div:nth-child(2) i {
-    --fa-primary-color: #000;
-    --fa-secondary-color: #0000ff ;
-  }
-  .container.mandatory > div:nth-child(3) {
-    background: #a4f4ff;
-  }
-  .container.mandatory > div:nth-child(3) i {
-    --fa-primary-color: #fff;
-    --fa-secondary-color: #000;
-  }
-  .container.mandatory > div:nth-child(4) {
-    background: #fff895;
-  }
-  .container.mandatory > div:nth-child(4) i {
-    --fa-primary-color: hsl(144, 95%, 36%);
-    --fa-secondary-color: hsl(359, 99%, 51%);
-  }
-  .container.mandatory > div:nth-child(5) {
-    background: #fdbfff;
-  }
-  .container.mandatory > div:nth-child(5) i {
-    --fa-primary-color: #000;
-    --fa-secondary-color: #000000;
-  }
-  .container.mandatory > div:nth-child(6) {
-    background: #8587ff;
-  }
-  .container.mandatory > div:nth-child(6) i {
-    --fa-primary-color: #000(144, 95%, 36%);
-    --fa-secondary-color: hsl(359, 99%, 51%);
-  }
-  .container.mandatory > div:nth-child(7) {
-    background: #0faf45;
-  }
-  .container.mandatory > div:nth-child(7) i {
-    --fa-primary-color: #000(144, 95%, 36%);
-    --fa-secondary-color: hsl(0, 0%, 100%);
-  }
-  .container.mandatory > div:nth-child(8) {
-    background: #ffb730;
-  }
-  .container.mandatory > div:nth-child(8) i {
-    --fa-primary-color: hsl(51, 100%, 70%);
-    --fa-secondary-color: #000;
-  }
-  .container.mandatory > div:nth-child(9) {
-    background: #4eb8ff;
-  }
-  .container.mandatory > div:nth-child(9) i {
-    --fa-primary-color: #c200c2;
-    --fa-secondary-color: #000;
-  }
-  .container.mandatory > div:last-child {
-    background: #cfffb4;
-  }
-  .container.mandatory > div:last-child i {
-    --fa-primary-color: green;
-    --fa-secondary-color: green;
-  }
   .container.proximity {
     scroll-snap-type: x proximity;
-  }
-  .container.proximity > div:first-child {
-    margin-left: 0;
-    background: #f7ff80;
-  }
-  .container.proximity > div:first-child i {
-    --fa-primary-color: rgb(0, 141, 54);
-    --fa-secondary-color: hsl(0, 59%, 25%);
-  }
-  .container.proximity > div:nth-child(2) {
-    margin-left: 0;
-    background: #13b456;
-  }
-  .container.proximity > div:nth-child(2) i {
-    --fa-primary-color: hsl(240, 100%, 60%);
-    --fa-secondary-color: hsl(69, 100%, 65%);
-  }
-  .container.proximity > div:nth-child(3) {
-    margin-left: 0;
-    background: #595959;
-  }
-  .container.proximity > div:nth-child(3) i {
-    --fa-primary-color: orange;
-    --fa-secondary-color: #fff;
-  }
-  .container.proximity > div:nth-child(4) {
-    margin-left: 0;
-    background: #b39898;
-  }
-  .container.proximity > div:nth-child(4) i {
-    --fa-primary-color: red;
-    --fa-secondary-color: hsl(0, 59%, 8%);
-  }
-  .container.proximity > div:nth-child(5) {
-    margin-left: 0;
-    background: #00adcc;
-  }
-  .container.proximity > div:nth-child(5) i {
-    --fa-primary-color: rgb(143, 42, 42);
-    --fa-secondary-color: hsl(0, 0%, 100%);
-  }
-  .container.proximity > div:nth-child(6) {
-    margin-left: 0;
-    background: #ff24ab;
-  }
-  .container.proximity > div:nth-child(6) i {
-    --fa-secondary-color: hsl(0, 0%, 100%);
-  }
-  .container.proximity > div:nth-child(7) {
-    margin-left: 0;
-    background: #ffdb38;
-  }
-  .container.proximity > div:nth-child(7) i {
-    --fa-primary-color: hsl(0, 3%, 30%);
-    --fa-secondary-color: hsl(0, 59%, 20%);
-  }
-  .container.proximity > div:nth-child(8) {
-    margin-left: 0;
-    background: #cecaba;
-  }
-  .container.proximity > div:nth-child(8) i {
-    --fa-primary-color: hsl(0, 3%, 30%);
-    --fa-secondary-color: hsl(251, 100%, 22%);
-  }
-  .container.proximity > div:nth-child(9) {
-    margin-left: 0;
-    background: #ad7100;
-  }
-  .container.proximity > div:nth-child(9) i {
-    --fa-primary-color: hsl(140, 100%, 69%);
-    --fa-secondary-color: hsl(39, 100%, 100%);
-  }
-  .container.proximity > div:last-child {
-    margin-left: 0;
-    background: #22a06b;
-  }
-  .container.proximity > div:last-child i {
-    --fa-secondary-color: #fff;
   }
 }
 .container > div {
