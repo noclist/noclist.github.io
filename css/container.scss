@@ -1,42 +1,181 @@
 @import 'modules/reset';
-@import 'modules/header';
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap');
 
 body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: system-ui;
-
-    background: conic-gradient(from -90deg at bottom center, rgb(255, 255, 255), peachpuff);
+    padding: 0.5em;
+    display: grid;
+    place-content: center;
+    background: hsl(350, 100%, 97%);
+    font-size: clamp(1.1em, calc(0.5em + 1vw), 2.5em);
+	line-height: 1.3;
 }
 
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+main {
+    display: grid;
     gap: 1em;
-    align-items: center;
-    width: 95vw;
-    height: 92vh;
-    border: 5px solid #212529;
-    background: conic-gradient(from 0.15turn at top right, #000, #8bb7b7);
+	font-weight: 300;
+	width: 90vw;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 h1 {
-    @include header(rgb(255, 255, 255), hsl(120, 100%, 86%));
-  }
-
-h2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: #fff;
-    padding: 1em;
+    font-size: 5.5vmax;
+    background: hsl(270, 50%, 70%);
+    font-family: 'Major Mono Display', monospace;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-stroke: 3.5px #212529;
+    -webkit-text-stroke: 3.5px #212529;
+    color: transparent;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #212529;
 }
 
-.item {
-    width: 10vw;
-    height: 10vh;
-    border: 3px dashed #ecae28;
+h2 {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.6vmax;
+    align-items: center;
+    font-family: 'Major Mono Display', monospace;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25rem;
+    background: hsl(270, 50%, 90%);
+    border: 2px solid #212529;
+    padding: 1rem;
+    margin: 0;
+
+    box-shadow:
+        rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+a {
+    color: #0000EE; 
+
+    &:hover {
+        color: #0000EE; 
+    }
+
+    &:active {
+        color: #0000EE; 
+    }
+
+    &:visited {
+        color: #0000EE; 
+    }
+  }
+
+.cards {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+
+/** Container Queries **/
+.card-wrapper {
+	container-type: inline-size;
+
+    &.small {
+        width: 1030px;
+        margin: 0 auto;
+    }
+
+    &.medium {
+        width: 1206px;
+        margin: 0 auto;
+    }
+}
+
+.card { /* default container: image stacked on top of description */
+	border: 1px solid #ccc;
+	background: rgba(0, 0, 0, 0.05);
+    display: grid;
+	grid-template: "image" "description" / 1fr;
+	gap: 1em;
+	padding: 1em;
+
+    .image {
+        grid-area: image;
+        font-size: 0.5em;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .description {
+        grid-area: description;
+
+        p {
+            background: #ccffcc;
+        }
+    }
+}
+
+@container (min-width: 800px) { /* small container: image next to description (1fr each) */
+	.card {
+		gap: 2em;
+		padding: 2em;
+		grid-template: "image description" / 1fr 1fr;
+        align-items: start;
+
+        .description {
+            text-align: left;
+    
+            p {
+                background: hsl(55deg 80% 76%); //yellow
+    
+                span {
+                    display: block;
+                    margin-bottom: 0.5em;
+                    font-weight: bold;
+                }
+            }
+        }
+	}
+}
+
+@container (min-width: 1032px) { /* medium container: image next to description (1fr each) */
+	.card {
+		gap: 2em;
+		padding: 2em;
+		grid-template: "image description" / 1.5fr 1fr;
+        align-items: center;
+
+        .description {
+            text-align: left;
+    
+            p {
+                background: hsl(28deg 100% 84%); //orange
+    
+                span {
+                    display: block;
+                    margin-bottom: 0.5em;
+                    font-weight: bold;
+                }
+            }
+        }
+	}
+}
+
+@container (min-width: 1380px) { /* large container: 2fr image next to 1fr description */
+	.card {
+		grid-template-columns: 2fr 1fr;
+        align-items: end;
+
+        .description {
+            p {
+                background: hsl(199deg 98% 78%); //blue
+            }
+        }
+	}
 }
