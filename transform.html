@@ -35,6 +35,44 @@
             <i id="icon-translate" class="fa-duotone fa-donut"></i>
             <input id="slider-translate" type="range" min="-100" max="100" step="1" value="0" oninput="transform('translate')">
         </section>
+        <section class="cube-container"> 
+            <div class="scene">
+                <div id="cube" class="cube">
+                <div class="cube-face front">front</div>
+                <div class="cube-face back">back</div>
+                <div class="cube-face right">right</div>
+                <div class="cube-face left">left</div>
+                <div class="cube-face top">top</div>
+                <div class="cube-face bottom">bottom</div>
+                </div> 
+            </div>
+            <div class="radio">
+                <div>
+                    <input type="radio" id="top" name="direction" value="top" onclick="rotate('top')">
+                    <label for="top">Top</label>
+                </div>
+                <div>
+                    <input type="radio" id="bottom" name="direction" value="bottom" onclick="rotate('bottom')">
+                    <label for="bottom">Bottom</label>
+                </div>
+                <div>
+                    <input type="radio" id="front" name="direction" value="front" onclick="rotate('front')">
+                    <label for="front">Front</label>
+                </div>
+                <div>
+                    <input type="radio" id="back" name="direction" value="back" onclick="rotate('back')">
+                    <label for="back">Back</label>
+                </div>
+                <div>
+                    <input type="radio" id="left" name="direction" value="left" onclick="rotate('left')">
+                    <label for="left">Left</label>
+                </div>
+                <div>
+                    <input type="radio" id="right" name="direction" value="right" onclick="rotate('right')">
+                    <label for="right">Right</label>
+                </div>
+              </div>
+        </section>
     </main>
 </body>
 
@@ -49,6 +87,11 @@
         if(transformType == 'translate')
             document.getElementById('icon-' + transformType).style.transform = transformType + '(' + rangeValue + 'px)';
         document.getElementById('label-' + transformType).innerHTML = rangeValue;
+    }
+
+    function rotate(direction) {
+        document.getElementById('cube').className = '';
+        document.getElementById('cube').classList.add('cube', direction + "-rotate");
     }
 </script>
 
