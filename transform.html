@@ -36,6 +36,7 @@
             <input id="slider-translate" type="range" min="-100" max="100" step="1" value="0" oninput="transform('translate')">
         </section>
         <section class="cube-container"> 
+            <h2>A Rotating Cube</h2>
             <div class="scene">
                 <div id="cube" class="cube">
                 <div class="cube-face front">front</div>
@@ -47,30 +48,30 @@
                 </div> 
             </div>
             <div class="radio">
-                <div>
+                <label>
                     <input type="radio" id="top" name="direction" value="top" onclick="rotate('top')">
-                    <label for="top">Top</label>
-                </div>
-                <div>
+                    <span for="top">Top</span>
+                </label>
+                <label>
                     <input type="radio" id="bottom" name="direction" value="bottom" onclick="rotate('bottom')">
-                    <label for="bottom">Bottom</label>
-                </div>
-                <div>
+                    <span for="bottom">Bottom</span>
+                </label>
+                <label>
                     <input type="radio" id="front" name="direction" value="front" onclick="rotate('front')">
-                    <label for="front">Front</label>
-                </div>
-                <div>
+                    <span for="front">Front</span>
+                </label>
+                <label>
                     <input type="radio" id="back" name="direction" value="back" onclick="rotate('back')">
-                    <label for="back">Back</label>
-                </div>
-                <div>
+                    <span for="back">Back</span>
+                </label>
+                <label>
                     <input type="radio" id="left" name="direction" value="left" onclick="rotate('left')">
-                    <label for="left">Left</label>
-                </div>
-                <div>
+                    <span for="left">Left</span>
+                </label>
+                <label>
                     <input type="radio" id="right" name="direction" value="right" onclick="rotate('right')">
-                    <label for="right">Right</label>
-                </div>
+                    <span for="right">Right</span>
+                </label>
               </div>
         </section>
     </main>
