@@ -4,7 +4,6 @@
 body {
     display: grid;
     grid-template-columns: repeat(auto-fit, 100px);
-    grid-template-rows: repeat(auto-fit, 100px);
     place-content: center;
     gap: 1rem;
 
@@ -13,16 +12,14 @@ body {
     min-height: 100vh;
 
     > div {
-        // border: 5px solid #212529;
-        // background-color: hsl(210, 11%, 40%);
         background-color: hsl(39, 100%, 40%);
         perspective: 1000px;
+        height: 100px;
 
         box-shadow: hsla(39, 100%, 40%, 0.3) 7px -7px;
 
         &:hover > div {
             transform: rotateY(180deg) skew(-0.06turn, 18deg);
-            // transform: rotateY(180deg);
         }
 
         > div {
