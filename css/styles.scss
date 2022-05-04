@@ -30,7 +30,7 @@ body {
     margin-top: 4em;
     margin-bottom: 2em;
     // background: linear-gradient( 89.9deg,  rgba(255,243,110,1) 16.9%, rgba(30,204,214,1) 55.1%, hsl(220, 94%, 60%) 90.7% );
-    background: linear-gradient(90deg, hsl(150, 58%, 75%) 17%, hsl(220, 94%, 65%));
+    background: linear-gradient(90deg, hsl(150, 58%, 75%) 40%, hsl(220, 94%, 65%));
 
     box-shadow: 
         hsl(0, 0%, 100%) 8px -8px 0 -1px,
@@ -255,8 +255,15 @@ main {
 
         &.transform {
             i {
-                --fa-primary-color: hsl(0, 0%, 35%);
-                --fa-secondary-color: hsl(199, 55%, 45%);
+                --fa-primary-color: hsl(0, 1%, 25%);
+                --fa-secondary-color: hsl(206, 96%, 55%);
+            }
+        }
+
+        &.books {
+            i {
+                --fa-primary-color: hsl(0, 59%, 30%);
+                --fa-secondary-color: hsl(120, 100%, 10%);
             }
         }
     }
