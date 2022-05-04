@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap");
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background: var(--color-pink);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.flow-content > * + * {
+  margin-top: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui;
+  background: #f0f4ff;
+  margin: 5vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section header {
+  font-size: 4vw;
+  line-height: 5.5vw;
+  font-family: "Karla", sans-serif;
+}
+section p {
+  margin: 0;
+}
+section p:first-of-type {
+  font-weight: 900;
+  font-size: 8vw;
+  letter-spacing: -0.5vw;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+section p:last-of-type {
+  font-size: 11vw;
+  line-height: 8.4vw;
+  font-family: "Unica One", cursive;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(10, 8vw);
+    grid-template-rows: repeat(48, 8vw);
+    grid-gap: 1vw;
+  }
+  section div:first-of-type {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    background-color: #f9e8d2;
+    z-index: -1;
+  }
+  section header {
+    grid-column: 2/4;
+    grid-row: 1/4;
+  }
+  section p:first-of-type {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    transform: rotate(-90deg);
+    margin-top: 0;
+  }
+  section p:last-of-type {
+    grid-column: 3/11;
+    grid-row: 3;
+  }
+}
