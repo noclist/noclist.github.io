@@ -48,13 +48,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 4vw;
 }
-
-main {
-  display: grid;
-  grid-template-columns: repeat(14, calc(7.14vw - 0.036rem));
-  grid-template-rows: repeat(8, calc(12.5vh - 0.0625rem));
-}
-main:before {
+body:before {
   content: "";
   background-image: url("/images/hedge.png");
   background-size: cover;
@@ -66,6 +60,12 @@ main:before {
   left: 0;
   opacity: 0.25;
   z-index: -1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(14, calc(7.14vw - 0.036rem));
+  grid-template-rows: repeat(8, calc(12.5vh - 0.0625rem));
 }
 main div {
   display: grid;
