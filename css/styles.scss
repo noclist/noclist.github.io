@@ -87,6 +87,10 @@ main {
             grid-column-start: 1;
         }
 
+        section.col-start-2 {
+            grid-column-start: 2;
+        }
+
         section.col-start-3 {
             grid-column-start: 3;
         }
@@ -271,6 +275,12 @@ main {
             i {
                 --fa-primary-color: hsl(33, 24%, 40%);
                 --fa-secondary-color: green;
+            }
+        }
+
+        &.maze {
+            i {
+                --fa-secondary-color: hsl(350, 100%, 65%);
             }
         }
     }

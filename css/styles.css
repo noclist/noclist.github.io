@@ -74,6 +74,9 @@ main {
   main section.col-start-1 {
     grid-column-start: 1;
   }
+  main section.col-start-2 {
+    grid-column-start: 2;
+  }
   main section.col-start-3 {
     grid-column-start: 3;
   }
@@ -197,6 +200,9 @@ main section.books i {
 main section.turtle i {
   --fa-primary-color: hsl(33, 24%, 40%);
   --fa-secondary-color: green;
+}
+main section.maze i {
+  --fa-secondary-color: hsl(350, 100%, 65%);
 }
 
 i {
