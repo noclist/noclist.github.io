@@ -79,13 +79,13 @@ main {
 @media (orientation: landscape) {
   main {
     grid-template-columns: repeat(14, calc(7.14vw - 0.036rem));
-    grid-template-rows: repeat(8, calc(12.5vh - 0.0625rem));
+    grid-template-rows: repeat(8, calc(var(--vh, 1vh) * 12.5 - 0.0625rem));
   }
 }
 @media (orientation: portrait) {
   main {
     grid-template-columns: repeat(14, 7.14vw);
-    grid-template-rows: repeat(8, 12.5vh);
+    grid-template-rows: repeat(8, calc(var(--vh, 1vh) * 12.5));
   }
 }
 main div {
