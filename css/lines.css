@@ -68,8 +68,8 @@ body:before {
 }
 @media (orientation: portrait) {
   body:before {
-    opacity: 0.25;
-    background-image: url("/images/mazebg2.png");
+    opacity: 1;
+    background-image: url("/images/mazebg.png");
   }
 }
 
