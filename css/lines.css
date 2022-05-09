@@ -91,10 +91,10 @@ main {
 main div {
   display: grid;
   justify-content: center;
-  place-items: center;
 }
 main div i {
-  font-size: 4.5vmax;
+  font-size: 4vmax;
+  margin-top: 1vmax;
 }
 main div.block-2, main div.block-3, main div.block-4, main div.block-5, main div.block-6, main div.block-7, main div.block-8, main div.block-9, main div.block-10, main div.block-11, main div.block-12, main div.block-13, main div.block-14, main div.block-25, main div.block-26, main div.block-27, main div.block-35, main div.block-36, main div.block-37, main div.block-38, main div.block-40, main div.block-41, main div.block-42, main div.block-95, main div.block-96, main div.block-97 {
   border-top: 1vmax solid #212529;
@@ -110,13 +110,12 @@ main div.block-1, main div.block-3, main div.block-5, main div.block-14, main di
 }
 main div.block-112 {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  place-items: center;
 }
 @media (orientation: portrait) {
   main div.block-112 i {
     position: absolute;
-    left: -2vmax;
+    left: -5vmax;
+    font-size: 7.5vmax;
   }
 }
