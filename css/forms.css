@@ -50,18 +50,51 @@ body {
   gap: 1em;
   align-items: center;
   font-family: "Karla", sans-serif;
-  background: #eef3ff;
+  background: #f0f4ff;
   color: #212529;
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   position: relative;
   width: 95vw;
   padding: 2em 1em;
-  background: linear-gradient(#fefefe, #fff);
+  background: #fafbff;
   border: 2px solid #212529;
   border-radius: 5px;
   box-shadow: Rgb(0 0 0/45%) 6px 6px 3px;
+}
+@media (min-width: 992px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  min-height: 40vh;
+}
+.board > h2 {
+  border: 0.5rem solid #fff;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  font-size: 2rem;
+}
+.board > h2:nth-child(odd) {
+  background: #b38cd9;
+}
+.board > h2:nth-child(even) {
+  background: pink;
+}
+.board > h2.span-2 {
+  grid-column-end: span 2;
+  background: #ffdb99;
 }
 
 h1 {
