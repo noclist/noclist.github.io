@@ -1,0 +1,16 @@
+CSS Cascade Layers
+
+The true power of Cascade Layers comes from its unique position in the Cascade: before Selector Specificity and Order Of Appearance.
+
+we don’t need to worry about the Selector Specificity of the CSS that is used in other Layers, nor about the order in which we load CSS into these Layers — something that will come in very handy for larger teams or when loading in third-party CSS.
+
+Cascade  layers is a new and powerful way of determining what styles actually get applied
+
+a “higher” layer can literally beat a traditionally stronger selector even with a weaker selector in the layer.
+
+
+
+
+Allows authors to explicitly layer their styles in the cascade, before specificity and order of appearance are considered.
+
+When using Cascade Layers, we don’t need to worry about the Selector Specificity of the CSS that is used in other Layers, nor about the order in which we load CSS into these Layers — something that will come in very handy for larger teams or when loading in third-party CSS.

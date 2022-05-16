@@ -1,0 +1,510 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="hover.css">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/content.css" />
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-sm-3 m-2">
+				<div class="sticky-top">
+					<ul id="workflow" class="py-3 pl-0">
+						<li class="icon-swap">
+							<i class="fal fa-home-lg-alt"></i><i class="fas fa-home-lg-alt"></i> Home
+						</li>
+						<li class="pt-2 icon-swap">
+							<!-- <i class="fal fa-prescription-bottle-alt"></i><i class="fas fa-prescription-bottle-alt"></i>  -->
+							<i class="fad fa-lightbulb-exclamation"></i><i class="fad fa-lightbulb"></i>
+							Medications
+						</li>
+						<li class="pt-2 icon-swap">
+							<!-- <i class="fal fa-stethoscope"></i><i class="fas fa-stethoscope"></i> -->
+							<i class="fad fa-lightbulb-exclamation"></i><i class="fad fa-lightbulb"></i>
+							Conditions
+						</li>
+						<li class="pt-2 icon-swap">
+							<!-- <i class="fal fa-hospital-user"></i><i class="fas fa-hospital-user"></i> -->
+							<i class="fad fa-lightbulb-exclamation"></i><i class="fad fa-lightbulb"></i>
+							Procedures 
+						</li>
+					</ul>
+
+					<div id="summary" class="pt-3">
+						<h4>Your Selections</h4>
+						<div class="accordion" id="">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h2 class="mb-0">
+										<button class="btn collapsed w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											<div class="row">
+												<div class="col-sm-10 icon-swap">
+														<i class="fal fa-user"></i><i class="fas fa-user"></i>
+													 	You
+												</div>
+												<div class="col-sm-2">
+											 		<i class="fal fa-chevron-up arrow"></i>
+											 	</div>
+										 	</div>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+									<div class="card-body">
+										<ul>
+											<li>Medications</li>
+											<ul>
+												<li>Lisinopril</li>
+												<li>Azithromycin</li>
+												<li>Amlodipine</li>
+											</ul>
+											<li>Conditions</li>
+											<ul>
+												<li>Osteoarthritis</li>
+												<li>Glaucoma</li>
+												<li>Hypertension</li>
+											</ul>
+											<li>Procedures</li>
+											<ul>
+												<li>Osteoarthritis</li>
+												<li>Glaucoma</li>
+												<li>Hypertension</li>
+											</ul>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<h2 class="mb-0">
+										<button class="btn collapsed w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											<div class="row">
+												<div class="col-sm-10 icon-swap">
+													<i class="fal fa-users"></i><i class="fad fa-users"></i>
+													Your Dependents
+												</div>
+												<div class="col-sm-2">
+													<i class="fal fa-chevron-up arrow"></i>
+												</div>
+											</div>
+										</button>
+									</h2>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+									<div class="card-body p-0">
+										<div class="accordion" id="">
+											<div class="card">
+												<div class="card-header" id="headingOne">
+													<h2 class="mb-0">
+														<button class="btn collapsed btn-small w-100" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+															<span class="float-left icon-swap">
+																<i class="fal fa-female"></i><i class="fas fa-female"></i> Spouse - Lauren Carpenter
+															</span>
+															<i class="fal fa-chevron-up arrow float-right"></i>
+														</button>
+													</h2>
+												</div>
+												<div id="collapseThree" class="collapse" aria-labelledby="headingOne">
+													<div class="card-body pl-5">
+														<ul>
+															<li>Medications</li>
+															<ul>
+																<li>Lisinopril</li>
+																<li>Azithromycin</li>
+																<li>Amlodipine</li>
+															</ul>
+															<li>Conditions</li>
+															<ul>
+																<li>Osteoarthritis</li>
+																<li>Glaucoma</li>
+																<li>Hypertension</li>
+															</ul>
+															<li>Procedures</li>
+															<ul>
+																<li>Osteoarthritis</li>
+																<li>Glaucoma</li>
+																<li>Hypertension</li>
+															</ul>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-header" id="headingTwo">
+													<h2 class="mb-0">
+														<button class="btn collapsed btn-small w-100" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+															<span class="float-left icon-swap">
+																<i class="fal fa-child"></i><i class="fas fa-child"></i> Child - Juniper Carpenter
+															</span>
+															<i class="fal fa-chevron-up arrow float-right"></i>
+														</button>
+													</h2>
+												</div>
+												<div id="collapseFour" class="collapse" aria-labelledby="headingTwo">
+													<div class="card-body pl-5">
+														<ul>
+															<li>Medications</li>
+															<ul>
+																<li>Lisinopril</li>
+																<li>Azithromycin</li>
+																<li>Amlodipine</li>
+															</ul>
+															<li>Conditions</li>
+															<ul>
+																<li>Osteoarthritis</li>
+																<li>Glaucoma</li>
+																<li>Hypertension</li>
+															</ul>
+															<li>Procedures</li>
+															<ul>
+																<li>Osteoarthritis</li>
+																<li>Glaucoma</li>
+																<li>Hypertension</li>
+															</ul>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<main class="col-sm-9 col-md-8 col-lg-7">
+				<div class="mt-2 ml-2">
+					<h1><i class="fas fa-prescription"></i> Your Medications</h1>
+					<p class="font-weight-bold mb-1">Below are the most commonly prescribed medications for common conditions.</p>
+					<p class="font-weight-bold">Please select all medictions you're currently taking.</p>
+				</div>
+
+				<div class="ml-2 p-3 border" style="background-color: #efefef; border: 1px solid #bbb !important;">
+					<p>Please select what you're adding.</p>
+					<p>A past event</p>
+
+					<label for="rdo-1" class="btn-radio">
+						<input type="radio" id="rdo-1" name="radio-grp1">
+						<svg width="20px" height="20px" viewBox="0 0 20 20">
+							<circle cx="10" cy="10" r="9"></circle>
+							<path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+							<path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+						</svg>
+						<span>A medical procedure performed in a doctor's office, not a hospital</span>
+					</label>
+					<label for="rdo-2" class="btn-radio">
+						<input type="radio" id="rdo-2" name="radio-grp1">
+						<svg width="20px" height="20px" viewBox="0 0 20 20">
+							<circle cx="10" cy="10" r="9"></circle>
+							<path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+							<path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+						</svg>
+						<span>A hospitalization that did NOT include a surgery</span>
+					</label>
+					<label for="rdo-3" class="btn-radio">
+						<input type="radio" id="rdo-3" name="radio-grp1">
+						<svg width="20px" height="20px" viewBox="0 0 20 20">
+							<circle cx="10" cy="10" r="9"></circle>
+							<path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+							<path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+						</svg>
+						<span>A surgery that you were admitted to a hospital for</span>
+					</label>
+
+					<p class="mt-3">An event that is planned for a future date</p>
+
+					<label for="rdo-4" class="btn-radio">
+						<input type="radio" id="rdo-4" name="radio-grp2">
+						<svg width="20px" height="20px" viewBox="0 0 20 20">
+							<circle cx="10" cy="10" r="9"></circle>
+							<path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+							<path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+						</svg>
+						<span>A medical procedure that will be performed in a doctor's office, not a hospital</span>
+					</label>
+					<label for="rdo-5" class="btn-radio">
+						<input type="radio" id="rdo-5" name="radio-grp2">
+						<svg width="20px" height="20px" viewBox="0 0 20 20">
+							<circle cx="10" cy="10" r="9"></circle>
+							<path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+							<path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+						</svg>
+						<span>A planned hospitalization that did NOT include a surgery</span>
+					</label>
+					<label for="rdo-6" class="btn-radio">
+						<input type="radio" id="rdo-6" name="radio-grp2">
+						<svg width="20px" height="20px" viewBox="0 0 20 20">
+							<circle cx="10" cy="10" r="9"></circle>
+							<path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+							<path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+						</svg>
+						<span>A surgery that will require a hospital admission</span>
+					</label>
+				</div>
+
+				<div class="row">
+					<div class="button">
+					  <p class="button-message">Hover on me!</p>
+					</div>
+					<div class="button">
+					  <p class="button-message">Hover on me!</p>
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<div class="col-sm-6">
+						<div class="card hvr-float-shadow d-block">
+							<div class="card-body">
+								<h5 class="card-title">Heart Disease</h5>
+								<ul class="list-group list-group-flush mb-3">
+									<li class="list-group-item" data-toggle="modal" data-target="#medicationModal">
+										Acetaminophen <i class="fal fa-plus float-right"></i>
+									</li>
+									<li class="list-group-item">Adderall <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Alprazolam <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Amitiza <i class="fal fa-plus float-right"></i></li>
+								</ul>
+								<a href="#" class="card-link">Show more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card hvr-float-shadow d-block">
+							<div class="card-body">
+								<h5 class="card-title">Diabetes</h5>
+								<ul class="list-group list-group-flush mb-3">
+									<li class="list-group-item">Calcitriol <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Clopidogrel <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Cefdinir <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Coumadin <i class="fal fa-plus float-right"></i></li>
+								</ul>
+								<a href="#" class="card-link">Show more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-sm-6">
+						<div class="card hvr-float-shadow d-block">
+							<div class="card-body">
+								<h5 class="card-title">Cancer</h5>
+								<ul class="list-group list-group-flush mb-3">
+									<li class="list-group-item">Acetaminophen <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Adderall <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Alprazolam <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Amitiza <i class="fal fa-plus float-right"></i></li>
+								</ul>
+								<a href="#" class="card-link">Show more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card hvr-float-shadow d-block">
+							<div class="card-body">
+								<h5 class="card-title">Gastrointestinal</h5>
+								<ul class="list-group list-group-flush mb-3">
+									<li class="list-group-item">Calcitriol <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Clopidogrel <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Cefdinir <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Coumadin <i class="fal fa-plus float-right"></i></li>
+								</ul>
+								<a href="#" class="card-link">Show more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-sm-6">
+						<div class="card hvr-float-shadow d-block">
+							<div class="card-body">
+								<h5 class="card-title">Mental Health</h5>
+								<ul class="list-group list-group-flush mb-3">
+									<li class="list-group-item">Acetaminophen <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Adderall <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Alprazolam <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Amitiza <i class="fal fa-plus float-right"></i></li>
+								</ul>
+								<a href="#" class="card-link">Show more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card hvr-float-shadow d-block">
+							<div class="card-body">
+								<h5 class="card-title">Blood</h5>
+								<ul class="list-group list-group-flush mb-3">
+									<li class="list-group-item">Calcitriol <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Clopidogrel <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Cefdinir <i class="fal fa-plus float-right"></i></li>
+									<li class="list-group-item">Coumadin <i class="fal fa-plus float-right"></i></li>
+								</ul>
+								<a href="#" class="card-link">Show more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ml-2">
+					<a href="#">Show more comomon medications</a>
+					<div class="row mt-3">
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="medicationSearch" class="text-nowrap">Can't find your medication? Search for it:</label>
+								<input type="text" class="form-control" id="medicationSearch">
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<button type="submit" class="btn btn-primary hvr-grow-shadow">Submit</button>
+							<button type="submit" class="btn btn-primary hvr-curl-top-left">curl on hover</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="ml-2">
+					<div class="morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
+						<button type="button">Terms of Use</button>
+						<div class="morph-content">
+							<div>
+								<div class="content-style-text">
+									<span class="icon icon-close">Close the dialog</span>
+									<h2>Terms of Use</h2>
+									<p style="opacity: .7;">Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong <strong>fennel gumbo</strong> black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea <strong>tomato spring onion</strong> azuki bean gourd.</p>
+									<p><input id="terms" type="checkbox" /><label for="terms">I accept the terms &amp; conditions.</label></p>
+								</div>
+							</div>
+						</div>
+<!-- 						<button type="button">Security Info</button>
+						<div class="morph-content">
+							<div>
+								<div class="content-style-text">
+									<span class="icon icon-close">Close the dialog</span>
+									<h2>Security Info</h2>
+									<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong <strong>fennel gumbo</strong> black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea <strong>tomato spring onion</strong> azuki bean gourd.</p>
+									<p><input id="security" type="checkbox" /><label for="security">I accept the terms &amp; conditions.</label></p>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+
+			</main>
+			<div class="modal fade" id="medicationModal" tabindex="-1" role="dialog" aria-labelledby="medicationModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="medicationModalLabel">Add Medication</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							<button type="button" class="btn btn-primary"> Add</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script src="https://kit.fontawesome.com/393384302f.js" crossorigin="anonymous"></script>
+
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_fixed.js"></script>
+
+	<script>
+		$('nav .btn').on('click', function() {
+			if ($(this).find('.arrow').hasClass('fa-chevron-up')) {
+				$(this).find('.arrow').removeClass('fa-chevron-up');
+				$(this).find('.arrow').addClass('fa-chevron-down');
+			} else {
+				$(this).find('.arrow').removeClass('fa-chevron-down');
+				$(this).find('.arrow').addClass('fa-chevron-up');
+			}
+		});
+
+		(function() {	
+			var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+			// trick to prevent scrolling when opening/closing button
+			function noScrollFn() {
+				window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+			}
+
+			function noScroll() {
+				window.removeEventListener( 'scroll', scrollHandler );
+				window.addEventListener( 'scroll', noScrollFn );
+			}
+
+			function scrollFn() {
+				window.addEventListener( 'scroll', scrollHandler );
+			}
+
+			function canScroll() {
+				window.removeEventListener( 'scroll', noScrollFn );
+				scrollFn();
+			}
+
+			function scrollHandler() {
+				if( !didScroll ) {
+					didScroll = true;
+					setTimeout( function() { scrollPage(); }, 60 );
+				}
+			};
+
+			function scrollPage() {
+				scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+				didScroll = false;
+			};
+
+			scrollFn();
+
+			var UIBtnn = new UIMorphingButton( document.querySelector( '.morph-button' ), {
+				closeEl : '.icon-close',
+				onBeforeOpen : function() {
+					// don't allow to scroll
+					noScroll();
+				},
+				onAfterOpen : function() {
+					// can scroll again
+					canScroll();
+				},
+				onBeforeClose : function() {
+					// don't allow to scroll
+					noScroll();
+				},
+				onAfterClose : function() {
+					// can scroll again
+					canScroll();
+				}
+			} );
+
+			document.getElementById( 'terms' ).addEventListener( 'change', function() {
+				UIBtnn.toggle();
+			} );
+		})();
+
+	</script>
+
+</body>
+</html>

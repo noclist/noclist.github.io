@@ -1,0 +1,40 @@
+﻿.btn {
+    font-size: 1.25rem;
+    padding: .3rem 1.1rem;
+    border: 0;
+    margin: 0 1rem 1rem 0;
+
+    .fas {
+        position: relative;
+        color: #fff;
+        font-size: 1.3rem;
+        margin-right: .3rem;
+    }
+
+    span + .fas {
+        margin-left: .3rem;
+        margin-right: 0;
+        top: 1px; 
+    }
+
+    &.btn-primary,
+    &.btn-primary:not(:disabled):not(.disabled):active {
+        background-color: #e67300;
+    }
+
+    &.btn-secondary,
+    &.btn-secondary:hover,
+    &.btn-secondary:not(:disabled):not(.disabled):active {
+        background-color: #e8e8e8;
+        color: #212529;
+    }
+
+    &.btn-default,
+    &.btn-default:hover {
+        background-color: #395070;
+        color: #fff;
+    }
+    &.hover-reveal:before {
+        border-color: #395070 !important;
+    }
+}

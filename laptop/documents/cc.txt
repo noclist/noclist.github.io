@@ -1,0 +1,501 @@
+318.70 car
+78 one child matters
+53.38 lawn
+------------
+450.08 ready
+------------
++
+96.06 return
+69.39 fruit plate
+-------------
+165.45 waiting
+-------------
+-------------
+615.53
+
+
+780.60 balance - 
+615.53
+----------
+
+move 165.07
+
+450.08
+165.07
+------
+pay 615.15
+
+856.03 - 
+615.15 +
+75.43 flights/hulu on 08/12
+690.58
+------
+165.45 balance left
+
+Balance 8/13
+856.03
+
+Paid 8/13
+690.58
+
+------------------------------------------------
+------------------------------------------------
+Remaining balance 8/13
+165.45 - (amazon monitor return 96.06 + fruit plate 69.39)
+95 arboretum - in cc
+77.12 Aldi - 40 in cc
+37.12 balance 8/13
+------------------
+2.07 mcdds
+39.19 balance 8/15
+------------------
+14.99 pizza hut
+2.14 mcds
+4.40 shetler
+18.60 patrick sweany
+1.00 amazon
+80.32 balance 8/16
+------------------
+10.66 spotify
+2.17 carpy.click
+93.15 balance 8/17
+------------------
+39.96 GetGo
+1.17 carpenterb.xyz
+3.58 Aldi
+1.17 bencarp.fun
+139.03 balance 8/18
+-------------------
+40.20 Yangtze
+McDonalds 2.14
+Walmart eye-hooks 3.68
+Disney+ 8.57
+9.39 fruit plate
+203.01 balance 8/23
+-------------------
+Windtsream 54.45
+Chardon Oil 55.89
+313.35 balance 8/25
+-------------------
+paintbrush .50
+-10.61 return
+303.24 balance 8/31
+-------------------
+water bottles 27.21
+330.45 paid
+BSM AC zoning 1875
+1875 balance 9/1
+-------------------
+6.38 calvin truck
+20.02 mcdonalds
+58.59 van gas
+84.99 balance 9/3
+-------------------
+10.37 mower gas
+21.18 buns
+36.30 mirror
+5.87 flowers
+38.85 indians
+2.11 google
+6.00 indians
+6.50 indians
+17.25 indians
+8.92 milk
+6.99 minno
+
+deckrescue-paid 9/8 1150
+onechild-paid 9/8 78
+
+245.33 balance 9/8 (+ 1875 AC)
+-------------------
+11.89 movie
+55.98 gas
+27.50 haircut
+340.70 balance 9/10 (+ 1875 AC)
+-------------------
+13.54 Aldi KLP
+7.50 Discovery
+361.74 balance 9/13 (+ 1875 AC)
+-------------------
+12.86 hulu
+19.00 getgo
+12.80 music box
+33.00 thirsty dog
+21.42 walmart
+-------------------
+460.82 balance 9/14 (+ 1875 AC)
+395.57 payment
+-------------------
+65.25 balance 9/15 (+ 1875 AC)
+48.00 van gas
+9.06 chick filet
+24.47 tiki
+6.81 subway
+4.88 7/11
+16.86 world of beer
+16.38 mathers
+18.57 woods
+3.19 robinson
+12.25 ziggies
+-------------------
+225.72 balance 9/16 (+ 1875 AC)
+10.66 spotify
+8.00 sunrail
+9.05 ice cream
+16.61 poke
+7.00 a la cart
+11.09 applebees
+-------------------
+288.13 balance 9/17 (+ 1875 AC)
+17.98 busters
+5.35 magpies
+-------------------
+311.46 balance 9/18 (+ 1875 AC)
+1.37 7/11
+5.00 angry chair
+13.98 armature
+4.30 armature
+75.00 parking
+23.76 capps
+2.14 mcdonalds
+-------------------
+437.01 balance 9/22 (+ 1875 AC)
+8.57 Disney+
+7.00 donuts
+-------------------
+452.58 balance 9/23 (+ 1875 AC)
+11.20 CVS 
+54.45 windstream
+40.68 getgo
+-------------------
+558.91 balance 9/27 (+ 1875 AC)
+
+5.99 king kone
+10.00 pizza hut 
+57.84 gas
+5.78 aldi
+2.94 cvs
+-------------------
+641.46 balance 9/29 (+ 1875 AC)
+602.48 payment
+38.98 balance 9/30 (+ 1875 AC)
+-------------------
+5.99 king kone
+-------------------
+44.97 balance 10/4 (+ 1875 AC) - 1919.97
+1010.08 payment
+909.89 balance 10/4
+-------------------
+6.37 google
+916.26 balance 10/5
+-------------------
+5.32 Aldi 
+921.58 balance 10/6
+-------------------
+2.11 google
+19.44 masthead
+-------------------
+943.13 balance 10/7
+6.99 minno 
+-------------------
+950.12 balance 10/8
+218 bracelet
+-------------------
+1168.12 balance 10/11
+58.42 gas
+10 movies
+7.50 discovery
+13.93 hulu
+78 OCM
+-------------------
+1335.97 balance 10/15
+397.96 payment
+-------------------
+938.01 balance 10/16
+16.95 cvs
+10.66 spotify
+5 movies
+6.46 cvs
+46.57 gas
+8.57 d+
+mcds 3.79
+57.53 gas
+10.69 amazon
+54.45 windstream
+19.95 amazon
+23.46 interest
+2250.25 fridge
+---------------------
+3452.34 balance 10/29
+1452.34 payment 10/30
+---------------------
+2000.00 balance 11/01
+2000.00 payment
+11.00 movie
+29.48 amazon
+3.46 amazon
+62.06 gas
+---------------------
+25.73 chick fila
+23.05 post office
+46.45 gas
+200 cabin
+---------------------
+201.23 balance (+ cabin)
+25 payment
+---------------------
+176.23 balance 11/5
+22.41 speaker
+---------------------
+198.64 balance 11/8 (+ cabin)
+6.99 minno
+6.34 HD
+8.99 sakura
+7.50 d+
+8.29 subway
+2.14 mcdonalds
+13.93 hulu
+59.92 marathon
+6.94 bl
+3.19 bl
+44.14 sunrise
+8.75 jersey mikes
+-------------------
+375.76 balance 
+322.68 payment
+-------------------
+53.08 balance 11/15 
+5.00 movie
+9.59 walmart
+-------------------
+67.67 balance 11/16
+10.66 spotify
+-------------------
+78.33 balance 11/17
+-26.79 return
+51.54 balance 11/22
+-------------------
+16.99 wm - lights
+6.34 wm - lights
+-10.65 return
+WM total - 12.68
+
+22.05 hd - batteries
+11.64 hd - posts
+
+62.89 gas
+5.34 dollar tree
+166.14 balance 11/22
+--------------------
+8.57 d+
+27.50 haircut
+45.55 gas
+8.30 aldi
+76.87 windstream
+3.99 sheetz
+4.18 aldi
+5.01 gas
+
+417.27 balance 11/29
+--------------------
+11.73 CVS
+6.39 Heinens
+13.24 Walmart
+
+448.63 balance 11/30
+--------------------
+448.63 payment 
+
+0.00 balance 11/30
+--------------------
+7.21 discovery shop
+7.21 balance 12/1
+--------------------
+7.31 walmart
+--------------------
+14.52 balance 12/3
+
+30.34 party loft
+2.00 DT
+13.00 atlas
+4.27 DT
+1.60 FB
+5.34 FB
+6.99 minno
+18.13 GE 
+6.29 Heinens
+21.90 amazon
+49.54 compadres
+36.73 gas
+3.20 DT
+5.87 discovery
+20.93 CVS
+4.56 mcds
+26.23 chick filet
+7.50 discovery
+21.34 amazon - rachel
+13.93 hulu
+55.85 cvs - jessica
+1.00 DT
+
+-4.49 aldi return
+413.05 payment
+-------------------
+64.80 balance 12/15
+28.63 fandango 
+1.06 GW
+1.69 GW
+10.66 spotify 
+4.54 FB
+34.40 Yangtze 
+8.57 HG
+8.57 D+
+6.44 Target
+3.49 FB
+5.34 FB
+3.59 mcds
+12.24 CVS
+76.87 windstream
+53.31 walmart
+5.29 usps
+7.46 golf story
+56.83 getgo
+58.03 wlmart
+4.99 marcs
+8.53 heinens
+5.49 heinens
+
+rachel
+30.20
+88.56
+-----
+118.76
+
+324.20
+
+
+paypal credit - 59.77 
+.......
+paypal credit - 28 - 11/30 paid
+tithe - 61 - 11/30 paid
+
+
+paypal
+375.36
+[x]  dec 31 - 28.87 - $346.49
+[x]  jan 15 - 28.87 - $317.62
+[x]  jan 31 - 28.87 - $288.75
+[x]  feb 15 - 28.87 - $259.88
+[x]  feb 28 - 28.87 - $231.01
+[x]  mar 15 - 28.87 - $202.14
+[ ]  mar 31 - 28.87 - $173.27
+[ ]  apr 15 - 28.87 - $144.40
+[ ]  apr 31 - 28.88 - $115.52
+[ ]  may 15 - 28.88 - $86.64
+[ ]  may 31 - 28.88 - $57.76
+[ ] june 15 - 28.88 - $28.88
+[ ] june 31 - 28.88 - $0
+
+phone 3.89/mo
+
+2022
+mar[ ] apr[ ] may[ ] jun[ ] jul[ ]
+aug[ ] sep[ ] oct[ ] nov[ ] dec[ ]
+
+2023
+jan[ ] feb[ ] mar[ ] apr[ ] may[ ] jun[ ]
+jul[ ] aug[ ] sep[ ] oct[ ] nov[ ] dec[ ]
+
+2024
+jan[ ] feb[ ] mar[ ] apr[ ] may[ ] jun[ ]
+jul[ ] aug[ ] sep[ ] oct[ ] nov[ ] dec[ ]
+
+2025
+jan[ ] feb[ ]
+
+2/17 - $873.41 due
+       $468.68 paid 
+       166.73 + 238 cabin
+       238 payment
+2/18   166.73 balance
+       09.45
+       10.66
+       04.00
+       15.20
+2/21   206.04 balance
+       --------------
+2/21   8.00
+       0.77
+2/22   8.57
+2/23   10.23
+2/23   233.61 balance
+         7.39
+        76.87
+        23.46
+         3.09
+2/28 BALANCE 0.00
+
+
+phone 63.45 tax
+3.89 monthly
+
+
+
+H8981-90961
+-------------------------------------------------
+-------------------------------------------------
+
+1600.25
+393.33
+-------
+1993.58
+
+
+1800 AC
+1900 Rita
+1100 Deck
+----
+4800
+
+
+
+*Equity Trust company - investment company in westlake
+BriteSkies - tremont - e-commerce 
+BoxCast - live streaming cleveland
+Acumen Solutions - 
+
+
+
+-integrating the underwriting changes to the full FES workflow prototype, 
+-today im going to wrap up a few minor changes to the 2factor auth workflows
+
+
+finished #18, looks like brian was able to take a look at that
+
+move on to making some changes to the preferred contact messaging upon login to push the user towards using mobile
+
+
+Upon login, verified options (email, phone, etc.) will be presented to the broker.  If mobile/phone and email are verified, we will default to mobile/phone as this is the more secure method.
+
+We may want to include a message to the user to verify mobile (if unverified) when activating 2FA to push the user toward that method.
+
+
+
+ability to improving morale as a leader
+
+
+
+
+background gave him uniquie ability to turn setbacks into his advantage
+
+
+today i plan on wrapping up the changes the login flow for both sites on two factor authentication, and i will have a link out to those updated prototypes by the end of the day
+
+
+
+emails
+
+
+
+
+

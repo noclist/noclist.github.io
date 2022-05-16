@@ -1,0 +1,64 @@
+FORM FIELDS DOES NOT HAVE VALID LABEL
+
+Condition Selector
+
+change add condition icon to link or button
+add aria-label to anchor tag and aria-hidden to icon
+
+<a href="#/" aria-label="Add Allergies / Skin Condition for A B B">
+<i class="fal fa-plus-circle add" aria-hidden=”true”></i>
+</a>
+
+remove aria-hidden attribute and make aria-label more meaningful - ALREADY COMPLETED?
+
+-----------------------------------------------------------------------
+
+Your Account Information - checkboxes
+remove tabindex="0" on all checkboxes - ALREADY COMPLETED?
+add aria-label to check all checkbox - ALREADY COMPLETED?
+replace label span and add ‘aria-labelledby’ on input field referring to id of span - ALREADY COMPLETED?
+
+-----------------------------------------------------------------------
+
+Review and Sign page
+
+duplicate edit controls - ALREADY COMPLETED?
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+IMAGE BUTTONS DOES NOT HAVE VALID LABEL
+
+We do not have control over this markup
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+THERE IS NO VALID ERROR IDENTIFICATION
+
+Error summary must be available in each form section - ALREADY COMPLETED?
+
+Add role=”img” along with aria-label=”Error” to icon image
+
+aria-describedby attribute can be used to associate the error message with a form field. ALREADY COMPLETED?
+
+Example:
+<input aria-describedby="first-name-error-0">
+<span class="help-block form-error" id="first-name-error-0">
+<i class="error-icon"></i> Required Field
+</span>
+
+error summaries - remove role="alert"
+		  tabindex="0" - ALREADY COMPLETE?
+                  focus on error summaries - ALREADY COMPLETE?
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+COLOR CONTRAST ISSUE

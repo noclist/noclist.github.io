@@ -1,0 +1,24 @@
+add additional benefits
+
+https://www.smashingmagazine.com/2020/07/responsive-dashboard-angular-material-ng2-charts-schematics/
+
+https://valor-software.com/ng2-charts/
+
+https://demos.creative-tim.com/material-dashboard-angular2/#/dashboard
+
+Angular Material dashboard schematic
+ng2-charts
+
+navigation
+dashboard
+-cards
+-mini cards
+-charts
+-tables
+
+
+move mini cards to top
+remove current product table, add list to top
+
+add this product - change to email the agent (email icon)
+add commission column
