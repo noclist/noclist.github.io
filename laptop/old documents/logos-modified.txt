@@ -1,0 +1,56 @@
+AlliantHealth
+AnthemBCBS
+BCBSGA
+Blue Care of Michigan
+BCBS Arizona
+BCBS Florida
+BCBS Illinois
+BCBS Kansas City
+BCBS Kansas
+BCBS Western New York
+BS California
+Capital Health Plan
+Coventry
+Cox
+Dean
+Emblem
+First Care
+Florida Blue
+Florida Health Care Plans
+Friday
+Geisinger
+Group Health Cooperative
+Gunderson
+Harvard
+Health Alliance
+Health Net
+HealthNet
+Health First
+Highmark BCBS
+Horizon
+Humana
+Independence
+Independent Health
+Innovation
+Kaiser
+MercyCare
+MetroPlus
+Optima
+Oscar
+Pacific Source
+Paramount
+Physicians Health Plan Northern IN
+Regence
+Rocky Mountain
+Security
+SIHO
+Summa
+Sutter
+Total Health Care
+UnitedHealthCare
+Unity
+UPMC
+US Health
+Western Health
+
+

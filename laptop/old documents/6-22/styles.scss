@@ -1,0 +1,232 @@
+@import 'modules/reset';
+@import 'modules/icons';
+@import 'modules/fancy-hover';
+@import 'modules/circles';
+@import 'modules/colors';
+@import 'modules/breakpoints';
+
+@font-face {
+    font-family: "Mosk-bold";
+    src: url(/fonts/Mosk-Bold-700.ttf);
+  }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; 
+
+    @media(min-width: $bp-xs) {
+        background: conic-gradient(from .13turn at 50% 50%,var(--color-purple), var(--color-pink), var(--color-yellow), var(--color-pink), var(--color-purple));
+    }
+} 
+ 
+h1 { 
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 0.8em;
+    margin-top: -0.2em;
+    color: #fff;
+    text-shadow: 0 2px 2px #FF0000, 
+    -2px 5px 0 #FF7F00, 
+    -4px 10px 0 #FFFF00,
+    -8px 15px 0 #00FF00,
+    -12px 20px 0 #0000FF, 
+    -16px 25px 0 #4B0082,
+    -20px 30px 0 #9400D3; 
+
+    @media(min-width: $bp-xs) {
+        font-size: 5em;
+        text-align: left;
+        margin-bottom: 0.5em; 
+    }
+
+}
+  
+.carptainer {
+    width: 90vw;  
+    padding: 0.5em 1em;
+    margin: 1.2em 0;
+    background: rgba(130,176,255,0.75);
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, hsl(119, 75%, 43%) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+
+    @media (min-width: $bp-xs) {
+        width: 75vw;
+        background: linear-gradient(0deg, hsl(218deg, 100%, 90%) 0%, rgba(0,196,118,1) 100%);
+        box-shadow: rgb(0, 0, 255) 0px 0px 0px 3px, 
+        rgb(255, 255, 255) 10px -10px 0px -1px,
+        rgb(31, 193, 27) 10px -10px 0 2px, 
+        rgb(255, 255, 255) 20px -20px 0px -2px, 
+        rgb(255, 217, 19) 20px -20px 0 1px, 
+        rgb(255, 255, 255) 30px -30px 0px -3px, 
+        rgb(255, 156, 85) 30px -30px, 
+        rgb(255, 255, 255) 40px -40px 0px -3px, 
+        rgb(255, 85, 85) 40px -40px;
+    }   
+    
+    @media(min-width: $bp-lg) {
+        margin-top: 3.2em; 
+        padding: 0.5em 3em;
+        transform: rotate(-0.5deg);
+        -webkit-transform-origin: 50%  51%;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: $bp-xs) {
+        flex-direction: column;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    letter-spacing: 0.4em;
+
+    a {
+        color: #fff; 
+    }
+
+    .maze {
+        display: inline-block;
+        background: url('/images/maze2.png') no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 16px;
+        width: 55px;
+        height: 55px;
+        transition: transform 1s ease-out;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+
+        @media(min-width: $bp-xs) {
+            background-image: url('/images/maze.png');
+            top: 12px;
+        }
+    }
+
+    @media (min-width: $bp-xs) {
+        flex-direction: row;
+    }
+
+    @media (min-width: $bp-md) {
+        margin-bottom: 0;
+    }
+} 
+
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: $bp-md) {
+        flex-direction: row;  
+    }
+} 
+
+.carp {
+    background-image: url("/images/lips2.png");
+    height: auto; 
+    align-self: center;
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 350px;
+    position: relative;
+    filter: drop-shadow(0px 0px 12px #fff);
+    
+    @media (min-width: $bp-md) {
+        flex: 0 0 260px;
+    }
+}
+
+.outline {
+    font-family: Mosk-bold, sans-serif;
+    font-size: 4rem;
+    color: var(--clr-black);
+    padding: 0 0.5rem;
+
+    -webkit-text-fill-color: var(--color-white);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--color-black);
+
+    img {
+        position: relative;
+        top: -10px;
+        padding: 58px 53px;
+        background: url(/icons/Cleveland_512_cropped-colored-resized.png) no-repeat;
+        filter: hue-rotate(304deg);
+
+        @media(min-width: $bp-xs) {
+            display: inline-block;
+        }
+    }
+
+    .name {
+        -webkit-text-fill-color: var(--color-purple);
+
+        &:hover {
+        -webkit-text-fill-color: var(--color-white);
+        }
+    }  
+
+    .city {
+        -webkit-text-fill-color: var(--color-yellow);
+
+        &:hover {
+        -webkit-text-fill-color: var(--color-white);
+        }
+    }
+
+    &:hover {
+        -webkit-text-fill-color: var(--color-pink);
+
+        img {
+            filter: hue-rotate(0);
+        }
+    }
+
+    &.outline-link {
+        font-size: 2.1rem;
+        -webkit-text-fill-color: var(--color-white);
+
+        &:hover {
+            -webkit-text-fill-color: var(--color-blue);
+        }
+
+        @media(min-width: $bp-xs) {
+            -webkit-text-fill-color: var(--color-pink);
+        }
+    } 
+
+    @media(max-width: $bp-xs) {
+        font-size: 2.5em; 
+        text-align: center;
+    }
+}
+
+footer { 
+    ul { 
+        display: flex;   
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @media(max-width: $bp-xs) {
+            justify-content: space-around;
+
+        } 
+    }
+}

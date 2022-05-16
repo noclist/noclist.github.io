@@ -1,0 +1,93 @@
+--W25--
+
+**Hansa Brewery and Restaurant 11
+
+Market Garden Brewery 11
+
+Nano Brew Cleveland 11
+
+**Great Lakes Brewing Company 12-1
+
+
+
+--Hingetown--
+
+**Bookhouse 3
+
+**Saucy Brew Works 11
+
+
+
+--Gordon Square--
+
+**Terrestrial Brewing 3
+
+Stone Mad 11
+
+BrweNuts [food] 630am
+
+Happy Dog [food] 11
+
+XYZ [food] 1130
+
+
+
+--Hingetown--
+
+Jukebox [FOOD] 5
+
+
+
+--West 25th--
+
+**Bad Tom Smith Brewing 430
+
+
+
+--Lorain--
+
+Forest City 4
+
+Platform 3
+
+Herb N Twine 11 [FOOD]
+
+
+
+--Tremont--
+
+**Porco 4
+
+Tremont Taphouse 4
+
+Prosperity Social Club 4
+
+**Bourban Street Barrel Room 430
+
+Spotted Owl 5
+
+
+
+--Flats East Bank--
+
+Brick and Barrel 2
+
+**Thirsty Dog Brewing Co. 11
+
+Collision Bend Brewing Company 3
+
+
+
+--Downtown--
+
+Johnnys Little Bar [FOOD]
+
+Butcher and the Brewer 4
+
+**Southern Tier 11
+
+**Masthead Brewing Co. 11
+
+**Noble Beast Brewing Co. 11
+
+Goldhorn 11

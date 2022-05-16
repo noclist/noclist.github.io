@@ -1,0 +1,49 @@
+1              $1936.61
+tithe          $0193.66
+car payment    $0289.29
+student loan   $0273.99
+phone          $0076.50
+retirement     $0050.00
+life           $0029.00
+gas            $0150.00
+cavs           $0139.36
+internet       $0054.99
+CC SUBTOTAL   ($0344.35)
+               --------
+extra          $0679.82
+SAVE           $0550.00
+
+
+
+15             $1961.98
+tithe          $0196.20
+mortgage       $1228.88
+life           $0029.00
+movie pass x2  $0019.90
+spotify        $0010.66
+hulu           $0008.53
+               --------
+extra          $0468.81
+
+1 -            $1936.61
+15 -           $1961.98
+               --------
+               $3898.59
+
+mortgage       $1228.88
+tithe          $0389.86
+car payment    $0289.29
+student loan   $0273.99
+gas            $0150.00
+cavs           $0139.36
+phone          $0076.50
+life           $0058.00
+internet       $0054.99
+retirement     $0050.00
+movie pass x2  $0019.90
+spotify        $0010.66
+hulu           $0008.53
+               --------
+               $2749.96
+
+extra          $1148.63

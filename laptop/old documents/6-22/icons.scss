@@ -1,0 +1,72 @@
+/* icons */
+
+@import 'modules/breakpoints';
+@import 'modules/colors';
+
+.fab {
+    font-size: 2rem;
+    color: hsla(0, 0%, 0%, 0.4);
+
+    &.fa-twitter:hover {
+        color: #1DA1F2 !important;
+    }
+    
+    &.fa-instagram:hover {
+        color: #E1306C !important;
+    }
+    
+    &.fa-lastfm:hover {
+        color: #d51007 !important;
+    }
+    
+    &.fa-facebook:hover {
+        color: #3b5998 !important;
+    }
+    
+    &.fa-linkedin:hover {
+        color: #0077b5 !important;
+    }
+
+    &.fa-strava:hover {
+        color: #fc4c02 !important;
+    }
+
+    @media(max-width: $bp-xs) {
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+}
+
+a {
+    color: #1DA1F2;
+
+    i {
+        &.fal {
+            display: block;
+        }
+
+        &.fad {
+            display: none;
+        }
+    }
+
+    &:hover {
+        .fal {
+            display: none;
+        }
+
+        .fad {
+            display: block;
+        }
+    }
+}
+
+.fa-alien-monster {
+    --fa-primary-color: var(--color-black);
+    --fa-primary-opacity: 1;
+    --fa-secondary-color: var(--color-yellow);
+    --fa-secondary-opacity: 1;
+
+    font-size: 2.3rem;
+    position: relative;
+    top: 2px;
+}

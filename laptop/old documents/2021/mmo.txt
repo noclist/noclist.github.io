@@ -1,0 +1,22 @@
+[ ] 2269.84 mri - bill
+[x]  267.17 ben ER - bill
+[ ]  350.06 calvin surgeon appt - bill
+[x]  184.87 IUI lab - bill
+[x]   61.62 calvin pediatrician - bill
+[x]  810.17 calvin surgery - 420.06 - credit card
+                             373.03
+                              16.78
+
+
+proposal name full line
+remove address
+add naics
+change to "employer contact information"
+
+
+carriers to coverage lines
+use workflow dates UI
+
+
+
+keep SSN and email right, move SSN next to email

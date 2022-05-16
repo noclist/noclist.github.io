@@ -1,0 +1,160 @@
+Week 1
+T  1
+W  10
+R  1
+F  9
+Sa 7
+Su 2
+---
+30
+
+Week 2
+M 6
+T 2
+W 7
+R 2
+F 7
+S 8
+S 3
+---
+35
+
+Week 3
+M 6 
+T 3
+W 8
+R 4
+F 5
+S 7
+S 2
+---
+35
+
+Week 4
+M 6
+T 2
+W 9
+R 2
+F 7
+S 4
+S 5
+---
+35
+
+Week 5
+M 10
+T 0
+W 7
+R 1
+F 7 + 1? (remove OG@sac)
+S 4
+S 4 + 1?
+---
+35
+
+Week 6 
+M 6
+T 3
+W 10
+R 0
+F 7
+S 5
+S 2
+---
+
+
+[x]cc
+[x]fan battery
+vent bolts
+[x]christmas list
+[x]lights
+[x]tree
+macaroon
+lego
+[x]medical bills
+[x]wordscapes
+schedule matrix
+[x]vacuum basement
+exchange gift
+[x]friends list
+[x]power of the dog
+
+
+dan
+diana
+joe
+mhead
+kory
+rogers
+mike
+terry/debra
+caitlyn
+
+gun pegs
+pick up cards
+
+16
+R 2
+F 7
+S 4
+S 3
+
+blowout  - PB, LB,leg,factory,legacy, dunk, lb, leg
+close  - Larr, PB(0.5) Fac(0.5), pb, dunk, lb, lb, leg(0.5) larrys(0.5), lb
+
+Blowouts 
+Legacy(3)
+Loose Balls(2)
+Dunkers(1)
+Factory(1)
+Pinballers(1)
+
+Gillette Close Shaves
+Loose Balls(3)
+Pinballers(1.5)
+Larrys(1.5)
+Dunkers(1)
+Factory(0.5)
+Legacy(0.5)
+
+
+Week 1
+Blowout: Pinballers over Dunkers by 76
+Close Shave: Larrys over Legacy by 11
+
+Week 2
+Blowout: Loose Balls over Dunkers by 162
+Close Shave: Pinballers/Skeet Factory tie, 76
+
+Week 3
+Blowout: Legacy over Dunkers 107
+Close Shave: Pinballers over Larrys by 23
+
+Week 4
+Blowout: Factory over Pinballers 49
+Close Shave: Dunkers over Larrys, 11
+
+Week 5
+Blowout: Legacy over Larrys 151
+Close Shave: Loose Balls over Factory 38
+
+Week 6
+Blowout: Dunkers over Factory 51
+Close Shave: Loose Balls over Larrys 36
+
+Week 7
+Blowout: Loose Balls over Dunkers 45
+Close Shave: Legacy/Larrys tie, 21Factory 21
+
+Week 8
+Blowout: Legacy over Dunkers 132
+Close Shave: Loose Balls over Pinballers 22
+
+M 3
+T 5
+W 4
+R 9
+f 0
+S 3
+S 6
+---

@@ -1,0 +1,83 @@
+1.9.1
+Chrome - Append, condition var good
+IE - Append, condition var good
+
+
+3.1.1
+Chrome - hide/show, condition var good
+IE - Append, condition var bad
+
+A Star is Born
+Beautiful Boy
+The Front Runner
+Widows
+Green Book
+Creed 2
+The Favourite
+Spider-Verse
+Mary Poppins Returns
+Welcome to Marwen
+Aquaman
+Bird Box
+Vice
+Holmes and Watson
+
+
+$('.option span')
+
+
+if ($(this).parent('span.toggleOption').length)
+
+
+MONDAY-
+create backup JS file for condition.js [X]
+tobacco bug
+logout bug
+Goal #3
+
+
+Guys Pizza
+Johnnys Little Bar
+Galleria
+Dannys Deli
+Roses Braai
+Subway
+Daves Cosmic
+Potbelly
+Chipotle
+Emperors Palace
+
+Succession
+Narcos Mexico
+Little Drummer Girl
+Versace
+Escape at Dannemora
+Homecoming
+Bodyguard
+Bojack
+Big Mouth
+
+Little Drummre Girl
+Escape from Danemmora
+Narcos Mexio
+Patriot
+The Marvelous Mrs Maizel
+
+http://localhost/FormFire.Website.Interview/Login?reason=undefined#/
+Component-Based Design Systems
+
+Multi-step forms out-perform single-step forms
+
+Only display a question if a user has answered a previous question in a certain way. This technique reduces the average length of your form, while also reducing form abandonment by not displaying questions that might be irrelevant to certain users.
+
+completed an icon and treatment update for Sponsored Plans
+Send Forms sidebar visibility issue - unfixed the checklist so it scrolls with the page
+Tobacco bug unrelated
+UI Goals for 2.0
+
+
+
+Display live chat or contact information within view of your form
+For more complex forms where users might have questions about the form itself. Answering any questions stopping them from completing the form.
+
+

@@ -1,0 +1,30 @@
+monday 
+pot roast
+
+tuesday
+enchilada bake
+
+wednesday 
+pasta bake
+
+thursday
+brown barn
+
+friday
+red b and r
+
+saturday
+grilled chicken
+
+
+spent some time with jim helping him get a sysadmin user for his pen testing
+spent some more time on front end work for enrollment period and talked to Nick about some UI ideas with that, going to move forward with that today
+
+
+spent the last couple of days working with figma, which is a design and prototyping tool. put together a couple small workflows for enrollment period, hopefully its something we can use for more UI work going forward.
+
+
+so we were looking at the workflow for initiating a proposal and thought
+why repeat all the employer information when all thats necessary to a proposal is the effective date
+
+so heres a quick workflow example that hopefully can make this process simpler

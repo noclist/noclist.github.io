@@ -1,0 +1,37 @@
+[x]review job
+[x]job inquiry
+[x]call nurse
+[x]html from p drive
+[ ]carps space
+[ ]unit tests
+[ ]mail letter
+
+SAVE65 
+
+3024902320673 
+
+3028702320164 
+
+af9113
+
+Setup pages
+-----------
+Enter email/phone, click Send verification code
+Enter verification code
+Success or resend code
+
+
+Login
+-----
+Enter email/phone, click Send verification code
+Enter verification code
+Login or resend code
+
+kevin powell
+animate.css
+laundry
+photos
+call city
+
+
+
