@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ben's HTML5 Site</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Programming in HTML5 with JavaScript and CSS3</h1>
+		</header>
+		<nav>
+			<div id="leftnav">| <a href="semantics.html">HOME</a> | <a href="canvas.html">CANVAS</a> | <a href="flex.html">FLEX</a></div><div id="rightnav"> CSS3: | <a href="properties.html">STYLES</a> | <a href="effects.html">EFFECTS</a> |</div>
+		</nav>
+		<article>
+			<section>
+				<div>
+					<h4>HTML5 Form Input Types</h4>
+					<form>
+						<ul>
+							<li>
+							<label for="url">URL:</label><input type="url" id="url" placeholder="www.ben.ben" required="required" />
+							</li>		
+							<li>
+							<label for="email">E-Mail:</label><input type="email" id="email" placeholder="ben@ben.com" required="required" />	
+							</li>
+							<li>
+							<label for="phone">Phone:</label><input type="phone" id="phone" placeholder="1-800-BEN" required="required" />	
+							</li>
+							<li>
+							<label for="date">Date:</label><input id="date" type="date" value="2014-03-20" />
+							</li>
+							<li>
+							<label for="number">Number:</label><input id="number" type="number" placeholder="13" required="required" />
+							</li>
+							<li>
+							<label for="range">Range:</label><input id="range" type="range" value="13" min="1" max="50" required="required" />
+							</li>
+							<li>
+							<label for="search">Search:</label><input id="search" type="search" placeholder="Ben Carpenter" required="required" />
+							</li>
+							<li>
+							<label for="color">Color:</label><input id="color" type="color" value="#384747" />	
+							</li>
+							<li>
+							<input type="submit" value="Submit" />	
+							</li>
+						</ul>
+					</form>
+				</div>
+			</section>
+			<section>
+				<div class="box-model">
+					Margin
+					<div class="box-model">
+						Border
+						<div class="box-model">
+							Padding
+							<div class="box-model">
+								Box
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+		<aside>
+			<h3>HTML5 Media</h3>
+			<div>
+				<h4>Audio</h4>
+				<audio src="Beastie Boys - Ch-Check It Out.mp3" controls></audio>
+			</div>
+			<div>
+				<h4>Video</h4>
+				<video src="PieContest.mp4" width="300" poster="piecontest.jpg" controls></video>
+			</div>
+		</aside>
+		<footer>
+			<a href="mailto:ben@formfire.com">© 2013 Ben Carpenter</a>
+		</footer>
+	</body>
+</html>

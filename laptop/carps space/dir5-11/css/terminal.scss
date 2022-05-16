@@ -1,0 +1,50 @@
+@import 'modules/reset';
+@import 'modules/breakpoints';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(275deg, rgba(131,58,180,1) 0%, rgba(252,176,69,1) 100%);
+}
+
+h1 {
+    color: #005900;
+    text-shadow: #fffca8 4px 3px 0px, #9c9c9c 6px 6px 0px;
+    font-size: 3.5em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 160px);
+    gap: 5px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    margin: 2em 0;
+    padding: 1em;
+    background: #fff;
+    box-shadow: -14px -13px 15px -10px Rgb(74 74 48 / 30%) inset, 0 20px 15px -10px Rgb(39 39 19 / 30%) inset, 0 0 10px Rgb(0 0 0 / 10%);
+    width: 85vw;
+
+    @media(min-width: $bp-xs) {
+        grid-template-columns: repeat(4, 250px);
+        width: auto;
+    }
+
+    img {
+        border-radius: 5px;
+    }
+
+    .middle {
+        display: none;
+
+        @media(min-width: $bp-xs) {
+            display: block;
+            grid-column: 2/4;
+            grid-row: 2/4;
+        }
+    }
+}

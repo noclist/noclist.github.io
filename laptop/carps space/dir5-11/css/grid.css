@@ -1,0 +1,61 @@
+:root {
+  --color-blue: #1DA1F2;
+  --color-purple: #b78cf7;
+  --color-pink: #ff7c94;
+  --color-yellow: #ffcf0d;
+  --color-black: #212529;
+  --color-white: #fff; }
+
+@font-face {
+  font-family: "Mosk-bold";
+  src: url(/fonts/Mosk-Bold-700.ttf); }
+
+body {
+  background: rgba(135, 171, 120, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Mosk-bold', sans-serif; }
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 0.25em;
+  padding: 0;
+  color: #fff;
+  text-shadow: 5px 5px 0px #3269de; }
+
+h2 {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.6); }
+
+#grid {
+  margin: 1em 1.5em 1.5em 1.5em;
+  width: 75vw;
+  padding: 4em;
+  background: radial-gradient(closest-side, #f69d3c, #ebf8e1, #00334896);
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, 140px);
+  grid-template-rows: repeat(auto-fit, 250px);
+  box-shadow: 0 0px 13px 3px black; }
+  @media (max-width: 600px) {
+    #grid {
+      background: linear-gradient(90deg, #fccc45 0%, #b074d9 100%); } }
+  #grid > * {
+    height: 250px;
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all .2s ease-in-out; }
+    #grid > *:hover {
+      transform: scale(1.1) rotate(-5deg);
+      box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.25); }
+
+img {
+  max-width: 100%; }

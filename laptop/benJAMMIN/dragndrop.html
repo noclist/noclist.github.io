@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <style>
+            body {
+                background-image:url('images/green.jpg');
+                
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            
+            /*.ui-widget-header.ui-droppable.cool {
+                background-color: #96CB9D;
+                width: 800px;
+            }*/
+            
+            #draggable {
+                padding: 20px;
+                float: left;
+                font-family: 'Comic Sans MS';
+                font-size: 72px;
+                margin: 10px 10px 10px 0;
+                /*background-color: #96f;
+                border: 3px solid #f69;*/
+                cursor: crosshair;
+                text-align: center;
+            }
+            #droppable {
+                padding: 20px;
+                float: right;
+                font-family: 'Comic Sans MS';
+                font-size: 72px;
+                margin: 10px;
+                /*background-color: #f69;
+                border: 3px solid #96f;*/
+                text-align: center;
+                top: 50px;
+                right: 50px;
+            }
+        </style>
+        <script>
+            $(function() {
+              $( "#draggable" ).draggable();
+              $( "#droppable" ).droppable({
+                drop: function() {
+                  $(this).parent().css('background-color', 'black');
+                  $(this).html("<img src='images/guitarbot.png' />");
+                  
+                }
+              });
+            });
+        </script>
+    </head>
+    <body>
+    <div id="draggable" class="ui-widget-content">
+      <img src="images/shades.png" />
+    </div>
+    <div id="droppable" class="ui-widget-header">
+        <img src="images/bullseye.png" />
+    </div>
+    </body>
+</html>

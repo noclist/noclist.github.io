@@ -1,0 +1,53 @@
+.coaster {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 2.3%;
+    z-index: 2;
+    box-shadow: 0 0 20px 10px #fff,
+                0 0 33px 20px #f0f,
+                0 0 47px 30px #0ff;
+
+    @media(max-width: $bp-lg) {
+        display: none;
+    }
+}
+ 
+.clip-path {
+    transform: rotate(-18deg);
+    top:5%;
+    transition: transform .1s linear;
+
+    &:hover {
+        transform: rotate(-8deg);
+    }
+}
+
+.playhouse {
+    top: calc(30%);
+    transition: transform .1s linear;
+
+    &:hover {
+        transform: rotate(10deg);
+    }
+}
+
+.ohio {
+    transform: rotate(-9deg);
+    bottom: calc(30%);
+    transition: transform .1s linear;
+
+    &:hover {
+        transform: rotate(1deg);
+    }
+}
+
+.lake-erie {
+    transform: rotate(18deg);
+    bottom: 5%;
+    transition: transform .1s linear;
+
+    &:hover {
+        transform: rotate(8deg);
+    }
+}

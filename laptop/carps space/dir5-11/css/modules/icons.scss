@@ -1,0 +1,102 @@
+/* icons */
+
+@import 'modules/breakpoints';
+@import 'modules/colors';
+
+.fab {
+    font-size: 2rem;
+    color: hsla(0, 0%, 0%, 0.4);
+
+    &.fa-twitter:hover {
+        color: #1DA1F2 !important;
+    }
+    
+    &.fa-instagram:hover {
+        color: #E1306C !important;
+    }
+    
+    &.fa-lastfm:hover {
+        color: #d51007 !important;
+    }
+    
+    &.fa-facebook:hover {
+        color: #3b5998 !important;
+    }
+    
+    &.fa-linkedin:hover {
+        color: #0077b5 !important;
+    }
+
+    &.fa-strava:hover {
+        color: #fc4c02 !important;
+    }
+
+    @media(max-width: $bp-xs) {
+        color: hsl(200deg, 50%, 23%);
+    }
+}
+
+a {
+    i {
+        &.fas {
+            display: inline-block;
+        }
+    }
+
+    &:hover {
+        .fad {
+            display: inline-block;
+        }
+    }
+}
+
+.fa-alien-monster {
+    --fa-primary-color: var(--color-black);
+    --fa-primary-opacity: 1;
+    --fa-secondary-color: var(--color-yellow);
+    --fa-secondary-opacity: 1;
+}
+
+// circles
+
+.circles {
+    display: flex;
+
+    &:hover {
+        .circle {
+            &:first-child {
+                background: #FF8000 !important;
+            }
+
+            &:nth-child(2) {
+                background: #05E156 !important;
+            }
+
+            &:nth-child(3) {
+                background: #40BCF4 !important;
+            }
+        }
+    }   
+
+    .circle {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background:hsla(0, 0%, 0%, 0.4);
+
+        &:nth-child(2) {
+            transform: translateX(-5px);
+            z-index: 2;
+            mix-blend-mode: multiply;
+        }
+
+        &:nth-child(3) {
+            transform: translateX(-10px);
+        }
+
+        @media(max-width: $bp-xs) {
+            background: hsl(200deg, 50%, 23%);
+            
+        }
+    }
+}

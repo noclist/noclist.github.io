@@ -1,0 +1,30 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+	background-color: #8C8274;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 9.4vw;
+	color: #D9CEC1;
+}
+
+img {
+	border: 10px solid #D9CEC1;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.logo img {
+	border: 0;
+	border-radius: 0;
+}
+
+@media (max-width: 576px) {
+	.logo img {
+		width: 20%;
+	}
+}
+
+.row {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}

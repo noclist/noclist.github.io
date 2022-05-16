@@ -1,0 +1,102 @@
+/* sicky note */
+ul.sticky {
+    display: block;
+    overflow: hidden;
+    padding: 0.5em 1.8em 1.5em 1em;
+
+    > li {
+        list-style: none;
+        margin: 1em;
+        float: left;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color :#000;
+            background: #ffc;
+            display: block;
+            height: 10em;
+            width: 10em;
+            padding: 1em;
+            -moz-box-shadow: 5px 5px 7px rgba(33,33,33,1);
+            -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+            box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+            -moz-transition: -moz-transform .15s linear;
+            -o-transition: -o-transform .15s linear;
+            -webkit-transition: -webkit-transform .15s linear;
+            -webkit-transform: rotate(-6deg);
+            -o-transform: rotate(-6deg);
+            -moz-transform:rotate(-6deg);
+            background: #cfc;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            img {
+                height: 115px;
+            }
+        }
+
+        &:nth-child(2) a {
+            -o-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            position: relative;
+            top:-5px;
+            background: #F8C2C8;
+          }
+
+          &:nth-child(3) a {
+            -o-transform:rotate(5deg);
+            -webkit-transform:rotate(5deg);
+            -moz-transform:rotate(5deg);
+            position:relative;
+            top:-10px;
+            background: #ccf;
+          }
+
+          &:nth-child(4) a {
+            -o-transform:rotate(4deg);
+            -webkit-transform:rotate(4deg);
+            -moz-transform: rotate(4deg);
+            position: relative;
+            top: 5px;
+            background:#ffc;
+          }
+
+          &:nth-child(5) a {
+            -o-transform:rotate(7deg);
+            -webkit-transform:rotate(7deg);
+            -moz-transform:rotate(7deg);
+            position: relative;
+            top:3px;
+            background :#ffc261;
+          }
+    }
+
+    li {
+        a {
+            &:hover,
+            &:focus {
+                box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+                -moz-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+                -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+                -webkit-transform: scale(1.25);
+                -moz-transform: scale(1.25);
+                -o-transform: scale(1.25);
+                position: relative;
+                z-index: 5;
+            }
+        }
+    }
+}
+
+ol {
+    padding-left:1em;
+    font-size: .7em;
+
+    li {
+        margin: 0;
+    }
+}

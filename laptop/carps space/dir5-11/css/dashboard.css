@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+:root {
+  --color-blue: #1DA1F2;
+  --color-purple: #b78cf7;
+  --color-pink: #ff7c94;
+  --color-yellow: #ffcf0d;
+  --color-black: #212529;
+  --color-white: #fff; }
+
+/* fancy link */
+.fancy-link {
+  position: relative; }
+
+.fancy-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #01627f;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+.fancy-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left; }
+
+/* Icon Spin */
+.hvr-icon-spin {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-icon-spin .hvr-icon {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out; }
+
+.hvr-icon-spin:hover .hvr-icon, .hvr-icon-spin:focus .hvr-icon, .hvr-icon-spin:active .hvr-icon {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+/* Icon Bounce */
+.hvr-icon-bounce {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.hvr-icon-bounce .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-icon-bounce:hover .hvr-icon, .hvr-icon-bounce:focus .hvr-icon, .hvr-icon-bounce:active .hvr-icon {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+
+/* Icon Pop */
+@-webkit-keyframes hvr-icon-pop {
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); } }
+
+@keyframes hvr-icon-pop {
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); } }
+
+.hvr-icon-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.hvr-icon-pop .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-icon-pop:hover .hvr-icon, .hvr-icon-pop:focus .hvr-icon, .hvr-icon-pop:active .hvr-icon {
+  -webkit-animation-name: hvr-icon-pop;
+  animation-name: hvr-icon-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  background: conic-gradient(from 0.5turn at 50% 110%, white, orange); }
+
+h1 {
+  color: #fff;
+  margin-top: 0; }
+
+.actions-grid {
+  width: 75vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  grid-template-areas: "animals games food" "sci-fi music music";
+  grid-gap: 20px; }
+  .actions-grid .action {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: #FFE0A8;
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.25); }
+    .actions-grid .action h2 {
+      grid-column: 1 / 4;
+      padding: 0.3em 0;
+      background: var(--color-blue);
+      color: white;
+      border: 1px solid var(--color-black);
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      margin: 0; }
+    .actions-grid .action a {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 1em 0;
+      background-color: var(--color-white);
+      border: 1px solid rebeccapurple;
+      color: rebeccapurple;
+      line-height: 1.5;
+      font-size: 1.1em;
+      text-decoration: none;
+      transition: background-color .5s ease-in, color .5s ease-in; }
+      .actions-grid .action a i {
+        font-size: 2.3em; }
+        .actions-grid .action a i.fas {
+          display: none; }
+        .actions-grid .action a i.fal {
+          display: block; }
+      .actions-grid .action a:hover {
+        background-color: rebeccapurple;
+        color: var(--color-pink); }
+        .actions-grid .action a:hover .fal {
+          display: none; }
+        .actions-grid .action a:hover .fas {
+          display: block; }
+    .actions-grid .action.animals {
+      grid-area: animals;
+      grid-template-columns: repeat(3, 1fr); }
+    .actions-grid .action.games {
+      grid-area: games;
+      grid-template-columns: 1fr; }
+      .actions-grid .action.games h2 {
+        grid-column: 1 / 1; }
+    .actions-grid .action.food {
+      grid-area: food;
+      grid-template-columns: repeat(2, 1fr); }
+      .actions-grid .action.food h2 {
+        grid-column: 1 / 3; }
+    .actions-grid .action.sci-fi {
+      grid-area: sci-fi;
+      grid-template-columns: repeat(3, 1fr); }
+    .actions-grid .action.music {
+      grid-area: music;
+      grid-template-columns: 1fr 1fr 1.5fr 1fr; }
+      .actions-grid .action.music h2 {
+        grid-column: 1 / 5; }
+  @media (max-width: 1200px) {
+    .actions-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "animals food" "games sci-fi" "music music"; }
+      .actions-grid .action.games {
+        grid-template-columns: 1fr 1fr; }
+        .actions-grid .action.games h2 {
+          grid-column: 1 / 3; } }
+  @media (max-width: 992px) {
+    .actions-grid {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: "animals animals" "games food" "sci-fi sci-fi" "music music"; }
+      .actions-grid .action.games {
+        grid-template-columns: 1fr; }
+        .actions-grid .action.games h2 {
+          grid-column: 1 / 2; } }
+  @media (max-width: 600px) {
+    .actions-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas: "animals" "games" "food" "sci-fi" "music"; } }

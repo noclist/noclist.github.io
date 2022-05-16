@@ -1,0 +1,65 @@
+body {
+    background-color: #101010;
+    
+    -webkit-animation-name:back;
+    -webkit-animation-duration:5s;
+}
+    
+div {
+    width:500px;
+    height:215px;
+    border: 6px solid #000;
+    border-radius: 150px;
+    background-image:url('../images/road.jpg');
+    
+    -webkit-animation-name:benimation;
+    -webkit-animation-duration:15s;
+}
+
+img {
+    -webkit-animation-name:bike;
+    -webkit-animation-duration:5s;
+    
+    width: 562px;
+    height: 525px;
+    
+    -webkit-transition: -webkit-transform 1s ease-out;
+    -moz-transition: -moz-transform 1s ease-out;
+    -o-transition: -o-transform 1s ease-out;        
+    transition: transform 1s ease-out;
+}
+
+img:hover {
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+    
+body, div, img
+{
+    position:relative;
+    
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-play-state:running;
+}
+
+@-webkit-keyframes back
+{
+0%  {background-color: #101010; }
+100%  {background-color: #E95C0C;}
+}
+
+@-webkit-keyframes benimation
+{
+0%  { border-radius: 200px;}
+100%  {border-radius: 0px; border: 0px; width:1000px; height:430px;}
+}
+
+@-webkit-keyframes bike
+{
+0%  {left: 0px; }
+100%  {left: 300px;}
+}

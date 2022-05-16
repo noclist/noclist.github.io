@@ -1,0 +1,65 @@
+// HEART
+
+.heart {
+    position: relative;
+    width: 150px;
+    height: 135px;
+    animation: pulse 1s linear infinite;
+
+    > .heart {
+        width: 100px;
+        height: 90px;
+        z-index: 1;
+        top: calc(50% - 45px);
+        left: calc(50% - 50px);
+        animation: pulse 0.5s linear infinite;
+
+        &:before,
+        &:after {
+            content: '';
+            width: 50px;
+            height: 80px;
+            border-radius: 50px 50px 0 0;
+            left: 50px;
+            background: yellow;
+        }
+
+        &:after {
+            left: 0;
+        }
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      left: 75px;
+      top: 10px;
+      width: 75px;
+      height:120px;
+      background: red;
+      border-radius: 75px 75px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+
+    &:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+  }
+
+  @keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}

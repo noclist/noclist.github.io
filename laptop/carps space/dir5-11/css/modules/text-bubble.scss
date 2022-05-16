@@ -1,0 +1,27 @@
+.outer-bubble {
+    @include bp-custom-hide(1226px, block);
+
+    filter: drop-shadow(7px 7px 1px rgba(50, 50, 0, 0.5));
+
+    .text-bubble {
+        position: absolute;
+        width: 70vw;
+        height: 120px;
+        background: #212529;
+        border-radius: 12px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 28% 75%, 21% 100%, 22% 75%, 0% 75%);
+        top: -90px;
+        z-index: 2;
+
+        .inner-bubble {
+            position: absolute;
+            width: 99.4%;
+            height:112px;
+            background: #ffe394;
+            border-radius: 12px;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 28% 75%, 21.2% 100%, 22.2% 75%, 0% 75%);
+            left: 3px;
+            top: 3px;
+        }
+    }
+}

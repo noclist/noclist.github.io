@@ -1,0 +1,535 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; 
+    font-family: Mosk-bold, sans-serif;
+}
+
+body > div:first-child {
+    z-index: 1;
+    width: 0;
+    position: absolute;
+    left: 0;
+    color: white;
+}
+
+div[class] {
+    box-shadow: rgba(0, 0, 0, 0.2) 7px 6px 2.6px;
+    border-radius: 5px;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.outer {
+    width: 95vw;
+    height: 95vh;
+    position: relative;
+    border: 5px solid black;
+    background: red;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 43px;
+        height: 20px;
+        background: red;
+        left: -48px;
+        position: absolute;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 20px;
+        background: red;
+        position: absolute;
+        left: -5px;
+        top: calc(50% - 10px);
+    }
+}
+
+.one {
+    width: 92vw;
+    height: 89vh;
+    position: relative;
+    border: 5px solid black;
+    background: orange;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: red;
+        position: absolute;
+        left: calc(50% - 10px);
+        top: -5px;
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 3vh;
+        background: black;
+        position: absolute;
+        left: calc(50% - 15px);
+        top: -3vh;
+    }
+}
+
+.two {
+    width: 89vw;
+    height: 83vh;
+    position: relative;
+    border: 5px solid black;
+    background: yellow;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 5px;
+        height: 20px;
+        background: yellow;
+        position: absolute;
+        right: -5px;
+        top: calc(50% - 10px);
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: yellow;
+        position: absolute;
+        left: calc(50% - 15px);
+        bottom: -5px;
+    }
+}
+
+.three {
+    width: 86vw;
+    height: 77vh;
+    position: relative;
+    border: 5px solid black;
+    background: green;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 5px;
+        height: 20px;
+        background: green;
+        position: absolute;
+        right: -5px;
+        top: calc(25%);
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 3vh;
+        background: black;
+        position: absolute;
+        left: 43.3vw;
+        bottom: -3vh;
+    }
+}
+
+.four {
+    width: 83vw;
+    height: 71vh;
+    position: relative;
+    border: 5px solid black;
+    background: blue;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: green;
+        position: absolute;
+        left: 25%;
+        top: -5px;
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 3vh;
+        background: green;
+        position: absolute;
+        left: -5px;
+        bottom: 15%;
+    }
+}
+
+.five {
+    width: 80vw;
+    height: 65vh;
+    position: relative;
+    border: 5px solid black;
+    background: indigo;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 5px;
+        height: 3.1vh;
+        background: black;
+        position: absolute;
+        left: 19vw;
+        top: -3.6vh;
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 3vh;
+        background: indigo;
+        position: absolute;
+        left: -5px;
+        bottom: 75%;
+    }
+}
+
+.six {
+    width: 77vw;
+    height: 59vh;
+    position: relative;
+    border: 5px solid black;
+    background: violet;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: violet;
+        position: absolute;
+        left: 19vw;
+        bottom: -5px;
+    }
+
+    &::after {
+        content: '';
+        width: 1.4vw;
+        height: 5px;
+        background: black;
+        position: absolute;
+        left: -1.6vw;
+        top: 13.25vh;
+    }
+}
+
+.seven {
+    width: 74vw;
+    height: 53vh;
+    position: relative;
+    border: 5px solid black;
+    background: red;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 1.5vw;
+        height: 5px;
+        background: black;
+        position: absolute;
+        right: -1.7vw;
+        bottom: 30%;
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: violet;
+        position: absolute;
+        left: 55vw;
+        top: -5px;
+    }
+}
+
+.eight {
+    width: 71vw;
+    height: 47vh;
+    position: relative;
+    border: 5px solid black;
+    background: orange;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: orange;
+        position: absolute;
+        right: 50vw;
+        bottom: -5px;
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 5.5vh;
+        background: black;
+        position: absolute;
+        left: 21vw;
+        bottom: -3vh;
+    }
+}
+
+.nine {
+    width: 68vw;
+    height: 41vh;
+    position: relative;
+    border: 5px solid black;
+    background: yellow;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: yellow;
+        position: absolute;
+        right: 46vw;
+        bottom: -5px;
+    }
+
+    &::after {
+        content: '';
+        width: 2.5vh;
+        height: 5px;
+        background: yellow;
+        position: absolute;
+        left: 0;
+        top: -5px;
+    }
+}
+
+.ten {
+    width: 65vw;
+    height: 35vh;
+    position: relative;
+    border: 5px solid black;
+    background: green;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: yellow;
+        position: absolute;
+        left: 0;
+        top: -5px;
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 2.9vh;
+        background: black;
+        position: absolute;
+        left: -5px;
+        top: -3.4vh;
+        z-index: 3;
+    }
+}
+
+.eleven {
+    width: 62vw;
+    height: 29vh;
+    position: relative;
+    border: 5px solid black;
+    background: blue;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: green;
+        position: absolute;
+        left: 15vw;
+        top: -5px;
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 2.9vh;
+        background: blue;
+        position: absolute;
+        right: -5px;
+        top: 20vh;
+        z-index: 3;
+    }
+}
+
+.twelve {
+    width: 59vw;
+    height: 23vh;
+    position: relative;
+    border: 5px solid black;
+    background: indigo;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 5px;
+        height: 2.5vh;
+        background: black;
+        position: absolute;
+        left: 35vw;
+        top: -3vh;
+    }
+
+    &::after {
+        content: '';
+        width: 5px;
+        height: 2.9vh;
+        background: indigo;
+        position: absolute;
+        left: -5px;
+        bottom: -0.1px;
+        z-index: 3;
+    }
+}
+
+.thirteen {
+    width: 56vw;
+    height: 17vh;
+    position: relative;
+    border: 5px solid black;
+    background: violet;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 5px;
+        height: 2.5vh;
+        background: black;
+        position: absolute;
+        left: 33.5vw;
+        top: -3vh;
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: violet;
+        position: absolute;
+        left: 50vw;
+        bottom: -5px;
+        z-index: 3;
+    }
+}
+
+.fourteen {
+    width: 53vw;
+    height: 11vh;
+    position: relative;
+    border: 5px solid black;
+    background: red;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 5px;
+        height: 2.5vh;
+        background: black;
+        position: absolute;
+        left: -5px;
+        top: -3vh;
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: violet;
+        position: absolute;
+        left: 0;
+        top: -5px;
+        z-index: 3;
+    }
+}
+
+.fifteen {
+    width: 50vw;
+    height: 5vh;
+    position: relative;
+    border: 5px solid black;
+    background: orange;
+
+    @include flex;
+    
+    &::before {
+        content: '';
+        width: 5px;
+        height: 5.8vh;
+        background: black;
+        position: absolute;
+        right: 20px;
+        top: -3vh;
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background: orange;
+        position: absolute;
+        right: 0;
+        top: -5px;
+        z-index: 3;
+    }
+}
+
+.inner {
+    width: 47.4vw;
+    height: 5px;
+    position: relative;
+    background: black;
+
+    display: flex;
+    justify-content: flex-end;
+
+    div {
+        position: absolute;
+        top: -16px;
+        padding-right: 8px;
+        color: black;
+    }
+}

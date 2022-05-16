@@ -1,0 +1,8 @@
+body {
+  min-height: 97vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  gap: 1em; }
+  body > * {
+    border: 1px solid black;
+    padding: 2em; }

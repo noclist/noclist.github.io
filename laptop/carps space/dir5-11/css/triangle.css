@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: #333;
+  background: #ddd; }
+
+.content {
+  width: 70vw;
+  padding: 3em;
+  background: #fff;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15); }
+
+p {
+  color: rgba(0, 0, 0, 0.6); }
+  p.important {
+    color: rgba(0, 0, 0, 0.9);
+    position: relative; }
+    p.important::after {
+      content: '';
+      position: absolute;
+      left: -1.5em;
+      top: -4px;
+      border: 1em solid transparent;
+      border-left-color: #ee6352; }

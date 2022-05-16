@@ -1,0 +1,17 @@
+body {
+    min-width: 70vw;
+    padding: 3em;
+}
+
+.cta {
+    height: 50px;
+    width: 50%;
+    border: 1px solid blue;
+    padding: 1em;
+    transition: transform 250ms;
+
+    &:hover, 
+    &:focus-within {
+        transform: scale(1.1);
+    }
+}
