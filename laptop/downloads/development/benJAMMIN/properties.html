@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Properties</title>
+		<link rel="stylesheet" type="text/css" href="styles/propstyle.css">
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                <script src="scripts/properties.js"></script>
+	</head>
+	<body>
+		<header>
+			This is your styled text!
+		</header>
+		<div class="properties" id="styled-text">
+			<label for="text"><span class="number">1.</span> Type some text!</label><br /><textarea id="text" cols="22">This is your styled text!</textarea>	
+                </div>
+		<div class="properties" id="font">
+			<span class="number">2.</span> Choose a font!
+			<ul>
+				<li>
+					<input id="size" type="text" value="48" /> pt
+					<input id="color" type="color" value="#ffffff" />	
+				</li>
+				<li>
+					<select id="face">
+						<option value="Aharoni">Aharoni</option>
+						<option value="Andalus">Andalus</option>
+						<option value="Agency FB">Agency FB</option>
+						<option value="Angsana New">Angsana New</option>
+						<option value="Arial">Arial</option>
+						<option value="Calibri">Calibri</option>
+						<option value="Cambria">Cambria</option>
+						<option value="Candara">Candara</option>
+						<option value="Comic Sans MS">Comic Sans MS</option>
+						<option value="Consolas">Consolas</option>
+						<option value="Constantina">Constantina</option>
+						<option value="Corbel">Corbel</option>
+						<option value="Courier New">Courier New</option>
+						<option value="David">David</option>
+						<option value="Dotum">Dotum</option>
+						<option value="Euphemia">Euphemia</option>
+						<option value="Georgia">Georgia</option>
+						<option value="Impact">Impact</option>
+						<option value="Lucida Console">Lucida Console</option>
+						<option value="Palatino">Palatino</option>
+						<option value="Segoe UI">Segoe UI</option>
+						<option value="Tahoma" selected>Tahoma</option>
+						<option value="Times New Roman">Times New Roman</option>
+						<option value="Trebuchet MS">Trebuchet MS</option>
+						<option value="Verdana">Verdana</option>
+					</select>
+				</li>
+				
+			</ul>
+                </div>
+		<div id="style" class="properties">
+			<span class="number">3.</span> Style it!
+			<ul>
+				<li>
+					<label for="normal">Normal </label><input type="radio" name="style" id="normal" />
+				</li>
+				<li>
+					<label for="italic">Italic </label><input type="radio" name="style" id="italic" />
+				</li>
+				<li>
+					<label for="oblique">Oblique </label><input type="radio" name="style" id="oblique" />
+				</li>
+			</ul>
+                </div>
+		<div id="weight" class="properties">
+			<span class="number">4.</span> Weight it!
+			<ul>
+				<li>
+					<label for="lighter">Lighter </label><input type="radio" name="weight" id="lighter" />
+				</li>
+				<li>
+					<label for="normal">Normal </label><input type="radio" name="weight" id="normal-weight" />
+				</li>
+				<li>
+					<label for="bold">Bold </label><input type="radio" name="weight" id="bold" />
+				</li>
+				<li>
+					<label for="bolder">Bolder </label><input type="radio" name="weight" id="bolder" />
+				</li>
+			</ul>
+                </div>
+                <div id="decorate" class="properties">
+			<span class="number">5.</span> Decorate it!
+			<ul>
+				<li>
+					<label for="underline">Underline </label><input type="radio" name="decoration" id="underline" />
+				</li>
+				<li>
+					<label for="overline">Overline </label><input type="radio" name="decoration" id="overline" />
+				</li>
+				<li>
+					<label for="linethrough">Line-Through </label><input type="radio" name="decoration" id="linethrough" />
+				</li>
+			</ul>
+                </div>
+                <div id="transform" class="properties">
+			<span class="number">6.</span> Transform it!
+			<ul>
+				<li>
+					<label for="lowercase">Lowercase </label><input type="radio" name="transform" id="lowercase" />
+				</li>
+				<li>
+					<label for="uppercase">Uppercase </label><input type="radio" name="transform" id="uppercase" />
+				</li>
+				<li>
+					<label for="capitalize">Capitalize </label><input type="radio" name="transform" id="capitalize" />
+				</li>
+			</ul>
+                </div>
+                <div id="shadow" class="properties">
+			<span class="number">7.</span> Add a shadow?
+			<ul>
+				<li>
+					<label for="shadow">Shadow </label><input type="radio" name="shadow" id="shadow" />
+				</li>
+				<li>
+					<label for="no-shadow">No Shadow </label><input type="radio" name="shadow" id="no-shadow" />
+				</li>
+				<li>
+					<label class="color" for="shadowcolor">Color</label><input id="shadowcolor" type="color" value="#ff0000" />	
+				</li>
+			</ul>
+                </div>
+                <div class="properties" id="container">
+			<span class="number">8.</span> Style the container!
+			<ul>
+				<li>
+					<label class="color" for="boxcolor">Color</label><input id="boxcolor" type="color" value="#679472" />	
+				</li>
+				<li>
+					<label class="color" for="bordercolor">Border</label><input id="bordercolor" type="color" value="#000000" />	
+				</li>
+				<li>
+					<label class="color" for="boxshadowcolor">Shadow</label><input id="boxshadowcolor" type="color" value="#888888" />	
+				</li>
+			</ul>
+                 </div>
+        </body>
+</html>

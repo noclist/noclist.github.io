@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: Docs
+---
+
+<ul>
+{% for page in collections.docs %} 
+  <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+{% endfor %}
+</ul>
+
+<h2>Components</h2>
+<ul>
+{% for page in collections.components %} 
+  <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+{% endfor %}
+</ul>
+
+<h2>Templates</h2>
+<ul>
+{% for page in collections.templates %} 
+  <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+{% endfor %}
+</ul>

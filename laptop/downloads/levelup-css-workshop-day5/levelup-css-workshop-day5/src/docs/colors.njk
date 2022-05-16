@@ -1,0 +1,33 @@
+---
+title: Colors
+---
+
+<ul role="list" class="layout-grid layout-grid--auto-fit"  style="--gap: 3vw;">
+  {% for colorToken in colors %} 
+    <li>
+      <figure class="swatch">
+        <figcaption class="background-{{ colorToken.name }}">
+          <strong>{{ colorToken.name }}</strong> {{ colorToken.color }}
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+
+  {% for greyShade in ["medium", "light"] %} 
+  <li>
+      <figure class="swatch">
+        <figcaption class="background-grey-{{ greyShade }}">
+          <strong>grey-{{ greyShade }}</strong>
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+
+  <li>
+    <figure class="swatch">
+      <figcaption class="background-body">
+        <strong>background-body</strong>
+      </figcaption>
+    </figure>
+  </li>
+</ul>

@@ -1,0 +1,8 @@
+[ ] 2269.84 mri - bill
+[ ]  267.17 ben ER - bill
+[ ]  184.87 IUI lab - bill
+[ ]  350.06 calvin surgeon appt
+[ ]   61.62 calvin pediatrician - bill
+[x]  810.17 calvin surgery - 420.06 - credit card
+                             373.03
+                              16.78
