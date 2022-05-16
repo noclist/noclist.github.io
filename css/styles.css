@@ -27,8 +27,8 @@ body {
   padding: 1.5em 3em;
   margin-top: 4em;
   margin-bottom: 2em;
-  background: linear-gradient(89.9deg, #fff36e 16.9%, #1eccd6 55.1%, #3979f9 90.7%);
-  box-shadow: #fff 8px -8px 0 -1px, #ee6352 8px -8px 0 2px, #fff 20px -20px 0 -2px, #d45379 20px -20px 0 1px, #fff 30px -30px 0 -3px, #a4558f 30px -30px, #fff 40px -40px 0 -3px, #6d588e 40px -40px, #fff 50px -50px 0 -3px, #405378 50px -50px;
+  background: linear-gradient(90deg, #9ae4bf 40%, #528afa);
+  box-shadow: white 8px -8px 0 -1px, #ee6352 8px -8px 0 2px, #fff 20px -20px 0 -2px, #d45379 20px -20px 0 1px, #fff 30px -30px 0 -3px, #a4558f 30px -30px, #fff 40px -40px 0 -3px, #6d588e 40px -40px, #fff 50px -50px 0 -3px, #405378 50px -50px;
 }
 
 h1 {
@@ -74,6 +74,9 @@ main {
   main section.col-start-1 {
     grid-column-start: 1;
   }
+  main section.col-start-2 {
+    grid-column-start: 2;
+  }
   main section.col-start-3 {
     grid-column-start: 3;
   }
@@ -92,6 +95,7 @@ main section {
   background: conic-gradient(at 0% 0%, snow, white);
   border: 0.5vmin solid var(--dark);
   cursor: pointer;
+  filter: drop-shadow(6px 6px 2px #666666);
 }
 main section:hover {
   background: conic-gradient(from 0.5turn at bottom center, #ff99f5, white);
@@ -169,8 +173,9 @@ main section.text i {
   --fa-primary-color: #FF66C4;
   --fa-secondary-color: #818181;
 }
-main section.maze i {
-  --fa-secondary-color: #FF450C;
+main section.cards i {
+  --fa-primary-color: #212529;
+  --fa-secondary-color: #f00;
 }
 main section.aliens i {
   --fa-primary-color: #212529;
@@ -184,10 +189,29 @@ main section.terminal i {
   --fa-primary-color: hsl(198, 79%, 15%);
   --fa-secondary-color: #fff;
 }
+main section.transform i {
+  --fa-primary-color: hsl(0, 1%, 25%);
+  --fa-secondary-color: hsl(206, 96%, 55%);
+}
+main section.books i {
+  --fa-primary-color: hsl(0, 59%, 30%);
+  --fa-secondary-color: hsl(120, 100%, 10%);
+}
+main section.turtle i {
+  --fa-primary-color: hsl(33, 24%, 40%);
+  --fa-secondary-color: green;
+}
+main section.maze i {
+  --fa-secondary-color: hsl(350, 100%, 65%);
+}
 
 i {
-  font-size: 2em;
+  font-size: 3em;
   --fa-secondary-opacity: 0.8;
+}
+
+h2 {
+  font-size: 1.4em;
 }
 
 .xl i {
@@ -197,27 +221,6 @@ i {
   font-size: 2em;
 }
 
-.lg i {
-  font-size: 3.1em;
-}
-.lg h2 {
-  font-size: 1.5em;
-}
-
-.md i {
-  font-size: 2.3em;
-}
-.md h2 {
-  font-size: 1.3em;
-}
-
-.sm i {
-  font-size: 2.3em;
-}
-.sm h2 {
-  font-size: 1em;
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -225,10 +228,26 @@ footer {
   gap: 1.5em;
 }
 footer a {
-  color: #5b6671;
+  color: #f2f2f2;
+  filter: drop-shadow(3px 3px 3px #666666);
 }
 @media (min-width: 650px) {
   footer {
     justify-content: space-between;
   }
+}
+
+dialog button {
+  background-color: #e67300;
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  text-transform: uppercase;
+  height: 36px;
+  padding: 0 16px;
+}
+dialog .cancel {
+  background: #fff;
+  color: #395070;
+  border: 1px solid #395070;
 }

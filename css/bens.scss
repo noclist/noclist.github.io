@@ -6,13 +6,29 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
-    font-family: 'Karla', sans-serif;
-    background: hsl(222, 100%, 97%);
-    color: #212529;
+    background: hsl(222, 100%, 99%);
+    display: grid;
+    // gap: 3px;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 10vh);
+    background: yellow;
+
+    > * {
+
+        background: yellow;
+
+        &.eye, &.mouth {
+            background: #212529;
+            border-radius: 50%;
+
+            &.left {
+                border-radius: 29% 71% 27% 73% / 22% 79% 21% 78%;
+            }
+            &.right {
+                border-radius: 77% 23% 82% 18% / 76% 14% 86% 24%;
+            }
+        }
+    }
 }
 
 .container {
