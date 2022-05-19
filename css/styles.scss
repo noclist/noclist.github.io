@@ -136,26 +136,17 @@ main {
             }
         }
 
-        &.shapes {
-            border-radius: 50%;
-            i {
-                --fa-primary-color: #73BF43;
-                --fa-secondary-color: #864C9E;
-            }
-        }
-
         &.grid {
-            border-radius: 50%;
             i {
-                --fa-primary-color: #0000F7;
-                --fa-secondary-color: #ff8928;
+                --fa-secondary-color: #01718D;
+                --fa-primary-color: #01718D;
             }
         }
 
         &.form {
             i {
-                --fa-primary-color: #e7e7e7;
-                --fa-secondary-color: #5873E1;
+                --fa-secondary-color: hsl(0, 0%, 70%);
+                --fa-primary-color: #5873E1;
             }
         }
 
@@ -175,7 +166,7 @@ main {
 
         &.shadow {
             i {
-                --fa-primary-color: #212529;
+                --fa-primary-color: hsl(210, 11%, 30%);
                 --fa-secondary-color: hsl(48, 100%, 50%);
             }
         }
@@ -187,17 +178,10 @@ main {
             }
         }
 
-        &.honeycomb {
-            i {
-                --fa-primary-color: #EFB711;
-                --fa-secondary-color: #6B312C;
-            }
-        }
-
         &.cquery {
             i {
-                --fa-primary-color: #AE3B24;
-                --fa-secondary-color: #EC1C24;
+                --fa-secondary-color: #000;
+                --fa-secondary-color: hsl(3, 54%, 50%);
             }
         }
 
@@ -210,8 +194,8 @@ main {
 
         &.subgrid {
             i {
-                --fa-primary-color: #212529;
-                --fa-secondary-color: hsl(210, 44%, 29%);
+                --fa-primary-color: hsl(120, 49%, 55%);
+                --fa-secondary-color: hsl(210, 11%, 30%);
             }
         }
 
@@ -222,17 +206,10 @@ main {
             }
         }
 
-        &.text {
-            i {
-                --fa-primary-color: #FF66C4;
-                --fa-secondary-color: #818181;
-            }
-        }
-
         &.cards {
             i {
-                --fa-primary-color: #212529;
-                --fa-secondary-color: #f00;
+                --fa-primary-color: hsl(210, 11%, 30%);
+                --fa-secondary-color: hsl(0, 100%, 40%);
             }
         }
 
@@ -265,9 +242,10 @@ main {
         }
 
         &.books {
+            border-radius: 50%;
             i {
-                --fa-primary-color: hsl(0, 59%, 30%);
-                --fa-secondary-color: hsl(120, 100%, 10%);
+                --fa-secondary-color: hsl(208, 70%, 50%); 
+                --fa-primary-color: hsl(58, 55%, 60%);
             }
         }
 
@@ -280,7 +258,7 @@ main {
 
         &.maze {
             i {
-                --fa-secondary-color: hsl(350, 100%, 65%);
+                --fa-secondary-color: hsl(270, 50%, 60%);
             }
         }
     }

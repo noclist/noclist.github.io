@@ -14,7 +14,7 @@ body {
   display: grid;
   place-content: center;
   font-family: "Major Mono Display", monospace;
-  background: #fafafa;
+  background: hsl(0deg, 0%, 98%);
   color: var(--dark);
 }
 
@@ -27,8 +27,8 @@ body {
   padding: 1.5em 3em;
   margin-top: 4em;
   margin-bottom: 2em;
-  background: linear-gradient(90deg, #9ae4bf 40%, #528afa);
-  box-shadow: white 8px -8px 0 -1px, #ee6352 8px -8px 0 2px, #fff 20px -20px 0 -2px, #d45379 20px -20px 0 1px, #fff 30px -30px 0 -3px, #a4558f 30px -30px, #fff 40px -40px 0 -3px, #6d588e 40px -40px, #fff 50px -50px 0 -3px, #405378 50px -50px;
+  background: linear-gradient(90deg, hsl(150deg, 58%, 75%) 40%, hsl(220deg, 94%, 65%));
+  box-shadow: hsl(0deg, 0%, 100%) 8px -8px 0 -1px, #ee6352 8px -8px 0 2px, #fff 20px -20px 0 -2px, #d45379 20px -20px 0 1px, #fff 30px -30px 0 -3px, #a4558f 30px -30px, #fff 40px -40px 0 -3px, #6d588e 40px -40px, #fff 50px -50px 0 -3px, #405378 50px -50px;
 }
 
 h1 {
@@ -95,10 +95,10 @@ main section {
   background: conic-gradient(at 0% 0%, snow, white);
   border: 0.5vmin solid var(--dark);
   cursor: pointer;
-  filter: drop-shadow(6px 6px 2px #666666);
+  filter: drop-shadow(6px 6px 2px hsl(0deg, 0%, 40%));
 }
 main section:hover {
-  background: conic-gradient(from 0.5turn at bottom center, #ff99f5, white);
+  background: conic-gradient(from 0.5turn at bottom center, hsl(306deg, 100%, 80%), white);
 }
 main section.art {
   padding: 2em;
@@ -115,23 +115,13 @@ main section.film i {
   --fa-primary-color: #212529;
   --fa-secondary-color: #A5ABAB;
 }
-main section.shapes {
-  border-radius: 50%;
-}
-main section.shapes i {
-  --fa-primary-color: #73BF43;
-  --fa-secondary-color: #864C9E;
-}
-main section.grid {
-  border-radius: 50%;
-}
 main section.grid i {
-  --fa-primary-color: #0000F7;
-  --fa-secondary-color: #ff8928;
+  --fa-secondary-color: #01718D;
+  --fa-primary-color: #01718D;
 }
 main section.form i {
-  --fa-primary-color: #e7e7e7;
-  --fa-secondary-color: #5873E1;
+  --fa-secondary-color: hsl(0, 0%, 70%);
+  --fa-primary-color: #5873E1;
 }
 main section.grail i {
   --fa-primary-color: hsl(39, 89%, 47%);
@@ -142,40 +132,32 @@ main section.ddd i {
   --fa-secondary-color: hsla(197, 100%, 50%, 0.749);
 }
 main section.shadow i {
-  --fa-primary-color: #212529;
+  --fa-primary-color: hsl(210, 11%, 30%);
   --fa-secondary-color: hsl(48, 100%, 50%);
 }
 main section.masonry i {
   --fa-primary-color: #B1AD94;
   --fa-secondary-color: #BE5A3E;
 }
-main section.honeycomb i {
-  --fa-primary-color: #EFB711;
-  --fa-secondary-color: #6B312C;
-}
 main section.cquery i {
-  --fa-primary-color: #AE3B24;
-  --fa-secondary-color: #EC1C24;
+  --fa-secondary-color: #000;
+  --fa-secondary-color: hsl(3, 54%, 50%);
 }
 main section.snap i {
   --fa-primary-color: #212529;
   --fa-secondary-color: #BEBCBD;
 }
 main section.subgrid i {
-  --fa-primary-color: #212529;
-  --fa-secondary-color: hsl(210, 44%, 29%);
+  --fa-primary-color: hsl(120, 49%, 55%);
+  --fa-secondary-color: hsl(210, 11%, 30%);
 }
 main section.dash i {
   --fa-primary-color: #BDE5F5;
   --fa-secondary-color: #212529;
 }
-main section.text i {
-  --fa-primary-color: #FF66C4;
-  --fa-secondary-color: #818181;
-}
 main section.cards i {
-  --fa-primary-color: #212529;
-  --fa-secondary-color: #f00;
+  --fa-primary-color: hsl(210, 11%, 30%);
+  --fa-secondary-color: hsl(0, 100%, 40%);
 }
 main section.aliens i {
   --fa-primary-color: #212529;
@@ -193,16 +175,19 @@ main section.transform i {
   --fa-primary-color: hsl(0, 1%, 25%);
   --fa-secondary-color: hsl(206, 96%, 55%);
 }
+main section.books {
+  border-radius: 50%;
+}
 main section.books i {
-  --fa-primary-color: hsl(0, 59%, 30%);
-  --fa-secondary-color: hsl(120, 100%, 10%);
+  --fa-secondary-color: hsl(208, 70%, 50%);
+  --fa-primary-color: hsl(58, 55%, 60%);
 }
 main section.turtle i {
   --fa-primary-color: hsl(33, 24%, 40%);
   --fa-secondary-color: green;
 }
 main section.maze i {
-  --fa-secondary-color: hsl(350, 100%, 65%);
+  --fa-secondary-color: hsl(270, 50%, 60%);
 }
 
 i {
@@ -228,8 +213,8 @@ footer {
   gap: 1.5em;
 }
 footer a {
-  color: #f2f2f2;
-  filter: drop-shadow(3px 3px 3px #666666);
+  color: hsl(0deg, 0%, 95%);
+  filter: drop-shadow(3px 3px 3px hsl(0deg, 0%, 40%));
 }
 @media (min-width: 650px) {
   footer {
