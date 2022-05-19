@@ -48,13 +48,13 @@ body {
   place-content: center;
   gap: 1em;
   padding: 1em;
-  background: #bbbbe8;
+  background: hsl(240deg, 49%, 82%);
   font-family: "Major Mono Display", monospace;
 }
 
 h1 {
   font-size: 5.5vmax;
-  background: #ffd280;
+  background: hsl(39deg, 100%, 75%);
   background-clip: text;
   -webkit-background-clip: text;
   text-stroke: 3.5px #212529;
@@ -80,7 +80,6 @@ i {
 }
 
 .container {
-  width: 90vw;
   display: grid;
   gap: 0.75em;
   grid-template-columns: 1fr;
