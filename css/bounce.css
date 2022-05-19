@@ -11,8 +11,8 @@ body {
 
 h1 {
   font-family: "Major Mono Display", monospace;
-  font-size: 5.5vmax;
-  margin: 1rem;
+  font-size: 4.5vmax;
+  margin: 1rem 0;
   background-clip: text;
   -webkit-background-clip: text;
   text-stroke: 3.5px #ff006a;
@@ -68,7 +68,7 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(#0007, #0000 50%);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4666666667), rgba(0, 0, 0, 0) 50%);
   animation: ballShadow 1.5s infinite ease-out;
 }
 @keyframes ballShadow {
@@ -104,8 +104,8 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #00b7ffbf;
-  box-shadow: 0 0 0.5em #000a inset;
+  background: rgba(0, 183, 255, 0.7490196078);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.6666666667) inset;
 }
 .cube .front {
   transform: translateZ(1em);
@@ -123,14 +123,14 @@ h1 {
   position: absolute;
   width: 2em;
   height: 2em;
-  background: #0ff7;
+  background: rgba(0, 255, 255, 0.4666666667);
   transform: translateY(-50%) rotateX(90deg);
 }
 .cube .bottom {
   position: absolute;
   width: 2em;
   height: 2em;
-  background: #0007;
+  background: rgba(0, 0, 0, 0.4666666667);
   bottom: 0;
   transform: translateY(50%) rotateX(90deg);
   box-shadow: 0 0 0.5em #000;
@@ -142,7 +142,7 @@ h1 {
   transform: translate(-50%, -50%) rotateX(90deg);
   width: 15em;
   height: 15em;
-  background-image: radial-gradient(#0000, #000 75%), repeating-conic-gradient(from 45deg, #111 0deg 90deg, #222 90deg 180deg);
-  background-image: radial-gradient(#0000, #000 75%), repeating-conic-gradient(from 108deg, #ff006a 0deg 90deg, #fff 90deg 180deg);
+  background-image: radial-gradient(rgba(0, 0, 0, 0), #000 75%), repeating-conic-gradient(from 45deg, #111 0deg 90deg, #222 90deg 180deg);
+  background-image: radial-gradient(rgba(0, 0, 0, 0), #000 75%), repeating-conic-gradient(from 108deg, #ff006a 0deg 90deg, #fff 90deg 180deg);
   background-size: 100%, 1em 1em;
 }
